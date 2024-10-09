@@ -1,0 +1,54 @@
+.card-review{
+    background-image: url('../../assets/images/bg-review.png');
+    background-size: cover;
+    background-position: center;
+    width: 700px;
+    height: 900px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.review-card{
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.review-card p{
+    text-align: center;
+}
+
+.doctoralia-icon{
+    width: 40px;
+}
+
+@media screen and (max-width: 900px) {
+    .review-card{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .card-review{
+        width: 400px;
+        height: 630px;
+    }
+
+    .review-card p{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.2em;
+        max-height: 3.6em;  
+    }
+}

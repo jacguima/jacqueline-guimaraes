@@ -1,0 +1,95 @@
+.principal-duvidas{
+    width: 100vw;
+    height: 150vh;
+    background-color: #F6F8F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topo-duvidas{
+    margin-top: 50px;
+}
+
+.topo-duvidas h1{
+    color: #777E5C;
+    font-size: 70px;
+    font-family: 'Agrandir';
+    font-weight: 400;
+}
+
+.rodape-duvidas {
+    width: 500px;
+    margin-top: 20px;
+}
+
+.rodape-duvidas h2{
+    font-size: 26px;
+    font-weight: 200;
+    text-align: center;
+    font-family: 'Kalam', sans-serif;
+}
+
+.btn-agendar-duvidas{
+    margin-top: 50px;
+}
+
+.btn-agendar-duvidas a{
+    background-color: #F1F0E8;
+    color: #706F21;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    text-shadow: 2px 2px #A0A19F;
+    box-shadow: 0px 23px 59px -12px rgba(0,0,0,0.75);
+}
+
+
+
+@media screen and (max-width: 1534px) {
+    .principal-duvidas{
+        display: flex;
+        height: 150vh;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 680px) {
+
+}
+
+@media screen and (max-width: 680px) {
+    .topo-duvidas h1{
+        font-size: 3rem;
+    }    
+}
+
+@media screen and (max-width: 450px) {
+
+    .principal-duvidas{
+        height: 120vh;
+        justify-content: center;
+    }
+
+    .topo-duvidas h1{
+        font-size: 1.5rem;
+    }
+
+    .rodape-duvidas{
+        width: fit-content;
+    }
+
+    .rodape-duvidas h2{
+        font-size: 1rem;
+    }
+
+    .btn-agendar-duvidas a{
+        box-shadow: 0px 0px 59px 8px rgba(0, 0, 0, 0.75);
+    }
+}

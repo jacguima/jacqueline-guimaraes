@@ -1,0 +1,50 @@
+.carousel {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .review-card {
+    border-radius: 50px;
+    padding: 20px;
+    margin: 0 10px;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .rating .fa-star,
+  .rating .fa-star-half-alt,
+  .rating .fa-star-outline {
+    color: gold;
+    margin: 0 2px;
+  }
+  
+  .source-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .source-icon .fa-google {
+    color: #db4437;
+  }
+  
+  .source-icon .fa-app-store-ios {
+    color: #000;
+  }
+
+  @media screen and (max-width: 900px) {
+    .carousel{
+      width: 90%;
+    }
+  }
