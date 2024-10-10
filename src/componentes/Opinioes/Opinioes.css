@@ -1,22 +1,16 @@
-.principal-opinioes {
-    width: 100vw;
-    height: 100vh;
+.reviews-container {
     background-color: #f6f8f4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
-.bg-opinioes1 {
-    margin-top: 100px;
+.circle-bg-reviews {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     background-color: #d2d8be;
-    height: 90vh;
-    width: 100vw;
     border-radius: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .card-carousel {

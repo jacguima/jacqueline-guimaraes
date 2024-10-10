@@ -4,12 +4,9 @@ import Carousel from "../Carousel";
 
 const Opinioes = () => {
   return (
-    <div className="principal-opinioes">
-      <div className="bg-opinioes1">
-        <div className="card-carousel">
-          <Carousel />
-        </div>
-      </div>
+    <div className="container-base reviews-container">
+      <div className="circle-bg-reviews"></div>
+      <Carousel />
     </div>
   );
 };

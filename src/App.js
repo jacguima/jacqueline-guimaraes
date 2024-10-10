@@ -79,9 +79,7 @@ function App() {
         <div>
           <EspacoMobile />
         </div>
-        <div ref={opinioesRef}>
-          <Opinioes />
-        </div>
+        <Opinioes ref={opinioesRef} />
         <div ref={duvidasRef}>
           <Duvidas />
         </div>
