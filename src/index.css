@@ -19,9 +19,21 @@ body {
 }
 
 :root {
+    --container-base: 1200px;
     --font-size-base: 14px;
 
     p, .font-size-base {
         font-size: var(--font-size-base);
     }
+
+    .container-base {
+        width: 100%;
+        max-width: var(--container-base);
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
