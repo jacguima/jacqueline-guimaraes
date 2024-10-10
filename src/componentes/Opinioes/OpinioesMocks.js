@@ -73,7 +73,7 @@ const reviews = [
     id: 10,
     author: "G.S",
     content:
-      "A Jacque é atenciosa, realista e jeitosa. Há 2 anos ela me atende, e eu já fui do 8 a 80, e ela sempre me atendeu bem, com carinho, compreensão, cuidado e gentileza, me fazendo amadurecer e crescer bastante. Como uma pessoa que já passou por muitos profissionais da área da psicologia, fico feliz em dizer que ela é uma das melhores psicólogas que já me atenderam.",
+      "A Jacque é atenciosa, realista e jeitosa. Há 2 anos ela me atende, e eu já fui do 8 a 80, e ela sempre me atendeu bem, com carinho, compreensão, cuidado e gentileza, me fazendo amadurecer e crescer bastante. Como uma pessoa que já passou por muitos profissionais da área da psicologia, fico feliz em dizer que ela é uma das melhores que já me atenderam.",
     rating: 5,
     source: "google",
   },

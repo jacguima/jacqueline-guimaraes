@@ -1,19 +1,27 @@
 * {
-  /*border: 1px solid red;*/
-  margin: 0;
-  padding: 0;
-  font-family: "Raleway", sans-serif;
-  scrollbar-width: thin;
-  scrollbar-color: transparent;
+    /*border: 1px solid red;*/
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: transparent;
 }
 
 html, body {
-  height: 100%; /* Make sure the body takes the full viewport height */
+    height: 100%; /* Make sure the body takes the full viewport height */
 }
 
 body {
-  margin: 0;
-  overflow-x: clip;
-  padding: 0;
-  min-height: 100vh;
+    margin: 0;
+    overflow-x: clip;
+    padding: 0;
+    min-height: 100vh;
+}
+
+:root {
+    --font-size-base: 14px;
+
+    p, .font-size-base {
+        font-size: var(--font-size-base);
+    }
 }
