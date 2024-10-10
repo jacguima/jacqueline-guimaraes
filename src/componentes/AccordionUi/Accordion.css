@@ -58,7 +58,7 @@
 }
 @media screen and (max-width: 900px) and (min-width: 450px) {
   .accordion {
-    width: 450px;
+    width: 440px;
   }
 
   .titulo-accordion,
@@ -68,7 +68,7 @@
 }
 @media screen and (max-width: 450px) {
   .accordion {
-    width: 400px;
+    width: 100%;
   }
 
   .titulo-accordion,
