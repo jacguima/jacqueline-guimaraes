@@ -62,15 +62,9 @@ const Rodape = () => {
       <div className="divisor-rodape"></div>
       <div className="rodape-rodape">
         <div className="politicas-termos">
-          <p>
-            Política de Privacidade
-          </p>
-          <p>
-            Termos e condições
-          </p>
-          <p>
-            © 2023 Jacqueline Guimarães ∙ Todos os direitos reservados
-          </p>
+          <p>Política de Privacidade</p>
+          <p>Termos e condições</p>
+          <p>© 2023 Jacqueline Guimarães ∙ Todos os direitos reservados</p>
         </div>
         <div className="icons-rodape">
           <div className="rodape-icons">

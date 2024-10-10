@@ -64,27 +64,27 @@ const EspacoMobile = () => {
 
       <div className="espaco-online-mbl">
         <div className="atd-online-mbl">
-            <h2>Atendimento Online</h2>
-            <div className="topicos-online-mbl">
-                <CheckUI />
-                <p>Acessibilidade</p>
-            </div>
-            <div className="topicos-online-mbl">
-                <CheckUI />
-                <p>Flexibilidade</p>
-            </div>
-            <div className="topicos-online-mbl">
-                <CheckUI />
-                <p>Segurança</p>
-            </div>
-            <div className="topicos-online-mbl">
-                <CheckUI />
-                <p>Conforto</p>
-            </div>
-            <div className="topicos-online-mbl">
-                <CheckUI />
-                <p>Conveniência</p>
-            </div>
+          <h2>Atendimento Online</h2>
+          <div className="topicos-online-mbl">
+            <CheckUI />
+            <p>Acessibilidade</p>
+          </div>
+          <div className="topicos-online-mbl">
+            <CheckUI />
+            <p>Flexibilidade</p>
+          </div>
+          <div className="topicos-online-mbl">
+            <CheckUI />
+            <p>Segurança</p>
+          </div>
+          <div className="topicos-online-mbl">
+            <CheckUI />
+            <p>Conforto</p>
+          </div>
+          <div className="topicos-online-mbl">
+            <CheckUI />
+            <p>Conveniência</p>
+          </div>
         </div>
       </div>
     </div>

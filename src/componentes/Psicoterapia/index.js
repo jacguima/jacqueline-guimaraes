@@ -69,52 +69,65 @@ const Psicoterapia = () => {
       </div>
       <div className="topicos-psicoterapia">
         <div className="topico-psicoterapia">
-            <div className="passo-psi">
-                <div className="num-pis">
-                    <img src={Posicao1} alt="1" />
-                </div>
-                <div className="textos-psi">
-                <h1>Psicoterapia individual</h1>
-                <h2>online e presencial</h2>
-                <p>Imagine um espaço seguro e acolhedor, onde você recebe suporte profissional e especializado para explorar seus pensamentos e sentimentos, entender melhor a si mesmo e desenvolver estratégias para lidar com desafios. Um caminho para o autoconhecimento e bem-estar emocional.</p>
-                </div>
+          <div className="passo-psi">
+            <div className="num-pis">
+              <img src={Posicao1} alt="1" />
             </div>
-            <div className="img-psi-barco">
-                <div className="img-barco">
-                    
-                </div>
+            <div className="textos-psi">
+              <h1>Psicoterapia individual</h1>
+              <h2>online e presencial</h2>
+              <p>
+                Imagine um espaço seguro e acolhedor, onde você recebe suporte
+                profissional e especializado para explorar seus pensamentos e
+                sentimentos, entender melhor a si mesmo e desenvolver
+                estratégias para lidar com desafios. Um caminho para o
+                autoconhecimento e bem-estar emocional.
+              </p>
             </div>
+          </div>
+          <div className="img-psi-barco">
+            <div className="img-barco"></div>
+          </div>
         </div>
         <div className="topico-psicoterapia2">
-        <div className="img-psi-chat">
-                <div className="img-chat">
-                </div>
+          <div className="img-psi-chat">
+            <div className="img-chat"></div>
+          </div>
+          <div className="passo-psi">
+            <div className="num-pis">
+              <img src={Posicao2} alt="2" />
             </div>
-            <div className="passo-psi">
-                <div className="num-pis">
-                    <img src={Posicao2} alt="2" />
-                </div>
-                <div className="textos-psi">
-                <h1>Psicoterapia de casal</h1>
-                <p>Meu papel profissional aqui é ajudar o casal a comunicar-se melhor, resolver conflitos e explorar os desafios juntos. É um investimento no bem-estar do relacionamento, promovendo uma convivência mais saudável e satisfatória.</p>
-                </div>
+            <div className="textos-psi">
+              <h1>Psicoterapia de casal</h1>
+              <p>
+                Meu papel profissional aqui é ajudar o casal a comunicar-se
+                melhor, resolver conflitos e explorar os desafios juntos. É um
+                investimento no bem-estar do relacionamento, promovendo uma
+                convivência mais saudável e satisfatória.
+              </p>
             </div>
+          </div>
         </div>
         <div className="topico-psicoterapia">
-            <div className="passo-psi">
-                <div className="num-pis">
-                    <img src={Posicao3} alt="3" />
-                </div>
-                <div className="textos-psi">
-                <h1>Orientação profissional</h1>
-                <p>Juntos, compreenderemos suas habilidades, interesses, valores e sonhos pessoais, com o objetivo de identificar propósitos de vida que se alinhem às suas preferências e aptidões, buscando, assim, sucesso e satisfação no caminho escolhido. O projeto de vida é um processo contínuo de desenvolvimento e tomada de decisões.</p>
-                </div>
+          <div className="passo-psi">
+            <div className="num-pis">
+              <img src={Posicao3} alt="3" />
             </div>
-            <div className="img-psi-bike">
-                <div className="img-bike">
-                    
-                </div>
+            <div className="textos-psi">
+              <h1>Orientação profissional</h1>
+              <p>
+                Juntos, compreenderemos suas habilidades, interesses, valores e
+                sonhos pessoais, com o objetivo de identificar propósitos de
+                vida que se alinhem às suas preferências e aptidões, buscando,
+                assim, sucesso e satisfação no caminho escolhido. O projeto de
+                vida é um processo contínuo de desenvolvimento e tomada de
+                decisões.
+              </p>
             </div>
+          </div>
+          <div className="img-psi-bike">
+            <div className="img-bike"></div>
+          </div>
         </div>
       </div>
     </div>

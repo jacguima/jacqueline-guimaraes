@@ -14,7 +14,6 @@ import Wpp from "./componentes/Wpp";
 import BlogMob from "./componentes/BlogMob";
 
 function App() {
-
   const sobreMimRef = useRef(null);
   const psicoterapiaRef = useRef(null);
   const espacoRef = useRef(null);
@@ -26,27 +25,49 @@ function App() {
   return (
     <div className="app">
       <nav className="topo">
-        <Home 
-          scrollToSobreMim={() => sobreMimRef.current.scrollIntoView({ behavior: 'smooth' })}
-          scrollToPsicoterapia={() => psicoterapiaRef.current.scrollIntoView({ behavior: 'smooth' })}
-          scrollToEspaco={() => espacoRef.current.scrollIntoView({ behavior: 'smooth' })}
-          scrollToContatos={() => contatosRef.current.scrollIntoView({ behavior: 'smooth' })}
-          scrollToBlog={() => blogRef.current.scrollIntoView({ behavior: 'smooth' })}
+        <Home
+          scrollToSobreMim={() =>
+            sobreMimRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToPsicoterapia={() =>
+            psicoterapiaRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToEspaco={() =>
+            espacoRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToContatos={() =>
+            contatosRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToBlog={() =>
+            blogRef.current.scrollIntoView({ behavior: "smooth" })
+          }
         />
       </nav>
-      <div className="colado">  
+      <div className="colado">
         <BarraMenu
-          scrollToHome={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          scrollToSobreMim={() => sobreMimRef.current.scrollIntoView({ behavior: 'smooth' })}
-          scrollToPsicoterapia={() => psicoterapiaRef.current.scrollIntoView({ behavior: 'smooth' })}
-          scrollToEspaco={() => espacoRef.current.scrollIntoView({ behavior: 'smooth' })}
-          scrollToBlog={() => blogRef.current.scrollIntoView({ behavior: 'smooth' })}
-          scrollToOpinioes={() => opinioesRef.current.scrollIntoView({ behavior: 'smooth' })}
-          scrollToDuvidas={() => duvidasRef.current.scrollIntoView({ behavior: 'smooth' })}
+          scrollToHome={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          scrollToSobreMim={() =>
+            sobreMimRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToPsicoterapia={() =>
+            psicoterapiaRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToEspaco={() =>
+            espacoRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToBlog={() =>
+            blogRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToOpinioes={() =>
+            opinioesRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToDuvidas={() =>
+            duvidasRef.current.scrollIntoView({ behavior: "smooth" })
+          }
         />
       </div>
       <div className="container">
-        <div ref={sobreMimRef} >
+        <div ref={sobreMimRef}>
           <SobreMim />
         </div>
         <div ref={psicoterapiaRef}>
@@ -72,8 +93,8 @@ function App() {
           <BlogMob />
         </div>
 
-        <div  ref={contatosRef}>
-        <Rodape/>
+        <div ref={contatosRef}>
+          <Rodape />
         </div>
         <Wpp />
       </div>

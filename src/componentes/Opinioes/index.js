@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./Opinioes.css";
 import Carousel from "../Carousel";
@@ -9,10 +8,9 @@ const Opinioes = () => {
       <div className="bg-opinioes1">
         <div className="cards-carousel">
           <div className="card-carousel">
-        <Carousel />
+            <Carousel />
           </div>
         </div>
-  
       </div>
     </div>
   );

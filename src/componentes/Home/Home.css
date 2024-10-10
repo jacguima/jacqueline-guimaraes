@@ -1,21 +1,17 @@
 .home {
-  background-image: url('../../assets/images/fundo.png');
+  background-image: url("../../assets/images/fundo.png");
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.46);
-
 }
-
-
 
 .logo-btns {
   height: 80%;
   width: 100%;
   display: flex;
-
 }
 .contato {
   height: 20%;
@@ -23,7 +19,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  
 }
 .divisor1 {
   width: 50%;
@@ -61,8 +56,6 @@
   align-items: center;
 }
 
-
-
 .botoes button {
   width: 70%;
   height: 8%;
@@ -76,8 +69,8 @@
   z-index: 2;
 }
 
-.botoes button:hover{
-  box-shadow: inset 0px 0px 27px -6px rgba(0,0,0,1);
+.botoes button:hover {
+  box-shadow: inset 0px 0px 27px -6px rgba(0, 0, 0, 1);
 }
 
 .contatos {
@@ -104,36 +97,33 @@
 }
 
 @media screen and (max-width: 1534px) {
-
 }
 
 @media screen and (max-width: 1149px) {
-
-  .home{
+  .home {
     height: 100vh;
-    background-image: url('../../assets/images/fundo-mbl.png');
+    background-image: url("../../assets/images/fundo-mbl.png");
     background-size: cover;
   }
 
   .divisor1 {
     width: 100%;
-  
   }
-  
-  .logo-btns{
+
+  .logo-btns {
     flex-direction: column;
   }
 
-  .divisor2{
+  .divisor2 {
     width: 100%;
   }
 
-  .botoes{
+  .botoes {
     width: 100%;
     height: 100%;
   }
 
-  .botoes button{
+  .botoes button {
     height: 50px;
     text-decoration: none;
     color: #000;
@@ -146,10 +136,8 @@
   .contatos {
     width: 70%;
     margin-top: 30px;
-    
   }
   .contatos a {
     margin: 10px;
   }
 }
-

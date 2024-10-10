@@ -1,201 +1,186 @@
-.principal-rodape{
-    width: 100vw;
-    height: 75vh;
+.principal-rodape {
+  width: 100vw;
+  height: 75vh;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #A9B475;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a9b475;
 }
 
-.topo-rodape{
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.topo-rodape {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contatos-rodape{
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
+.contatos-rodape {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
 }
-.wpp-rodape{
-    display: flex;
-    width: 40%;
-    justify-content: space-between;
-}
-
-.wpp-rodape a{
-    text-decoration: none;
+.wpp-rodape {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
 }
 
-.wpp-rodape p{
-    font-size: 25px;
-    font-family: 'Agrandir';
-    color: white;
+.wpp-rodape a {
+  text-decoration: none;
 }
 
-.wpp-rodape img{
-    width: 50px;
-    height: 50px;
+.wpp-rodape p {
+  font-size: 25px;
+  font-family: "Agrandir";
+  color: white;
 }
 
-.mail-rodape{
-    display: flex;
-    width: 55%;
-    justify-content: space-between;
+.wpp-rodape img {
+  width: 50px;
+  height: 50px;
 }
 
-.mail-rodape a{
-    text-decoration: none;
+.mail-rodape {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
 }
 
-.mail-rodape p{
-    font-size: 25px;
-    font-family: 'Agrandir';
-    margin-top: 0;
-    color: white;
+.mail-rodape a {
+  text-decoration: none;
 }
 
-.mail-rodape img{
-    width: 45px;
-    height: 35px;
+.mail-rodape p {
+  font-size: 25px;
+  font-family: "Agrandir";
+  margin-top: 0;
+  color: white;
 }
 
-.form-rodape{
-    display: flex;
-    width: 48%;
-    justify-content: space-between;
+.mail-rodape img {
+  width: 45px;
+  height: 35px;
 }
 
-.form-rodape p{
-    font-size: 25px;
-    font-family: 'Agrandir';
-    margin-top: 0;
-    color: white;
-}
-.form-rodape a{
-    text-decoration: none;
+.form-rodape {
+  display: flex;
+  width: 48%;
+  justify-content: space-between;
 }
 
-
-
-.logo-rodape{
-    width: 40%;
-    height: 100%;
-
+.form-rodape p {
+  font-size: 25px;
+  font-family: "Agrandir";
+  margin-top: 0;
+  color: white;
+}
+.form-rodape a {
+  text-decoration: none;
 }
 
-.logo-rodape img{
-    width: 600px;
+.logo-rodape {
+  width: 40%;
+  height: 100%;
 }
 
-.divisor-rodape{
-    width: 90%;
-    height: 2px;
-    background-color: white;
+.logo-rodape img {
+  width: 600px;
 }
 
-.rodape-rodape{
-
-    width: 90%;
-    height: 40%;
-    display: flex;
-  
+.divisor-rodape {
+  width: 90%;
+  height: 2px;
+  background-color: white;
 }
 
-.politicas-termos{
-    width: 60%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 100px;
-    flex-wrap: wrap;
+.rodape-rodape {
+  width: 90%;
+  height: 40%;
+  display: flex;
 }
 
-.politicas-termos p{
-    font-family: 'Agrandir';
-    font-size: 30px;
-    color: white;
-    text-decoration: none;
+.politicas-termos {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
 }
 
-.icons-rodape{
-    width: 40%;
-    height: 100%;
-    display: flex;
-    gap: 50px;
-    justify-content: flex-end;
+.politicas-termos p {
+  font-family: "Agrandir";
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
 }
 
-.rodape-icons{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 50px;
+.icons-rodape {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  gap: 50px;
+  justify-content: flex-end;
 }
 
-.insta-icon-rodape{
-    width: 50px;
-    height: 50px;
-
+.rodape-icons {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
 }
 
-.mail-icon-rodape{
-    width: 50px;
-    height: 40px;
+.insta-icon-rodape {
+  width: 50px;
+  height: 50px;
 }
 
-.link-icon-rodape{
-    width: 120px;
-    height: 30px;
+.mail-icon-rodape {
+  width: 50px;
+  height: 40px;
 }
 
+.link-icon-rodape {
+  width: 120px;
+  height: 30px;
+}
 
 @media screen and (max-width: 1534) {
-
 }
 
-
-
 @media screen and (max-width: 1284px) {
-
-
-   .principal-rodape{
+  .principal-rodape {
     height: 100vh;
-   }
+  }
 
-   .topo-rodape{
+  .topo-rodape {
     flex-direction: column;
     justify-content: flex-end;
-   }
+  }
 
-   .logo-rodape{
+  .logo-rodape {
     width: 100%;
     height: 30%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+  }
 
-   }
-
-   .logo-rodape img{
+  .logo-rodape img {
     width: 300px;
     height: 200px;
-   }
+  }
 
-
-.contatos-rodape{
+  .contatos-rodape {
     width: 100%;
     height: 50%;
     display: flex;
@@ -203,104 +188,100 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-}
-.wpp-rodape{
+  }
+  .wpp-rodape {
     display: flex;
     width: 250px;
     justify-content: space-between;
-}
+  }
 
-.wpp-rodape p{
+  .wpp-rodape p {
     font-size: 20px;
-    font-family: 'Agrandir';
+    font-family: "Agrandir";
     color: white;
-}
+  }
 
-.wpp-rodape img{
+  .wpp-rodape img {
     width: 20px;
     height: 20px;
-}
+  }
 
-.mail-rodape{
+  .mail-rodape {
     display: flex;
     width: 350px;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
-.mail-rodape p{
+  .mail-rodape p {
     font-size: 20px;
-    font-family: 'Agrandir';
+    font-family: "Agrandir";
     margin-top: 0;
     color: white;
-}
+  }
 
-.mail-rodape img{
+  .mail-rodape img {
     width: 20px;
     height: 15px;
-}
+  }
 
-.form-rodape{
+  .form-rodape {
     display: flex;
     width: 300px;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
-.form-rodape p{
+  .form-rodape p {
     font-size: 20px;
-    font-family: 'Agrandir';
+    font-family: "Agrandir";
     margin-top: 0;
     color: white;
-}
+  }
 
-.form-rodape svg{
+  .form-rodape svg {
     width: 20px;
+  }
 
-}
-
-.rodape-rodape{
+  .rodape-rodape {
     flex-direction: column-reverse;
-}
+  }
 
-.icons-rodape{
+  .icons-rodape {
     width: 100%;
     height: 50%;
-}
+  }
 
-.rodape-icons{
-        width: 100%;
-        height: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        margin-top: 5px;
-   
-}
+  .rodape-icons {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5px;
+  }
 
-.insta-icon-rodape {
+  .insta-icon-rodape {
     width: 30px;
     height: 30px;
-}
+  }
 
-.mail-icon-rodape {
+  .mail-icon-rodape {
     width: 30px;
     height: 20px;
-}
+  }
 
-.link-icon-rodape {
+  .link-icon-rodape {
     width: 50px;
     height: 15px;
-}
+  }
 
-.politicas-termos{
+  .politicas-termos {
     gap: 5px;
+  }
 
-}
-
-.politicas-termos p{
+  .politicas-termos p {
     font-size: 1rem;
-}
-
+  }
 }

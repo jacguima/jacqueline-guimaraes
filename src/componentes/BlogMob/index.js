@@ -9,11 +9,11 @@ const BlogMob = () => {
       <div className="blog-mob">
         <div className="divisor-blog-mob">
           <div className="card-blog-mob">
-          <h2>BLOG</h2>
-          <img className="doc" src={Doc} alt="doc" />
+            <h2>BLOG</h2>
+            <img className="doc" src={Doc} alt="doc" />
           </div>
           <div className="card-breve-mob">
-          <div className="seta-breve">
+            <div className="seta-breve">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -32,7 +32,7 @@ const BlogMob = () => {
         </div>
         <div className="divisor-blog-mob">
           <div className="card-breve2-mob">
-          <div className="seta-breve">
+            <div className="seta-breve">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -49,7 +49,7 @@ const BlogMob = () => {
             </div>
           </div>
           <div className="card-artigo-mob">
-          <div className="topo-artigo">
+            <div className="topo-artigo">
               <p>Artigo publicado:</p>
             </div>
             <div className="link-artigo-mob">
@@ -88,11 +88,15 @@ const BlogMob = () => {
       {/* PARTE DO EBOOK */}
       <div className="ebook-mob">
         <div className="ebook-logo-mob">
-        <img src={Ebook} alt="ebook" />
+          <img src={Ebook} alt="ebook" />
         </div>
         <div className="cards-ebook-mob">
-          <a className="emocional-mob" href="/files/linguagensdoamor.pdf" download="linguagensdoamor.pdf">
-          <div className="div-icon-download">
+          <a
+            className="emocional-mob"
+            href="/files/linguagensdoamor.pdf"
+            download="linguagensdoamor.pdf"
+          >
+            <div className="div-icon-download">
               <div className="icon-download-mob">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +113,7 @@ const BlogMob = () => {
             </div>
           </a>
           <a className="luto-mob" href="/files/luto.pdf" download="luto.pdf">
-          <div className="div-icon-download">
+            <div className="div-icon-download">
               <div className="icon-download-mob">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -124,9 +128,9 @@ const BlogMob = () => {
                 </svg>
               </div>
             </div>
-            </a>
+          </a>
           <div className="ciclo-mob">
-          <div className="div-icon-download">
+            <div className="div-icon-download">
               <div className="icon-download-mob">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

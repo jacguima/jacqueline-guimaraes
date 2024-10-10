@@ -1,10 +1,9 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
-  scrollbar-width: thin; 
-  scrollbar-color: transparent
+  font-family: "Raleway", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: transparent;
 }
 
 body {
@@ -13,5 +12,4 @@ body {
   overflow-y: scroll;
   width: 100vw;
   padding: 0;
-
 }

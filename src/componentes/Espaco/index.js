@@ -177,11 +177,9 @@ const Espaco = () => {
           </div>
         </div>
         <div className="divisor-online-cel">
-            <div className="celular">
-                <div className="img-cel">
-
-                </div>
-            </div>
+          <div className="celular">
+            <div className="img-cel"></div>
+          </div>
         </div>
       </div>
     </div>

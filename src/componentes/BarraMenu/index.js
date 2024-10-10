@@ -2,7 +2,15 @@ import "./BarraMenu.css";
 import Logo from "../../assets/images/logo-verde.png";
 import WppLogo from "../../assets/images/whatsapp.png";
 
-const BarraMenu = ({ scrollToHome, scrollToSobreMim, scrollToPsicoterapia, scrollToEspaco, scrollToBlog, scrollToOpinioes, scrollToDuvidas }) => {
+const BarraMenu = ({
+  scrollToHome,
+  scrollToSobreMim,
+  scrollToPsicoterapia,
+  scrollToEspaco,
+  scrollToBlog,
+  scrollToOpinioes,
+  scrollToDuvidas,
+}) => {
   return (
     <div className="barra-menu">
       <div className="logo-menu">
@@ -15,7 +23,7 @@ const BarraMenu = ({ scrollToHome, scrollToSobreMim, scrollToPsicoterapia, scrol
         <button onClick={scrollToEspaco}>Espaço</button>
         <button onClick={scrollToOpinioes}>Opiniões</button>
         <button onClick={scrollToDuvidas}>Dúvidas</button>
-        <button onClick={scrollToBlog}>Blog: em breve</button>
+        <button onClick={scrollToBlog}>Blog: em breve!</button>
         <a
           rel="noreferrer"
           target="_blank"

@@ -6,7 +6,6 @@ function Accordion({ dados, atualAberto, setAtualAberto, index }) {
   const { titulo, texto } = dados;
 
   const handleClick = () => {
-
     if (aberto) {
       setAtualAberto(null);
     } else {
@@ -15,7 +14,10 @@ function Accordion({ dados, atualAberto, setAtualAberto, index }) {
   };
 
   return (
-    <div className={`accordion ${aberto ? 'aberto' : ''}`} onClick={handleClick}>
+    <div
+      className={`accordion ${aberto ? "aberto" : ""}`}
+      onClick={handleClick}
+    >
       <div className="topo-accordion">
         <p className="titulo-accordion">{titulo}</p>
         {aberto ? (

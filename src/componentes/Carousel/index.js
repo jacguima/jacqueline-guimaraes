@@ -3,21 +3,17 @@ import Slider from "react-slick";
 import "./Carousel.css";
 import reviews from "../Opinioes/OpinioesMocks";
 import OpinioesCards from "../Opinioes/OpinioesCards";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
-
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = () => {
   const settings = {
-
-infinite: true,
-slidesToShow: 3,
-slidesToScroll: 1,
-autoplay: true,
-autoplaySpeed: 2000,
-pauseOnHover: true,   
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
     initialSlide: 0,
     responsive: [
       {
