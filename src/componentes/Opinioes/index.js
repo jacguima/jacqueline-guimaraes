@@ -6,10 +6,8 @@ const Opinioes = () => {
   return (
     <div className="principal-opinioes">
       <div className="bg-opinioes1">
-        <div className="cards-carousel">
-          <div className="card-carousel">
-            <Carousel />
-          </div>
+        <div className="card-carousel">
+          <Carousel />
         </div>
       </div>
     </div>

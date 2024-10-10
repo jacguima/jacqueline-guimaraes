@@ -2,6 +2,7 @@ import "./cards.css";
 import React from "react";
 import DoctaraliaIcon from "../../assets/images/doctoria.png";
 import GoogleIcon from "../UI/google";
+import BgReviewImage from "../../assets/images/bg-review.png";
 
 const OpinioesCards = ({ author, content, source }) => {
   const renderSourceIcon = () => {
@@ -38,15 +39,22 @@ const OpinioesCards = ({ author, content, source }) => {
   };
 
   return (
-    <div className="card-review">
-      <div className="review-card">
-        <div className="source-icon">
-          <a target="_blank" rel="noreferrer" href={renderSourceLink()}>
-            {renderSourceIcon()}
-          </a>
+    <div className="card-review-container">
+      <div className="card-review">
+        <img
+          className="card-bg-image"
+          src={BgReviewImage}
+          alt="Review Background"
+        />
+        <div className="review-card">
+          <div className="source-icon">
+            <a target="_blank" rel="noreferrer" href={renderSourceLink()}>
+              {renderSourceIcon()}
+            </a>
+          </div>
+          <p>{content}</p>
+          <h3>– {author}</h3>
         </div>
-        <p>{content}</p>
-        <h3>– {author}</h3>
       </div>
     </div>
   );
