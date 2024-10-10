@@ -25,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-bottom: 1rem;
 }
 
 .source-icon .fa-google {
@@ -34,10 +34,6 @@
 
 .source-icon .fa-app-store-ios {
     color: #000;
-}
-
-@media screen and (max-width: 900px) {
-
 }
 
 .carousel-container {
@@ -52,7 +48,7 @@
     display: flex;
     justify-content: center; /* Center the arrows horizontally */
     align-items: center;
-    margin-top: 10px; /* Space between carousel and arrows */
+    margin-top: 1rem;
 }
 
 .custom-arrows button {

@@ -16,7 +16,7 @@ const Carousel = () => {
     centerMode: true,
     centerPadding: "0",
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     initialSlide: 0,

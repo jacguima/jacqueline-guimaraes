@@ -46,7 +46,7 @@ const OpinioesCards = ({ author, content, source }) => {
           src={BgReviewImage}
           alt="Review Background"
         />
-        <div className="review-card">
+        <div className="review-content">
           <div className="source-icon">
             <a target="_blank" rel="noreferrer" href={renderSourceLink()}>
               {renderSourceIcon()}
