@@ -21,13 +21,6 @@
     margin: 0 2px;
 }
 
-.source-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
 .source-icon .fa-google {
     color: #db4437;
 }

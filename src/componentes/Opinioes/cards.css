@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-left: 4rem;
+    margin-left: 64px;
 }
 
 .card-bg-image {
@@ -20,6 +20,13 @@
     left: -462px;
     width: 1233px;
     height: auto;
+}
+
+.source-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .card-bg-image-container {
@@ -69,5 +76,28 @@
     .review-content {
         padding: 1rem;
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card-review {
+        width: 239px;
+        height: 381px;
+        margin-left: 45px;
+    }
+
+    .card-bg-image {
+        top: -118px;
+        left: -327px;
+        width: 869px;
+    }
+
+    .review-content {
+        margin-top: -2rem;
+        font-size: 13px;
+    }
+
+    .source-icon {
+        margin-bottom: .5rem;
     }
 }
