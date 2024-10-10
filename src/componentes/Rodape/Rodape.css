@@ -1,287 +1,189 @@
 .principal-rodape {
-  width: 100vw;
-  height: 75vh;
+    width: 100vw;
+    height: 75vh;
+    padding: 0 1rem;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #a9b475;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a9b475;
 }
 
 .topo-rodape {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
 }
 
 .contatos-rodape {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 50px;
-}
-.wpp-rodape {
-  display: flex;
-  width: 40%;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    flex: 1;
 }
 
-.wpp-rodape a {
-  text-decoration: none;
+.contact-info {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    align-items: flex-end;
 }
 
-.wpp-rodape p {
-  font-size: 25px;
-  font-family: "Agrandir";
-  color: white;
+.contact-info a {
+    text-decoration: none;
+    line-height: 1;
 }
 
-.wpp-rodape img {
-  width: 50px;
-  height: 50px;
+.contact-info p {
+    font-size: 18px;
+    font-family: "Agrandir";
+    margin-top: 0;
+    color: white;
 }
 
-.mail-rodape {
-  display: flex;
-  width: 55%;
-  justify-content: space-between;
-}
-
-.mail-rodape a {
-  text-decoration: none;
-}
-
-.mail-rodape p {
-  font-size: 25px;
-  font-family: "Agrandir";
-  margin-top: 0;
-  color: white;
-}
-
-.mail-rodape img {
-  width: 45px;
-  height: 35px;
-}
-
-.form-rodape {
-  display: flex;
-  width: 48%;
-  justify-content: space-between;
-}
-
-.form-rodape p {
-  font-size: 25px;
-  font-family: "Agrandir";
-  margin-top: 0;
-  color: white;
-}
-.form-rodape a {
-  text-decoration: none;
+.contact-info img, .contact-info svg {
+    width: 1.5rem;
+    height: auto;
 }
 
 .logo-rodape {
-  width: 40%;
-  height: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex: 1;
 }
 
 .logo-rodape img {
-  width: 600px;
+    width: 600px;
 }
 
 .divisor-rodape {
-  width: 90%;
-  height: 2px;
-  background-color: white;
+    width: 90%;
+    height: 2px;
+    background-color: white;
 }
 
 .rodape-rodape {
-  width: 90%;
-  height: 40%;
-  display: flex;
+    width: 90%;
+    height: 40%;
+    display: flex;
 }
 
 .politicas-termos {
-  width: 60%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 100px;
-  flex-wrap: wrap;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
 }
 
 .politicas-termos p {
-  font-family: "Agrandir";
-  font-size: 30px;
-  color: white;
-  text-decoration: none;
+    font-family: "Agrandir";
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
 }
 
 .icons-rodape {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  gap: 50px;
-  justify-content: flex-end;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
 }
 
 .rodape-icons {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 50px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
 }
 
 .insta-icon-rodape {
-  width: 50px;
-  height: 50px;
+    width: 50px;
+    height: 50px;
 }
 
 .mail-icon-rodape {
-  width: 50px;
-  height: 40px;
+    width: 50px;
+    height: 40px;
 }
 
 .link-icon-rodape {
-  width: 120px;
-  height: 30px;
-}
-
-@media screen and (max-width: 1534) {
+    width: 120px;
+    height: 30px;
 }
 
 @media screen and (max-width: 1284px) {
-  .principal-rodape {
-    height: 100vh;
-  }
+    .principal-rodape {
+        height: 100vh;
+    }
 
-  .topo-rodape {
-    flex-direction: column;
-    justify-content: flex-end;
-  }
+    .topo-rodape {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
 
-  .logo-rodape {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
+    .logo-rodape {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
 
-  .logo-rodape img {
-    width: 300px;
-    height: 200px;
-  }
+    .logo-rodape img {
+        width: 300px;
+        height: 200px;
+    }
 
-  .contatos-rodape {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-  }
-  .wpp-rodape {
-    display: flex;
-    width: 250px;
-    justify-content: space-between;
-  }
+    .rodape-rodape {
+        flex-direction: column-reverse;
+    }
 
-  .wpp-rodape p {
-    font-size: 20px;
-    font-family: "Agrandir";
-    color: white;
-  }
+    .icons-rodape {
+        width: 100%;
+        height: 50%;
+    }
 
-  .wpp-rodape img {
-    width: 20px;
-    height: 20px;
-  }
+    .rodape-icons {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 5px;
+    }
 
-  .mail-rodape {
-    display: flex;
-    width: 350px;
-    justify-content: space-between;
-    align-items: center;
-  }
+    .insta-icon-rodape {
+        width: 30px;
+        height: 30px;
+    }
 
-  .mail-rodape p {
-    font-size: 20px;
-    font-family: "Agrandir";
-    margin-top: 0;
-    color: white;
-  }
+    .mail-icon-rodape {
+        width: 30px;
+        height: 20px;
+    }
 
-  .mail-rodape img {
-    width: 20px;
-    height: 15px;
-  }
+    .link-icon-rodape {
+        width: 50px;
+        height: 15px;
+    }
 
-  .form-rodape {
-    display: flex;
-    width: 300px;
-    justify-content: space-between;
-    align-items: center;
-  }
+    .politicas-termos {
+        gap: 5px;
+    }
 
-  .form-rodape p {
-    font-size: 20px;
-    font-family: "Agrandir";
-    margin-top: 0;
-    color: white;
-  }
-
-  .form-rodape svg {
-    width: 20px;
-  }
-
-  .rodape-rodape {
-    flex-direction: column-reverse;
-  }
-
-  .icons-rodape {
-    width: 100%;
-    height: 50%;
-  }
-
-  .rodape-icons {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 5px;
-  }
-
-  .insta-icon-rodape {
-    width: 30px;
-    height: 30px;
-  }
-
-  .mail-icon-rodape {
-    width: 30px;
-    height: 20px;
-  }
-
-  .link-icon-rodape {
-    width: 50px;
-    height: 15px;
-  }
-
-  .politicas-termos {
-    gap: 5px;
-  }
-
-  .politicas-termos p {
-    font-size: 1rem;
-  }
+    .politicas-termos p {
+        font-size: 1rem;
+    }
 }

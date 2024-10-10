@@ -11,7 +11,7 @@ const Rodape = () => {
     <div className="principal-rodape">
       <div className="topo-rodape">
         <div className="contatos-rodape">
-          <div className="wpp-rodape">
+          <div className="contact-info">
             <img src={WppLogo} alt="wpp" />
             <a
               href="https://wa.me/5561992081099"
@@ -21,7 +21,7 @@ const Rodape = () => {
               <p>+55 61 99208-1099</p>
             </a>
           </div>
-          <div className="mail-rodape">
+          <div className="contact-info">
             <img src={MailLogo} alt="wpp" />
             <a
               href="mailto:jacqueline.g.nunes@gmail.com"
@@ -31,7 +31,7 @@ const Rodape = () => {
               <p>Jacqueline.g.nunes@gmail.com</p>
             </a>
           </div>
-          <div className="form-rodape">
+          <div className="contact-info">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"
