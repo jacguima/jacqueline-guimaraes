@@ -1,65 +1,53 @@
-.barra-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 100%;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
 }
 
-.logo-menu {
-  width: 20%;
+.wpp-btn {
+    display: flex;
+    gap: .25rem;
+    align-items: center;
+    text-decoration: none;
+    background-color: #edeadd;
+    padding: .25rem 1rem;
+    border-radius: 999px;
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
 }
 
-.logo-menu img {
-  width: 75%;
+.navbar-wpp-logo {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
-.menu {
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
+.logo-container .logo-img {
+    width: 60%;
 }
 
-.menu button {
-  background-color: transparent;
-  border: 2px solid transparent;
-  color: #777e5c;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  cursor: pointer;
-  height: 40px;
+.links {
+    display: flex;
+    gap: 2.5rem;
+
+    button {
+        border: none;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom-color .2s ease;
+        cursor: pointer;
+
+        &:hover {
+            border-bottom: 1px solid var(--main-green-lighter);
+        }
+    }
 }
 
-.menu button:hover {
-  border-bottom: 1px solid #777e5c;
-}
-
-.btn-wpp {
-  background-color: #edeadd;
-  border-radius: 5px;
-  /* border: 1px solid black; */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 10%;
-  text-decoration: none;
-  color: #777e5c;
-  font-size: 1.1rem;
-}
-
-.btn-wpp img {
-  width: 20px;
-}
-
-.btn-wpp:hover {
-  box-shadow: inset 0px -8px 7px -7px rgba(119, 126, 92, 1);
-}
-
-@media screen and (max-width: 1534) {
-}
-@media screen and (max-width: 900px) and (min-width: 450px) {
-}
-@media screen and (max-width: 450px) {
-  .barra-menu {
-    display: none;
-  }
+.wpp-btn, .links > button {
+    white-space: nowrap;
+    color: var(--main-green);
+    font-weight: 500;
+    font-size: var(--font-size-small);
 }

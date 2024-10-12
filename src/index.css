@@ -20,16 +20,21 @@ body {
 
 :root {
     --main-green: #777e5c;
+    --main-green-lighter: #A3A989;
 
     --container-narrow: 1140px;
     --container-wide: 1440px;
 
     --font-size-base: 24px;
+    --font-size-small: 16px;
     --font-size-h2: 56px;
     --font-size-h3: 28px;
 
-    --letter-spacing-base: 0.01em;
     --letter-spacing-base: 0;
+
+    .font-size-small {
+        font-size: var(--font-size-small);
+    }
 
     p, .font-size-base {
         font-size: var(--font-size-base);

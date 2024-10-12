@@ -12,11 +12,11 @@ const BarraMenu = ({
   scrollToDuvidas,
 }) => {
   return (
-    <div className="container-wide barra-menu">
-      <div className="logo-menu">
-        <img src={Logo} alt="logo-menu" />
+    <div className="container-wide navbar">
+      <div className="logo-container">
+        <img className="logo-img" src={Logo} alt="Logo" />
       </div>
-      <div className="menu">
+      <div className="links">
         <button onClick={scrollToHome}>Home</button>
         <button onClick={scrollToSobreMim}>Sobre mim</button>
         <button onClick={scrollToPsicoterapia}>Psicoterapia</button>
@@ -28,9 +28,9 @@ const BarraMenu = ({
           rel="noreferrer"
           target="_blank"
           href="https://wa.me/5561992081099"
-          className="btn-wpp"
+          className="wpp-btn"
         >
-          <img src={WppLogo} alt="wppLogo" />
+          <img className={'navbar-wpp-logo'} src={WppLogo} alt="Wpp Logo" />
           Fale comigo
           <svg
             xmlns="http://www.w3.org/2000/svg"
