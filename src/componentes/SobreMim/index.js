@@ -5,7 +5,7 @@ const SobreMim = () => {
   return (
     <div className="about-me-container">
       <div className="about-me-bg"></div>
-      <div className="container-base">
+      <div style={{height: '100%'}} className="container-narrow">
         <div className="about-me-content">
           <div className="about-me-text">
             <div

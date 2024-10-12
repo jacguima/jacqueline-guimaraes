@@ -12,7 +12,7 @@ const BarraMenu = ({
   scrollToDuvidas,
 }) => {
   return (
-    <div className="container-base barra-menu">
+    <div className="container-wide barra-menu">
       <div className="logo-menu">
         <img src={Logo} alt="logo-menu" />
       </div>

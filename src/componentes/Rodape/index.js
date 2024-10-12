@@ -8,7 +8,7 @@ import InstaLogo from "../../assets/images/insta-logo.png";
 
 const Rodape = () => {
   return (
-    <div className="container-base principal-rodape">
+    <div className="container-narrow principal-rodape">
       <div className="topo-rodape">
         <div className="contatos-rodape">
           <div className="contact-info">

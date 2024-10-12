@@ -20,14 +20,21 @@ body {
 
 :root {
     --main-green: #777e5c;
-    --container-base: 1200px;
-    --font-size-base: 20px;
-    --font-size-h2: 48px;
-    --font-size-h3: 26px;
+
+    --container-narrow: 1140px;
+    --container-wide: 1440px;
+
+    --font-size-base: 24px;
+    --font-size-h2: 56px;
+    --font-size-h3: 28px;
+
+    --letter-spacing-base: 0.01em;
+    --letter-spacing-base: 0;
 
     p, .font-size-base {
         font-size: var(--font-size-base);
-        line-height: 1.6;
+        line-height: 1.4;
+        letter-spacing: var(--letter-spacing-base);
     }
 
     h2, .font-size-h2 {
@@ -38,9 +45,16 @@ body {
         font-size: var(--font-size-h3);
     }
 
-    .container-base {
+    .container-narrow {
         width: 100%;
-        max-width: var(--container-base);
+        max-width: var(--container-narrow);
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .container-wide {
+        width: 100%;
+        max-width: var(--container-wide);
         margin: 0 auto;
         padding: 0 1rem;
     }

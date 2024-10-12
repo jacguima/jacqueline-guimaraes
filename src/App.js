@@ -24,25 +24,25 @@ function App() {
 
   return (
     <div className="app">
-      <nav className="topo">
-        <Home
-          scrollToSobreMim={() =>
-            sobreMimRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          scrollToPsicoterapia={() =>
-            psicoterapiaRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          scrollToEspaco={() =>
-            espacoRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          scrollToContatos={() =>
-            contatosRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          scrollToBlog={() =>
-            blogRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-        />
-      </nav>
+      {/*<nav className="topo">*/}
+      {/*  <Home*/}
+      {/*    scrollToSobreMim={() =>*/}
+      {/*      sobreMimRef.current.scrollIntoView({ behavior: "smooth" })*/}
+      {/*    }*/}
+      {/*    scrollToPsicoterapia={() =>*/}
+      {/*      psicoterapiaRef.current.scrollIntoView({ behavior: "smooth" })*/}
+      {/*    }*/}
+      {/*    scrollToEspaco={() =>*/}
+      {/*      espacoRef.current.scrollIntoView({ behavior: "smooth" })*/}
+      {/*    }*/}
+      {/*    scrollToContatos={() =>*/}
+      {/*      contatosRef.current.scrollIntoView({ behavior: "smooth" })*/}
+      {/*    }*/}
+      {/*    scrollToBlog={() =>*/}
+      {/*      blogRef.current.scrollIntoView({ behavior: "smooth" })*/}
+      {/*    }*/}
+      {/*  />*/}
+      {/*</nav>*/}
       <div className="colado">
         <BarraMenu
           scrollToHome={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -68,31 +68,31 @@ function App() {
       </div>
       <div className="container">
         <SobreMim ref={sobreMimRef} />
-        <div ref={psicoterapiaRef}>
-          <Psicoterapia />
-        </div>
-        <div ref={espacoRef}>
-          <Espaco />
-        </div>
-        <div>
-          <EspacoMobile />
-        </div>
-        <Opinioes ref={opinioesRef} />
-        <div ref={duvidasRef}>
-          <Duvidas />
-        </div>
-        <div ref={blogRef}>
-          <Blog />
-        </div>
+        {/*<div ref={psicoterapiaRef}>*/}
+        {/*  <Psicoterapia />*/}
+        {/*</div>*/}
+        {/*<div ref={espacoRef}>*/}
+        {/*  <Espaco />*/}
+        {/*</div>*/}
+        {/*<div>*/}
+        {/*  <EspacoMobile />*/}
+        {/*</div>*/}
+        {/*<Opinioes ref={opinioesRef} />*/}
+        {/*<div ref={duvidasRef}>*/}
+        {/*  <Duvidas />*/}
+        {/*</div>*/}
+        {/*<div ref={blogRef}>*/}
+        {/*  <Blog />*/}
+        {/*</div>*/}
 
-        <div>
-          <BlogMob />
-        </div>
+        {/*<div>*/}
+        {/*  <BlogMob />*/}
+        {/*</div>*/}
 
-        <div ref={contatosRef}>
-          <Rodape />
-        </div>
-        <Wpp />
+        {/*<div ref={contatosRef}>*/}
+        {/*  <Rodape />*/}
+        {/*</div>*/}
+        {/*<Wpp />*/}
       </div>
     </div>
   );
