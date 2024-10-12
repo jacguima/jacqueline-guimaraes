@@ -67,9 +67,7 @@ function App() {
         />
       </div>
       <div className="container">
-        <div ref={sobreMimRef}>
-          <SobreMim />
-        </div>
+        <SobreMim ref={sobreMimRef} />
         <div ref={psicoterapiaRef}>
           <Psicoterapia />
         </div>

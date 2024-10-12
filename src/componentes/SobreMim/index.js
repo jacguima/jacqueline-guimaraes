@@ -1,44 +1,58 @@
 import "./SobreMim.css";
+import ProfilePicture from "../../assets/images/foto-jac.jpg";
 
 const SobreMim = () => {
   return (
-    <div className="sobre-mim">
-      <div className="sobre-mim-principal">
-        <div className="textos-sobre">
-          <div className="sobre-mim-texto">
-            <div className="sobre-mim-topo">
-              <h1>Sobre mim</h1>
-              <p>Olá! Sou a Jacqueline Guimarães, psicóloga clínica.</p>
-            </div>
-            <p>
-              Graduada pelo UniCEUB e inscrita no Conselho Regional de
-              Psicologia CRP - 01/25708.
-            </p>
-            <p>
-              Adoto os princípios éticos e técnicos da Psicologia Humanista em
-              minha prática clínica, sendo especialista na Abordagem Centrada na
-              Pessoa (ACP) pela UNEPOS.
-            </p>
-            <p>
-              Proporciono um ambiente ético, confidencial e acolhedor a fim de
-              que meus Clientes possam explorar suas emoções e pensamentos de
-              forma livre e confidencial.
-            </p>
-
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://wa.me/5561992081099"
+    <div className="about-me-container">
+      <div className="about-me-bg"></div>
+      <div className="container-base">
+        <div className="about-me-content">
+          <div className="about-me-text">
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "1.5rem",
+              }}
             >
-              AGENDAR
-            </a>
+              <h2 style={{ textAlign: "center" }}>Sobre mim</h2>
+              <p>
+                Olá! Sou a Jacqueline Guimarães, psicóloga clínica, graduada
+                pelo UniCEUB e inscrita no Conselho Regional de Psicologia CRP -
+                01/25708.
+              </p>
+              <p>
+                Adoto os princípios éticos e técnicos da Psicologia Humanista em
+                minha prática clínica, sendo especialista na Abordagem Centrada
+                na Pessoa (ACP) pela UNEPOS.
+              </p>
+              <p>
+                Proporciono um ambiente ético, confidencial e acolhedor a fim de
+                que meus Clientes possam explorar suas emoções e pensamentos de
+                forma livre e confidencial.
+              </p>
+            </div>
+            <button className="schedule-btn">
+              <a
+                className="schedule-btn-link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://wa.me/5561992081099"
+              >
+                AGENDAR
+              </a>
+            </button>
+          </div>
+          <div className="profile-picture-container">
+            <div className="profile-picture-border">
+              <img
+                className="profile-picture"
+                src={ProfilePicture}
+                alt="Profile Pictue"
+              />
+            </div>
           </div>
         </div>
-        <div className="div-foto-jac">
-          <div className="foto-jac"></div>
-        </div>
-
-        <div className="foto-sobre-mbl"></div>
       </div>
     </div>
   );
