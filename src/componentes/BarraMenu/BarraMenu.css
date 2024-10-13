@@ -1,8 +1,21 @@
 .navbar {
     display: flex;
+    flex-direction: column;
+    transition: height .4s ease;
+    overflow: hidden;
+    height: 128px;
+
+    &.menu-opened {
+        height: 408px;
+    }
+}
+
+.navbar-wrapper {
+    display: flex;
     align-items: center;
-    justify-content: space-around;
-    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+    height: 128px;
 }
 
 .wpp-btn {
@@ -56,8 +69,35 @@
     font-size: var(--font-size-small);
 }
 
+.hamburger-btn-container {
+    display: none;
+}
+
+.links-hamburger {
+    flex-direction: column;
+    gap: .5rem;
+
+    .wpp-btn, button {
+        height: 2rem;
+    }
+
+    .wpp-btn {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 1200px) {
-    .links {
+    .links.links-navbar {
         gap: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .links.links-navbar {
+        display: none;
+    }
+
+    .hamburger-btn-container {
+        display: block;
     }
 }

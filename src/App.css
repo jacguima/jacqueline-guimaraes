@@ -29,7 +29,6 @@
     position: sticky;
     z-index: 50;
     top: 0;
-    height: 128px;
     background-color: #f1f1f1;
     box-shadow: 0 9px 36px -26px rgba(0, 0, 0, 0.75);
 }
