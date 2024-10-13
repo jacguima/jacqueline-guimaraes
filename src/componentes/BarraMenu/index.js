@@ -14,10 +14,10 @@ const BarraMenu = ({
   return (
     <div className="container-wide navbar">
       <div className="logo-container">
-        <img className="logo-img" src={Logo} alt="Logo" />
+        <img className="logo-img" src={Logo} alt="Logo" onClick={scrollToHome}/>
       </div>
       <div className="links">
-        <button onClick={scrollToHome}>Home</button>
+        {/*<button onClick={scrollToHome}>Home</button>*/}
         <button onClick={scrollToSobreMim}>Sobre mim</button>
         <button onClick={scrollToPsicoterapia}>Psicoterapia</button>
         <button onClick={scrollToEspaco}>Espaço</button>

@@ -25,8 +25,12 @@
     height: 1.5rem;
 }
 
-.logo-container .logo-img {
-    width: 60%;
+.logo-container {
+    width: 352px;
+}
+
+.logo-img {
+    width: 100%;
 }
 
 .links {
@@ -50,4 +54,10 @@
     color: var(--main-green);
     font-weight: 500;
     font-size: var(--font-size-small);
+}
+
+@media (max-width: 1200px) {
+    .links {
+        gap: 1.5rem;
+    }
 }
