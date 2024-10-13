@@ -1,7 +1,7 @@
-import "./SobreMim.css";
+import "./about-me-mobile.css";
 import ProfilePicture from "../../assets/images/foto-jac.jpg";
 
-const SobreMim = () => {
+const AboutMeMobile = () => {
   return (
     <div className="about-me-container">
       <div className="about-me-bg"></div>
@@ -15,7 +15,7 @@ const SobreMim = () => {
                 gap: "1.5rem",
               }}
             >
-              <h2 style={{ textAlign: "center" }}>Sobre mim</h2>
+              <h2 style={{ textAlign: "center" }}>Sobre mim mobile</h2>
               <p>
                 Olá! Sou a Jacqueline Guimarães, psicóloga clínica, graduada
                 pelo UniCEUB e inscrita no Conselho Regional de Psicologia CRP -
@@ -58,4 +58,4 @@ const SobreMim = () => {
   );
 };
 
-export default SobreMim;
+export default AboutMeMobile;

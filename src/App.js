@@ -9,9 +9,10 @@ import Home from "./componentes/Home/";
 import Opinioes from "./componentes/Opinioes";
 import Psicoterapia from "./componentes/Psicoterapia";
 import Rodape from "./componentes/Rodape";
-import SobreMim from "./componentes/SobreMim";
+import AboutMeDesktop from "./componentes/about-me-desktop/about-me-desktop";
 import Wpp from "./componentes/Wpp";
 import BlogMob from "./componentes/BlogMob";
+import AboutMeMobile from "./componentes/about-me-mobile/about-me-mobile";
 
 function App() {
   const sobreMimRef = useRef(null);
@@ -67,7 +68,12 @@ function App() {
         />
       </div>
       <div className="container">
-        <SobreMim ref={sobreMimRef} />
+        <div className={"about-me-mobile"}>
+          <AboutMeMobile ref={sobreMimRef} />
+        </div>
+        <div className={"about-me-desktop"}>
+          <AboutMeDesktop ref={sobreMimRef} />
+        </div>
         {/*<div ref={psicoterapiaRef}>*/}
         {/*  <Psicoterapia />*/}
         {/*</div>*/}
