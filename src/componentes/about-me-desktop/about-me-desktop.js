@@ -3,7 +3,7 @@ import ProfilePicture from "../../assets/images/foto-jac.jpg";
 
 const AboutMeDesktop = () => {
   return (
-    <div className="about-me-container">
+    <div className="about-me-desktop">
       <div className="about-me-bg"></div>
       <div style={{height: '100%'}} className="container-narrow">
         <div className="about-me-content">

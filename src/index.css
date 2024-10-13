@@ -19,8 +19,10 @@ body {
 }
 
 :root {
+    --main-gold: #7A6D4E;
     --main-green: #777e5c;
     --main-green-lighter: #A3A989;
+    --main-green-really-light: #f6f8f4;
 
     --container-narrow: 1140px;
     --container-wide: 1440px;

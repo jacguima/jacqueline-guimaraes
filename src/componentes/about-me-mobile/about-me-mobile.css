@@ -1,98 +1,30 @@
-.about-me-container {
-    position: relative;
-    height: 952px;
-}
-
-.about-me-bg {
-    position: absolute;
-    width: calc(100% - 2rem);
-    height: calc(100% - 4rem);
-    top: 2rem;
-    left: 0;
-    background-color: var(--main-green);
-    border-radius: 100px 500px 500px 100px;
-}
-
-.profile-picture {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.profile-picture-border {
-    border-radius: 6rem;
-    border: 2px solid white;
-    overflow: hidden;
-    height: 664px;
-    width: 464px;
-}
-
-.profile-picture-container {
-    z-index: 1;
-}
-
-.schedule-btn {
-    text-decoration: none;
-    font-size: var(--font-size-h3);
-    width: fit-content;
-    padding: .5rem 6rem;
-    border-radius: 999px;
-    border: none;
-    align-self: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.2s ease;
-    cursor: pointer;
-
-    .schedule-btn-link {
-        text-decoration: none;
-        color: var(--main-green);
-        font-weight: 600;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-    }
-
-    &:hover {
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-    }
-}
-
-.about-me-text {
+.about-me-mobile {
     display: flex;
     flex-direction: column;
-    z-index: 1;
-    color: #ffffff;
-    flex: 1 1;
-    justify-content: center;
-    gap: 3rem;
-    text-align: justify;
-    font-weight: 300;
-}
-
-.about-me-content {
-    display: flex;
     align-items: center;
-    gap: 8rem;
-    height: 100%;
-    justify-content: center;
-}
+    background-color: var(--main-green-really-light);
 
-.about-me-text h2 {
-    font-weight: 500;
-}
+    .title-container {
+        width: 310px;
+        height: 100px;
+        margin-bottom: -2rem;
+        z-index: 1;
 
-@media (max-width: 1200px) {
-    .profile-picture-border {
-        height: 564px;
-        width: 364px;
+        text {
+            font-size: 100px;
+            fill: var(--main-gold);
+        }
     }
 
-    .about-me-content {
-        gap: 4rem;
-    }
+    .profile-picture-container {
+        width: 33rem;
+        height: 42rem;
 
-    .about-me-text {
-        max-width: 432px;
+        .profile-picture {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
     }
 }
-
-

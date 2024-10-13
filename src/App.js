@@ -68,10 +68,10 @@ function App() {
         />
       </div>
       <div className="container">
-        <div className={"about-me-mobile"}>
+        <div className={"about-me-mobile-container"}>
           <AboutMeMobile ref={sobreMimRef} />
         </div>
-        <div className={"about-me-desktop"}>
+        <div className={"about-me-desktop-container"}>
           <AboutMeDesktop ref={sobreMimRef} />
         </div>
         {/*<div ref={psicoterapiaRef}>*/}

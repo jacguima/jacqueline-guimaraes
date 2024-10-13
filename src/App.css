@@ -35,13 +35,13 @@
 }
 
 @media (max-width: 992px) {
-    .about-me-desktop {
+    .about-me-desktop-container {
         display: none;
     }
 }
 
 @media (min-width: 993px) {
-    .about-me-mobile {
+    .about-me-mobile-container {
         display: none;
     }
 }
