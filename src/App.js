@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import "./App.css";
-import BarraMenu from "./componentes/BarraMenu";
+import Navbar from "./componentes/navbar/navbar";
 import Blog from "./componentes/Blog";
 import Duvidas from "./componentes/Duvidas";
 import Espaco from "./componentes/Espaco";
 import EspacoMobile from "./componentes/EspacoMobile";
-import Home from "./componentes/Home/";
+import Home from "./componentes/home/home";
 import Opinioes from "./componentes/Opinioes";
 import Psicoterapia from "./componentes/Psicoterapia";
 import Rodape from "./componentes/Rodape";
@@ -23,48 +23,27 @@ function App() {
   const opinioesRef = useRef(null);
   const contatosRef = useRef(null);
 
+  const scrollToRef = (ref) => () =>
+    ref.current.scrollIntoView({ behavior: "smooth" });
+
   return (
     <div className="app">
-      {/*<nav className="topo">*/}
-      {/*  <Home*/}
-      {/*    scrollToSobreMim={() =>*/}
-      {/*      sobreMimRef.current.scrollIntoView({ behavior: "smooth" })*/}
-      {/*    }*/}
-      {/*    scrollToPsicoterapia={() =>*/}
-      {/*      psicoterapiaRef.current.scrollIntoView({ behavior: "smooth" })*/}
-      {/*    }*/}
-      {/*    scrollToEspaco={() =>*/}
-      {/*      espacoRef.current.scrollIntoView({ behavior: "smooth" })*/}
-      {/*    }*/}
-      {/*    scrollToContatos={() =>*/}
-      {/*      contatosRef.current.scrollIntoView({ behavior: "smooth" })*/}
-      {/*    }*/}
-      {/*    scrollToBlog={() =>*/}
-      {/*      blogRef.current.scrollIntoView({ behavior: "smooth" })*/}
-      {/*    }*/}
-      {/*  />*/}
-      {/*</nav>*/}
+        <Home
+          scrollToSobreMim={scrollToRef(sobreMimRef)}
+          scrollToPsicoterapia={scrollToRef(psicoterapiaRef)}
+          scrollToEspaco={scrollToRef(espacoRef)}
+          scrollToContatos={scrollToRef(contatosRef)}
+          scrollToBlog={scrollToRef(blogRef)}
+        />
       <div className="colado">
-        <BarraMenu
+        <Navbar
           scrollToHome={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          scrollToSobreMim={() =>
-            sobreMimRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          scrollToPsicoterapia={() =>
-            psicoterapiaRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          scrollToEspaco={() =>
-            espacoRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          scrollToBlog={() =>
-            blogRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          scrollToOpinioes={() =>
-            opinioesRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          scrollToDuvidas={() =>
-            duvidasRef.current.scrollIntoView({ behavior: "smooth" })
-          }
+          scrollToSobreMim={scrollToRef(sobreMimRef)}
+          scrollToPsicoterapia={scrollToRef(psicoterapiaRef)}
+          scrollToEspaco={scrollToRef(espacoRef)}
+          scrollToBlog={scrollToRef(blogRef)}
+          scrollToOpinioes={scrollToRef(opinioesRef)}
+          scrollToDuvidas={scrollToRef(duvidasRef)}
         />
       </div>
       <div className="container">

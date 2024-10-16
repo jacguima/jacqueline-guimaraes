@@ -1,0 +1,64 @@
+.home-bg {
+    background-image: url("../../assets/images/fundo.png");
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .home-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .logo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        max-width: 47rem;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+
+        button {
+            font-size: var(--font-size-base);
+            padding: .75rem 5rem;
+            white-space: nowrap;
+            border-radius: 999px;
+            background: #f1ebe5;
+            width: 100%;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+            border: none;
+            transition: transform 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+
+        }
+
+        .contact {
+            display: flex;
+            gap: 1.5rem;
+            align-items: baseline;
+            margin: 2rem 2rem 0;
+
+            .icon {
+                width: auto;
+                height: 1.5rem;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        .home-wrapper {
+            flex-direction: column;
+        }
+    }
+}

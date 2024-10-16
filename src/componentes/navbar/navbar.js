@@ -1,10 +1,10 @@
-import "./BarraMenu.css";
+import "./navbar.css";
 import Logo from "../../assets/images/logo-verde.png";
 import WppLogo from "../../assets/images/whatsapp.png";
 import { Slant as Hamburger } from "hamburger-react";
 import { useState } from "react";
 
-const BarraMenu = ({
+const Navbar = ({
   scrollToHome,
   scrollToSobreMim,
   scrollToPsicoterapia,
@@ -108,4 +108,4 @@ const BarraMenu = ({
   );
 };
 
-export default BarraMenu;
+export default Navbar;

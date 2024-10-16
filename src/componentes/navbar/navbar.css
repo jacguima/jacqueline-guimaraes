@@ -1,0 +1,103 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    transition: height .4s ease;
+    overflow: hidden;
+    height: 128px;
+
+    &.menu-opened {
+        height: 408px;
+    }
+
+    .navbar-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 128px;
+    }
+
+    .wpp-btn {
+        display: flex;
+        gap: .25rem;
+        align-items: center;
+        text-decoration: none;
+        background-color: #edeadd;
+        padding: .25rem 1rem;
+        border-radius: 999px;
+        transition: box-shadow 0.2s ease;
+
+        &:hover {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .navbar-wpp-logo {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .logo-container {
+        width: 352px;
+    }
+
+    .logo-img {
+        width: 100%;
+    }
+
+    .links {
+        display: flex;
+        gap: 2.5rem;
+
+        button {
+            border: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom-color .2s ease;
+            cursor: pointer;
+
+            &:hover {
+                border-bottom: 1px solid var(--main-green-lighter);
+            }
+        }
+    }
+
+    .wpp-btn, .links > button {
+        white-space: nowrap;
+        color: var(--main-green);
+        font-weight: 500;
+        font-size: var(--font-size-small);
+    }
+
+    .hamburger-btn-container {
+        display: none;
+    }
+
+    .links-hamburger {
+        flex-direction: column;
+        gap: .5rem;
+
+        .wpp-btn, button {
+            height: 2rem;
+        }
+
+        .wpp-btn {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .links.links-navbar {
+            gap: 1.5rem;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .links.links-navbar {
+            display: none;
+        }
+
+        .hamburger-btn-container {
+            display: block;
+        }
+    }
+}
