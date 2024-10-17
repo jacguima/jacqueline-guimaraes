@@ -48,9 +48,16 @@
             align-items: baseline;
             margin: 2rem 2rem 0;
 
-            .icon {
-                width: auto;
-                height: 1.5rem;
+            a {
+                .icon {
+                    transition: transform 0.2s ease-in-out;
+                    width: auto;
+                    height: 1.5rem;
+                }
+
+                &:hover .icon {
+                    transform: translateY(-3px);
+                }
             }
         }
     }
