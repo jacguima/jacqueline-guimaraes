@@ -98,7 +98,7 @@
                 }
 
                 .img-container-individual {
-                    right: -365px;
+                    right: -372px;
                     bottom: -112px;
                 }
 
@@ -110,6 +110,31 @@
                 .img-container-professional {
                     right: -392px;
                     bottom: 0;
+                }
+            }
+
+            .details-couple {
+                align-self: flex-end;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .body {
+            .services-detailed-list {
+                align-items: center;
+                gap: 3rem;
+
+                .service-details {
+                    .service-img-container {
+                        margin: 2rem auto 0;
+                        width: 24rem;
+                        position: initial;
+                    }
+                }
+
+                .details-couple {
+                    align-self: unset;
                 }
             }
         }

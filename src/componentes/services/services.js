@@ -57,7 +57,7 @@ const Psicoterapia = () => {
                 <img className={"service-img"} src={BoatImage} alt="Barco" />
               </div>
             </div>
-            <div className={"service-details"}>
+            <div className={"service-details details-couple"}>
               <div className={"number-container"}>
                 <img className={"number-img"} src={NumberTwo} alt="Número 1" />
               </div>
