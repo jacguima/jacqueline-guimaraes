@@ -20,7 +20,9 @@ body {
 
 :root {
     --main-gold: #7A6D4E;
+    --gold-bg: #edeadd;
     --main-green: #777e5c;
+    --darker-green: #283106;
     --main-green-lighter: #A3A989;
     --main-green-really-light: #f6f8f4;
 

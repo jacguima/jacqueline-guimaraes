@@ -1,0 +1,482 @@
+.services-section {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .header {
+        color: var(--main-gold);
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .title {
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .services-list {
+            display: flex;
+            gap: 4rem;
+            justify-content: center;
+
+            .services-list-item {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+
+                h3 {
+                    font-weight: 400;
+                }
+
+                .bi-check-circle {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .body {
+        background: var(--gold-bg);
+        border-radius: 4rem;
+        padding: 4rem 0;
+        color: var(--darker-green);
+
+        .services-detailed-list {
+            display: flex;
+            flex-direction: column;
+            gap: 7rem;
+
+            .service-details {
+                width: min-content;
+                position: relative;
+
+                .number-container {
+                    width: 7rem;
+                    height: auto;
+
+                    .number-img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+
+                .service-details-content {
+                    margin-left: 4.5rem;
+                    margin-top: -1rem;
+                    width: min-content;
+
+                    .services-detailed-title {
+                        font-weight: 400;
+                        white-space: nowrap;
+                    }
+
+                    .online-on-site {
+                        font-style: italic;
+                        text-align: center;
+                        font-family: Kalam, sans-serif;
+                    }
+
+                    .service-details-paragraph {
+                        margin-top: 1rem;
+                    }
+                }
+
+                .service-img-container {
+                    width: 24rem;
+                    position: absolute;
+
+                    .service-img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+
+                .img-container-individual {
+                    right: -365px;
+                    bottom: -112px;
+                }
+
+                .img-container-couple {
+                    left: -365px;
+                    bottom: 0;
+                }
+
+                .img-container-professional {
+                    right: -392px;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/*.principal-psicoterapia {*/
+/*  background-color: #f6f8f4;*/
+/*  width: 100vw;*/
+/*  height: 180vh;*/
+/*}*/
+
+/*.topo-psicoterapia {*/
+/*  width: 100%;*/
+/*  height: 10%;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+
+/*.topo-psicoterapia h1 {*/
+/*  font-size: 55px;*/
+/*  color: #7a6d4e;*/
+/*  font-weight: 500;*/
+/*  font-family: "Agrandir";*/
+/*}*/
+
+/*.topicos-topo {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: space-around;*/
+/*  height: 80px;*/
+/*  width: 50%;*/
+/*}*/
+
+/*.topicos-topo p {*/
+/*  font-size: 30px;*/
+/*  color: #7a6d4e;*/
+/*  text-align: center;*/
+/*  font-family: "Agrandir";*/
+/*}*/
+
+/*.topico-topo {*/
+/*  height: 100%;*/
+/*  display: flex;*/
+/*  align-items: baseline;*/
+/*}*/
+
+/*.topico-topo svg {*/
+/*  color: #7a6d4e;*/
+/*  margin-right: 10px;*/
+/*  width: 24px;*/
+/*  height: 24px;*/
+/*}*/
+
+/*.topicos-psicoterapia {*/
+/*  background-color: #edeadd;*/
+/*  width: 100%;*/
+/*  height: 89%;*/
+/*  border-radius: 100px;*/
+/*  margin-bottom: 1%;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*}*/
+
+/*.topico-psicoterapia {*/
+/*  !* background-color: aqua; *!*/
+/*  width: 100%;*/
+/*  height: 30%;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*}*/
+
+/*.topico-psicoterapia2 {*/
+/*  width: 100%;*/
+/*  height: 30%;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*}*/
+
+/*.passo-psi {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  width: 60%;*/
+/*  height: 100%;*/
+/*}*/
+
+/*.textos-psi {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  z-index: 1;*/
+/*  height: 100%;*/
+/*  width: 50%;*/
+/*}*/
+
+/*.passo-psi h1 {*/
+/*  font-size: 44px;*/
+/*  font-weight: 200;*/
+/*  color: #283106;*/
+/*  font-family: "Agrandir";*/
+/*}*/
+
+/*.passo-psi h2 {*/
+/*  font-size: 30px;*/
+/*  font-weight: 100;*/
+/*  color: #283106;*/
+/*  font-family: "Kalam", sans-serif;*/
+/*}*/
+
+/*.passo-psi p {*/
+/*  font-size: 22px;*/
+/*  font-weight: 400;*/
+/*  color: #283106;*/
+/*  width: 88%;*/
+/*}*/
+
+/*.num-pis {*/
+/*  width: 50%;*/
+/*  height: 20%;*/
+/*}*/
+
+/*.num-pis img {*/
+/*  width: 100px;*/
+/*}*/
+
+/*.img-psi-barco {*/
+/*  width: 30%;*/
+/*  height: 100%;*/
+/*  display: flex;*/
+/*  align-items: flex-end;*/
+/*}*/
+
+/*.img-barco {*/
+/*  background-image: url("../../assets/images/barco.png");*/
+/*  background-size: cover;*/
+/*  width: 300px;*/
+/*  height: 200px;*/
+/*}*/
+
+/*.img-psi-chat {*/
+/*  width: 30%;*/
+/*  height: 100%;*/
+/*  display: flex;*/
+/*  justify-content: flex-end;*/
+/*}*/
+
+/*.img-chat {*/
+/*  background-image: url("../../assets/images/chat.png");*/
+/*  background-size: cover;*/
+/*  width: 300px;*/
+/*  height: 200px;*/
+/*}*/
+/*.img-psi-bike {*/
+/*  width: 30%;*/
+/*  height: 100%;*/
+/*  display: flex;*/
+/*  align-items: flex-start;*/
+/*  justify-content: flex-start;*/
+/*}*/
+
+/*.img-bike {*/
+/*  background-image: url("../../assets/images/bike.png");*/
+/*  background-size: cover;*/
+/*  width: 300px;*/
+/*  height: 200px;*/
+/*}*/
+
+/*@media screen and (min-width: 1200px) {*/
+/*  .img-psi-barco {*/
+/*    position: relative;*/
+/*    right: 400px;*/
+/*  }*/
+
+/*  .img-psi-chat {*/
+/*    position: relative;*/
+/*    left: 200px;*/
+/*  }*/
+
+/*  .img-psi-bike {*/
+/*    position: relative;*/
+/*    right: 350px;*/
+/*  }*/
+/*}*/
+
+/*@media screen and (max-width: 1630px) {*/
+/*  .topicos-topo {*/
+/*    display: flex;*/
+/*    !* flex-direction: column; *!*/
+/*    align-items: center;*/
+/*    justify-content: space-around;*/
+/*    height: max-content;*/
+/*    width: 50%;*/
+/*  }*/
+
+/*  .topicos-topo p {*/
+/*    font-size: 0.8rem;*/
+/*    color: #7a6d4e;*/
+/*    text-align: center;*/
+/*    font-family: "Agrandir";*/
+/*  }*/
+
+/*  .topicos-topo svg {*/
+/*    width: 0.8rem;*/
+/*    height: 0.8rem;*/
+/*  }*/
+
+/*  .topicos-psicoterapia {*/
+/*    border-radius: 100px;*/
+/*  }*/
+
+/*  .topico-psicoterapia {*/
+/*    width: 100%;*/
+/*  }*/
+/*  .passo-psi {*/
+/*    width: 100%;*/
+/*  }*/
+
+/*  .textos-psi h1 {*/
+/*    font-size: 2.5rem;*/
+/*  }*/
+
+/*  .textos-psi h2 {*/
+/*    font-size: 1.5rem;*/
+/*  }*/
+
+/*  .textos-psi p {*/
+/*    font-size: 1rem;*/
+/*    font-weight: 500;*/
+/*  }*/
+
+/*  .img-barco {*/
+/*    width: 200px;*/
+/*    height: 120px;*/
+/*  }*/
+
+/*  .img-psi-chat {*/
+/*    align-items: flex-start;*/
+/*    justify-content: flex-start;*/
+/*  }*/
+
+/*  .img-chat {*/
+/*    width: 200px;*/
+/*    height: 140px;*/
+/*  }*/
+
+/*  .img-psi-bike {*/
+/*    justify-content: center;*/
+/*  }*/
+
+/*  .img-bike {*/
+/*    width: 250px;*/
+/*    height: 155px;*/
+/*  }*/
+/*}*/
+
+/*@media screen and (max-width: 900px) {*/
+/*  .topicos-topo {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: space-around;*/
+/*    height: max-content;*/
+/*    width: 50%;*/
+/*    margin-bottom: 20px;*/
+/*  }*/
+
+/*  .topicos-topo p {*/
+/*    font-size: 1rem;*/
+/*    color: #7a6d4e;*/
+/*    text-align: center;*/
+/*    font-family: "Agrandir";*/
+/*  }*/
+
+/*  .topico-topo {*/
+/*    height: 100%;*/
+/*    display: flex;*/
+/*    align-items: baseline;*/
+/*  }*/
+
+/*  .topico-topo svg {*/
+/*    color: #7a6d4e;*/
+/*    margin-right: 10px;*/
+/*    width: 14px;*/
+/*    height: 14px;*/
+/*  }*/
+
+/*  .topicos-psicoterapia {*/
+/*    border-radius: 20px;*/
+/*  }*/
+
+/*  .topico-psicoterapia {*/
+/*    width: 100%;*/
+/*    flex-direction: column;*/
+/*  }*/
+
+/*  .topico-psicoterapia2 {*/
+/*    width: 100%;*/
+/*    flex-direction: column-reverse;*/
+/*  }*/
+
+/*  .num-pis {*/
+/*    width: 100%;*/
+/*  }*/
+
+/*  .textos-psi {*/
+/*    width: 100%;*/
+/*  }*/
+
+/*  .passo-psi {*/
+/*    width: 100%;*/
+/*  }*/
+
+/*  .textos-psi h1 {*/
+/*    font-size: 2rem;*/
+/*  }*/
+
+/*  .textos-psi h2 {*/
+/*    font-size: 1.3rem;*/
+/*    font-weight: 400;*/
+/*  }*/
+
+/*  .textos-psi p {*/
+/*    font-size: 1rem;*/
+/*    font-weight: 500;*/
+/*  }*/
+
+/*  .img-psi-barco {*/
+/*    width: 100%;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*  }*/
+
+/*  .img-barco {*/
+/*    width: 300px;*/
+/*    height: 165px;*/
+/*  }*/
+
+/*  .img-psi-chat {*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    width: 100%;*/
+/*  }*/
+
+/*  .img-chat {*/
+/*    width: 300px;*/
+/*    height: 180px;*/
+/*  }*/
+
+/*  .img-psi-bike {*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*  }*/
+
+/*  .img-bike {*/
+/*    width: 320px;*/
+/*    height: 195px;*/
+/*  }*/
+/*}*/
+
+/*@media screen and (max-width: 430px) {*/
+/*  .principal-psicoterapia {*/
+/*    height: 200vh;*/
+/*  }*/
+/*}*/

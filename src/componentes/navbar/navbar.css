@@ -22,7 +22,7 @@
         gap: .25rem;
         align-items: center;
         text-decoration: none;
-        background-color: #edeadd;
+        background: var(--gold-bg);
         padding: .25rem 1rem;
         border-radius: 999px;
         transition: box-shadow 0.2s ease;
