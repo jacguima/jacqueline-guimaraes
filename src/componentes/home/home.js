@@ -24,11 +24,11 @@ const Home = ({
             <img className="logo" src={LogoBranca} alt="logo" />
           </div>
           <div className="links">
-            <button onClick={scrollToSobreMim}>SOBRE MIM</button>
-            <button onClick={scrollToPsicoterapia}>PSICOTERAPIA</button>
-            <button onClick={scrollToEspaco}>ESPAÇO</button>
-            <button onClick={scrollToContatos}>ENTRE EM CONTATO</button>
-            <button onClick={scrollToBlog}>BLOG: EM BREVE</button>
+            <button onClick={scrollToSobreMim}>Sobre mim</button>
+            <button onClick={scrollToPsicoterapia}>Psicoterapia</button>
+            <button onClick={scrollToEspaco}>Espaço</button>
+            <button onClick={scrollToContatos}>Entre em contato</button>
+            <button onClick={scrollToBlog}>Blog: em breve!</button>
             <div className="contact">
               <a
                 rel="noreferrer"
