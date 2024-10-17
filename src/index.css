@@ -75,10 +75,14 @@ body {
 
     @media (max-width: 768px) {
         --font-size-base: 16px;
+        --font-size-h2: 48px;
+        --font-size-h3: 24px
     }
 
     @media (max-width: 576px) {
         --font-size-base: 14px;
+        --font-size-h2: 36px;
+        --font-size-h3: 20px
     }
 }
 

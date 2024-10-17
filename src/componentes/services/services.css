@@ -13,6 +13,7 @@
         .title {
             font-weight: 500;
             text-align: center;
+            white-space: nowrap;
         }
 
         .services-list {
@@ -20,18 +21,24 @@
             gap: 4rem;
             justify-content: center;
 
-            .services-list-item {
+            .services-list-line {
                 display: flex;
-                gap: 1rem;
-                align-items: center;
+                gap: 4rem;
 
-                h3 {
-                    font-weight: 400;
-                }
+                .services-list-item {
+                    display: flex;
+                    gap: 1rem;
+                    align-items: center;
 
-                .bi-check-circle {
-                    width: 1.5rem;
-                    height: 1.5rem;
+                    h3 {
+                        font-weight: 400;
+                        white-space: nowrap;
+                    }
+
+                    .bi-check-circle {
+                        width: 1.5rem;
+                        height: auto;
+                    }
                 }
             }
         }
@@ -120,6 +127,18 @@
     }
 
     @media (max-width: 1200px) {
+        .header {
+            .services-list {
+                flex-direction: column;
+                gap: 1.5rem;
+                align-items: center;
+
+                .services-list-line {
+                    gap: 3rem;
+                }
+            }
+        }
+
         .body {
             .services-detailed-list {
                 align-items: center;
@@ -135,6 +154,51 @@
 
                 .details-couple {
                     align-self: unset;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .services-detailed-title {
+            font-size: var(--font-size-h3);
+        }
+    }
+
+    @media (max-width: 576px) {
+        .header {
+            .services-list {
+                .services-list-line {
+                    gap: 1.5rem;
+
+                    .services-list-item {
+                        h3 {
+                            font-size: var(--font-size-base);
+                        }
+
+                        .bi-check-circle {
+                            width: 1rem;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .body {
+            .services-detailed-list {
+                .service-details {
+                    .service-details-content {
+                        margin-left: 3rem;
+                    }
+
+                    .service-img-container {
+                        width: 17rem;
+                    }
+
+                    .number-container {
+                        width: 4rem;
+                    }
                 }
             }
         }

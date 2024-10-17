@@ -14,21 +14,25 @@ const Psicoterapia = () => {
         <div className={"header"}>
           <h2 className={"title"}>Meus serviços</h2>
           <div className={"services-list"}>
-            <div className={"services-list-item"}>
-              <CheckIcon />
-              <h3>Adolescente</h3>
+            <div className={"services-list-line"}>
+              <div className={"services-list-item"}>
+                <CheckIcon />
+                <h3>Adolescente</h3>
+              </div>
+              <div className={"services-list-item"}>
+                <CheckIcon />
+                <h3>Adulto</h3>
+              </div>
             </div>
-            <div className={"services-list-item"}>
-              <CheckIcon />
-              <h3>Adulto</h3>
-            </div>
-            <div className={"services-list-item"}>
-              <CheckIcon />
-              <h3>Casal</h3>
-            </div>
-            <div className={"services-list-item"}>
-              <CheckIcon />
-              <h3>Orientação Profissional</h3>
+            <div className={"services-list-line"}>
+              <div className={"services-list-item"}>
+                <CheckIcon />
+                <h3>Casal</h3>
+              </div>
+              <div className={"services-list-item"}>
+                <CheckIcon />
+                <h3>Orientação Profissional</h3>
+              </div>
             </div>
           </div>
         </div>
