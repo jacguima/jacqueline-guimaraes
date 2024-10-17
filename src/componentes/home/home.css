@@ -65,22 +65,29 @@
     @media (max-width: 992px) {
         .home-wrapper {
             flex-direction: column;
+
+            .links {
+                gap: 1.5rem
+            }
         }
     }
 
     @media (max-width: 480px) {
-        .links {
-            width: 100%;
+        .home-wrapper {
+            .links {
+                width: 100%;
+                gap: 1rem;
 
-            button {
-                padding: .75rem 0;
-            }
+                button {
+                    padding: .75rem 0;
+                }
 
-            .contact {
-                margin: 2rem 0 0;
+                .contact {
+                    margin: 2rem 0 0;
 
-                .icon {
-                    height: 1.25rem;
+                    .icon {
+                        height: 1.25rem;
+                    }
                 }
             }
         }
