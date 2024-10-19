@@ -28,7 +28,9 @@ const Space = () => {
               </div>
             </div>
             <div className={"map"}>
-              <h3 className={"online-on-site-text"}>Atendimento Presencial</h3>
+              <h3 className={"online-on-site-text text-on-site"}>
+                Atendimento Presencial
+              </h3>
               <div className={"map-image-wrapper map-image-south"}>
                 <img src={MapSouth} alt="Localização Sul" />
               </div>
@@ -45,7 +47,16 @@ const Space = () => {
               </div>
             </div>
           </div>
-          <div className={"space-bottom"}></div>
+          <div className={"space-bottom"}>
+            <div style={{ display: "flex" }}>
+              <div
+                style={{ display: "flex", flex: 1, justifyContent: "flex-end" }}
+              >
+                <h3 className={"online-on-site-text"}>Atendimento Online</h3>
+              </div>
+              <div style={{ display: "flex", flex: 1 }}></div>
+            </div>
+          </div>
         </div>
       </div>
       {/*<div className="topo-espaco">*/}
