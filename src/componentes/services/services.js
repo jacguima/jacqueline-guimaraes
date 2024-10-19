@@ -5,7 +5,7 @@ import ChatImage from "../../assets/images/chat.png";
 import NumberOne from "../../assets/images/1.png";
 import NumberTwo from "../../assets/images/2.png";
 import NumberThree from "../../assets/images/3.png";
-import CheckIcon from "../../shared/check-icon";
+import CheckCircleIcon from "../../shared/check-circle-icon";
 
 const Psicoterapia = () => {
   return (
@@ -16,21 +16,21 @@ const Psicoterapia = () => {
           <div className={"services-list"}>
             <div className={"services-list-line"}>
               <div className={"services-list-item"}>
-                <CheckIcon />
+                <CheckCircleIcon />
                 <h3>Adolescente</h3>
               </div>
               <div className={"services-list-item"}>
-                <CheckIcon />
+                <CheckCircleIcon />
                 <h3>Adulto</h3>
               </div>
             </div>
             <div className={"services-list-line"}>
               <div className={"services-list-item"}>
-                <CheckIcon />
+                <CheckCircleIcon />
                 <h3>Casal</h3>
               </div>
               <div className={"services-list-item"}>
-                <CheckIcon />
+                <CheckCircleIcon />
                 <h3>Orientação Profissional</h3>
               </div>
             </div>

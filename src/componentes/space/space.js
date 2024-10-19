@@ -2,6 +2,8 @@ import "./space.css";
 import MapSouth from "../../assets/images/south.png";
 import MapNorth from "../../assets/images/north.png";
 import Pin from "../../assets/images/pin.png";
+import Phone from "../../assets/images/celular.png";
+import CheckIcon from "../../shared/check-icon";
 
 const Space = () => {
   return (
@@ -65,6 +67,46 @@ const Space = () => {
                 <h3 className={"online-on-site-text"}>Atendimento Online</h3>
               </div>
               <div style={{ display: "flex", flex: 1 }}></div>
+            </div>
+            <div style={{ display: "flex", gap: "6rem" }}>
+              <div
+                style={{ display: "flex", flex: 4, justifyContent: "flex-end" }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "1rem",
+                    justifyContent: "center",
+                  }}
+                >
+                  <div className={"check-text-container"}>
+                    <CheckIcon />
+                    <p>Acessibilidade</p>
+                  </div>
+                  <div className={"check-text-container"}>
+                    <CheckIcon />
+                    <p>Flexibilidade</p>
+                  </div>
+                  <div className={"check-text-container"}>
+                    <CheckIcon />
+                    <p>Segurança</p>
+                  </div>
+                  <div className={"check-text-container"}>
+                    <CheckIcon />
+                    <p>Conforto</p>
+                  </div>
+                  <div className={"check-text-container"}>
+                    <CheckIcon />
+                    <p>Conveniência</p>
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: "flex", flex: 6 }}>
+                <div className={"phone-img-container"}>
+                  <img className={"phone-img"} src={Phone} alt="Celular" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
