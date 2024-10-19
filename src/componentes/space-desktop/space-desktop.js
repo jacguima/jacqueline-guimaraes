@@ -1,11 +1,11 @@
-import "./space.css";
+import "./space-desktop.css";
 import MapSouth from "../../assets/images/south.png";
 import MapNorth from "../../assets/images/north.png";
 import Pin from "../../assets/images/pin.png";
 import Phone from "../../assets/images/celular.png";
 import CheckIcon from "../../shared/check-icon";
 
-const Space = () => {
+const SpaceDesktop = () => {
   return (
     <div className="space-section">
       <div
@@ -115,4 +115,4 @@ const Space = () => {
   );
 };
 
-export default Space;
+export default SpaceDesktop;

@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./componentes/navbar/navbar";
 import Blog from "./componentes/Blog";
 import Duvidas from "./componentes/Duvidas";
-import Space from "./componentes/space/space";
+import SpaceDesktop from "./componentes/space-desktop/space-desktop";
 import EspacoMobile from "./componentes/EspacoMobile";
 import Home from "./componentes/home/home";
 import Opinioes from "./componentes/Opinioes";
@@ -13,6 +13,7 @@ import AboutMeDesktop from "./componentes/about-me-desktop/about-me-desktop";
 import Wpp from "./componentes/Wpp";
 import BlogMob from "./componentes/BlogMob";
 import AboutMeMobile from "./componentes/about-me-mobile/about-me-mobile";
+import SpaceMobile from "./componentes/space-mobile/space-mobile";
 
 function App() {
   const aboutMeRef = useRef(null);
@@ -54,7 +55,12 @@ function App() {
           <AboutMeDesktop ref={aboutMeRef} />
         </div>
         <Services ref={servicesRef} />
-        <Space ref={spaceRef} />
+        <div className={"space-desktop-container"}>
+          <SpaceDesktop ref={spaceRef} />
+        </div>
+        <div className={"space-mobile-container"}>
+          <SpaceMobile ref={spaceRef} />
+        </div>
         {/*<div ref={espacoRef}>*/}
         {/*  <Espaco />*/}
         {/*</div>*/}
