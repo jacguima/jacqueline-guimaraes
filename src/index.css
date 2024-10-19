@@ -78,10 +78,15 @@ body {
         --font-size-small: 14px;
     }
 
+    @media (max-width: 992px) {
+        --font-size-h2-small: 30px;
+    }
+
     @media (max-width: 768px) {
         --font-size-base: 16px;
         --font-size-h2: 48px;
-        --font-size-h3: 24px
+        --font-size-h3: 24px;
+        --font-size-h2-small: 22px;
     }
 
     @media (max-width: 576px) {

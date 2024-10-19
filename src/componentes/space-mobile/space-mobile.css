@@ -1,0 +1,15 @@
+.space-section-mobile {
+    background-image: url("../../assets/images/sala.png");
+    background-position: top;
+    background-size: cover;
+    margin-top: 10rem;
+    min-height: calc(1080px - 128px);
+    color: white;
+    padding: 4rem 0;
+    display: flex;
+
+    .title {
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+}
