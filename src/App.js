@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./componentes/navbar/navbar";
 import Blog from "./componentes/Blog";
 import Duvidas from "./componentes/Duvidas";
-import Espaco from "./componentes/Espaco";
+import Space from "./componentes/space/space";
 import EspacoMobile from "./componentes/EspacoMobile";
 import Home from "./componentes/home/home";
 import Opinioes from "./componentes/Opinioes";
@@ -17,7 +17,7 @@ import AboutMeMobile from "./componentes/about-me-mobile/about-me-mobile";
 function App() {
   const aboutMeRef = useRef(null);
   const servicesRef = useRef(null);
-  const espacoRef = useRef(null);
+  const spaceRef = useRef(null);
   const duvidasRef = useRef(null);
   const blogRef = useRef(null);
   const opinioesRef = useRef(null);
@@ -31,7 +31,7 @@ function App() {
       <Home
         scrollToSobreMim={scrollToRef(aboutMeRef)}
         scrollToPsicoterapia={scrollToRef(servicesRef)}
-        scrollToEspaco={scrollToRef(espacoRef)}
+        scrollToEspaco={scrollToRef(spaceRef)}
         scrollToContatos={scrollToRef(contatosRef)}
         scrollToBlog={scrollToRef(blogRef)}
       />
@@ -40,7 +40,7 @@ function App() {
           scrollToHome={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           scrollToSobreMim={scrollToRef(aboutMeRef)}
           scrollToPsicoterapia={scrollToRef(servicesRef)}
-          scrollToEspaco={scrollToRef(espacoRef)}
+          scrollToEspaco={scrollToRef(spaceRef)}
           scrollToBlog={scrollToRef(blogRef)}
           scrollToOpinioes={scrollToRef(opinioesRef)}
           scrollToDuvidas={scrollToRef(duvidasRef)}
@@ -54,6 +54,7 @@ function App() {
           <AboutMeDesktop ref={aboutMeRef} />
         </div>
         <Services ref={servicesRef} />
+        <Space ref={spaceRef} />
         {/*<div ref={espacoRef}>*/}
         {/*  <Espaco />*/}
         {/*</div>*/}

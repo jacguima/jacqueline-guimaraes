@@ -48,7 +48,7 @@
         background: var(--gold-bg);
         border-radius: 100px;
         padding: 4rem 0;
-        color: var(--darker-green);
+        color: var(--kinda-black);
 
         .services-detailed-list {
             display: flex;

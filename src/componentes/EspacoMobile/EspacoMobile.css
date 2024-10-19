@@ -85,7 +85,7 @@
   border-radius: 20px;
   box-shadow: 0px 15px 27px -21px rgba(0, 0, 0, 0.75);
 
-  background-image: url("../../assets/images/loc-norte.PNG");
+  background-image: url("../../assets/images/north.png");
   background-size: cover;
   background-position: center;
 }
@@ -95,7 +95,7 @@
   border-radius: 20px;
   box-shadow: 0px 15px 27px -21px rgba(0, 0, 0, 0.75);
 
-  background-image: url("../../assets/images/loc-sul.PNG");
+  background-image: url("../../assets/images/south.png");
   background-size: cover;
   background-position: center;
 }

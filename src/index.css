@@ -20,11 +20,15 @@ body {
 
 :root {
     --main-gold: #7A6D4E;
+    --kinda-black: #292929;
     --gold-bg: #edeadd;
     --main-green: #777e5c;
     --darker-green: #283106;
     --main-green-lighter: #A3A989;
     --main-green-really-light: #f6f8f4;
+    --main-green-really-light-rgb: 246 248 244;
+    --beige: #ab9885;
+    --brown: #4d3b29;
 
     --container-narrow: 1140px;
     --container-wide: 1440px;
