@@ -1,6 +1,5 @@
 .space-section {
-    background-image: linear-gradient(to bottom, var(--main-green-really-light) 0, rgba(255, 255, 255, 0) 1rem),
-    url("../../assets/images/sala.png");
+    background-image: url("../../assets/images/sala.png");
     background-position: top;
     background-size: cover;
     margin-top: 10rem;
@@ -8,6 +7,10 @@
     color: white;
     padding: 4rem 0;
     display: flex;
+
+    a {
+        all: unset;
+    }
 
     .space-content {
         display: flex;
