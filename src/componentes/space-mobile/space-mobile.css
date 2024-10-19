@@ -1,5 +1,5 @@
 .space-section-mobile {
-    background-image: url("../../assets/images/sala.png");
+    background-image: url("../../assets/images/espaco-bg-mbl.png");
     background-position: top;
     background-size: cover;
     margin-top: 10rem;
@@ -11,5 +11,54 @@
     .title {
         font-weight: 500;
         margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .card {
+        border-radius: 2rem;
+        background: white;
+        overflow: hidden;
+        color: var(--kinda-black);
+        padding: 1.5rem;
+        margin: 2rem auto 6rem;
+        height: 34rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        max-width: 28rem;
+    }
+
+    .address {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .address-title {
+        font-size: var(--font-size-h2-small);
+    }
+
+    .card-map-img-wrapper {
+        overflow: hidden;
+        border-radius: 1.5rem;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .address-details {
+        font-weight: 400;
+    }
+
+    .card-button {
+        padding: 1rem 0;
+        font-size: var(--font-size-h2-small);
+        border-radius: 1.25rem;
+        border: none;
+        font-weight: 500;
+    }
+
+    .card-map-img {
+        height: 100%;
+        transform: scale(1.6);
     }
 }
