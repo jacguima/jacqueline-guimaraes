@@ -6,32 +6,30 @@ import Pin from "../../assets/images/pin.png";
 const Space = () => {
   return (
     <div className="space-section">
-      <div className={"container-narrow"}>
+      <div
+        className={"container-narrow"}
+        style={{ display: "flex", flexDirection: "column" }}
+      >
         <h2 className={"title"}>O espaço</h2>
-        <div className={"maps-container"}>
-          <div className={"map"}>
-            <div className={"map-image-wrapper"}>
-              <img src={MapNorth} alt="Localização Norte" />
-            </div>
-            <div className={"map-address address-north"}>
-              <p className={"address-main-text"}>Asa Norte</p>
-              <div className={"address-details"}>
-                <div className={"pin-wrapper"}>
-                  <img src={Pin} alt="Location pin" />
+        <div className={"space-content"}>
+          <div className={"space-top"}>
+            <div className={"map"}>
+              <div className={"map-image-wrapper map-image-north"}>
+                <img src={MapNorth} alt="Localização Norte" />
+              </div>
+              <div className={"map-address address-north"}>
+                <p className={"address-main-text"}>Asa Norte</p>
+                <div className={"address-details"}>
+                  <div className={"pin-wrapper"}>
+                    <img src={Pin} alt="Location pin" />
+                  </div>
+                  <p className={"address-detail-text"}>Shopping ID</p>
                 </div>
-                <p className={"address-detail-text"}>Shopping ID</p>
               </div>
             </div>
-          </div>
-          <div className={"map-wrapper"}>
-            <h3
-              className={"online-on-site-text"}
-              style={{ marginBottom: "3rem" }}
-            >
-              Atendimento Presencial
-            </h3>
             <div className={"map"}>
-              <div className={"map-image-wrapper"}>
+              <h3 className={"online-on-site-text"}>Atendimento Presencial</h3>
+              <div className={"map-image-wrapper map-image-south"}>
                 <img src={MapSouth} alt="Localização Sul" />
               </div>
               <div className={"map-address address-south"}>
@@ -47,6 +45,7 @@ const Space = () => {
               </div>
             </div>
           </div>
+          <div className={"space-bottom"}></div>
         </div>
       </div>
       {/*<div className="topo-espaco">*/}
