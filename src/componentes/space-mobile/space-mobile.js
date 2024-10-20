@@ -7,13 +7,17 @@ const SpaceMobile = () => {
     <div className="space-section-mobile">
       <div
         className={"container-narrow"}
-        style={{ display: "flex", flexDirection: "column" }}
+        style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
       >
         <h2 className={"title"}>O espaço</h2>
         <div className={"cards-container"}>
           <div className={"card"}>
             <div className={"card-map-img-wrapper"}>
-              <img className={"card-map-img"} src={MapNorth} alt="Mapa" />
+              <img
+                className={"card-map-img map-img-north"}
+                src={MapNorth}
+                alt="Mapa"
+              />
             </div>
             <div className={"address"}>
               <h2 className={"address-title"}>Asa Norte</h2>
