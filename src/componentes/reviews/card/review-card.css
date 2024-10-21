@@ -8,6 +8,7 @@
     background-image: url("../../../assets/images/review-bg.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     width: 22rem;
     height: 30rem;
     display: flex;
@@ -63,35 +64,23 @@
     width: auto;
 }
 
-@media screen and (max-width: 450px) {
-    /*.card-review {*/
-    /*    width: 286px;*/
-    /*    height: 456px;*/
-    /*    margin-left: 55px;*/
-    /*}*/
+@media screen and (max-width: 480px) {
+    .card-review {
+        width: 18rem;
+        height: 24rem;
+        padding: 2.4rem .2rem 4.8rem 2.8rem;
 
-    /*.review-content {*/
-    /*    padding: 12% .2rem 29%;*/
-    /*    font-size: 14px;*/
+        .review-text {
+            font-size: 14px;
+        }
 
-    /*    p {*/
-    /*        padding: 0 1rem;*/
-    /*    }*/
-    /*}*/
+        .review-author {
+            font-size: 1rem;
+        }
+    }
 }
 
 @media screen and (max-width: 400px) {
-    /*.card-review {*/
-    /*    width: 239px;*/
-    /*    height: 381px;*/
-    /*    margin-left: 45px;*/
-    /*}*/
-
-    /*.review-content {*/
-    /*    font-size: 13px;*/
-    /*}
-    */
-
     .source-icon {
         margin-bottom: .5rem;
     }
