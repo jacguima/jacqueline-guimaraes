@@ -12,7 +12,7 @@ const Carousel = () => {
 
   const settings = {
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     centerMode: true,
     centerPadding: "0",
     slidesToScroll: 1,
@@ -23,12 +23,6 @@ const Carousel = () => {
     initialSlide: 0,
     arrows: false,
     responsive: [
-      {
-        breakpoint: 1921,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
       {
         breakpoint: 1000,
         settings: {
