@@ -1,15 +1,6 @@
 .reviews-container {
     margin: 4rem 0;
-    background-color: #f6f8f4;
     position: relative;
-}
-
-.circle-bg-reviews {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
     background-color: #d2d8be;
     border-radius: 600px;
 }
