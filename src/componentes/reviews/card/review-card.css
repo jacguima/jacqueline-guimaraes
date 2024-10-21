@@ -17,6 +17,7 @@
     color: #444;
     padding: 4rem .2rem 6rem 4rem;
     justify-content: space-between;
+    transition: transform .2s ease-in-out;
 
     .review-text {
         font-size: 1rem;
@@ -29,6 +30,10 @@
     .review-author {
         font-size: 1rem;
         font-weight: 500;
+    }
+
+    &:hover {
+        transform: scale(1.02);
     }
 }
 
