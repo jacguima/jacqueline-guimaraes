@@ -14,6 +14,7 @@ import Wpp from "./componentes/Wpp";
 import BlogMob from "./componentes/BlogMob";
 import AboutMeMobile from "./componentes/about-me-mobile/about-me-mobile";
 import SpaceMobile from "./componentes/space-mobile/space-mobile";
+import OnlineMobile from "./componentes/online-mobile/online-mobile";
 
 function App() {
   const aboutMeRef = useRef(null);
@@ -60,6 +61,7 @@ function App() {
         </div>
         <div className={"space-mobile-container"}>
           <SpaceMobile ref={spaceRef} />
+          <OnlineMobile />
         </div>
         {/*<div ref={espacoRef}>*/}
         {/*  <Espaco />*/}

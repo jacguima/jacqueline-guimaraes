@@ -23,6 +23,7 @@ body {
     --kinda-black: #292929;
     --gold-bg: #edeadd;
     --main-green: #777e5c;
+    --color-green-secondary: #706f21;
     --darker-green: #283106;
     --main-green-lighter: #A3A989;
     --main-green-really-light: #f6f8f4;
@@ -38,6 +39,7 @@ body {
     --font-size-h2: 56px;
     --font-size-h2-small: 40px;
     --font-size-h3: 28px;
+    --font-size-h3-large: 2rem;
 
     --letter-spacing-base: 0;
 
@@ -92,7 +94,8 @@ body {
     @media (max-width: 576px) {
         --font-size-base: 14px;
         --font-size-h2: 36px;
-        --font-size-h3: 20px
+        --font-size-h3: 20px;
+        --font-size-h3-large: 1.8rem
     }
 }
 

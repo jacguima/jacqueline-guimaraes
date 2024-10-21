@@ -1,0 +1,107 @@
+.online-section-mobile {
+    display: flex;
+    margin: 8rem 0;
+    color: var(--color-green-secondary);
+
+    .title {
+        font-size: 2.4rem;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .phone-img-wrapper {
+        .phone-img {
+            height: 100%;
+            object-fit: cover;
+            max-height: 30rem;
+            max-width: 100%;
+            object-position: right;
+        }
+    }
+
+    .content-container {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding-right: 1rem;
+        gap: 1.5rem;
+    }
+
+    .checklist-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .checklist-item-container {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+    }
+
+    .checklist-item-text {
+        font-weight: 300;
+        font-size: 2rem;
+    }
+
+    .bi-check {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    @media (max-width: 576px) {
+        .title {
+            font-size: 2rem;
+        }
+
+        .checklist-item-text {
+            font-size: 1.6rem;
+        }
+
+        .checklist-container {
+            gap: 1.5rem;
+        }
+
+        .content-container {
+            gap: 1rem;
+        }
+
+        .checklist-item-container {
+            gap: .25rem;
+        }
+
+        .bi-check {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    @media (max-width: 461px) {
+        .title {
+            font-size: 1.8rem;
+        }
+
+        .checklist-item-text {
+            font-size: 1.4rem;
+        }
+
+        .checklist-container {
+            gap: 1rem;
+        }
+    }
+
+    @media (max-width: 405px) {
+        .title {
+            font-size: 1.6rem;
+        }
+
+        .checklist-item-text {
+            font-size: 1.2rem;
+        }
+
+        .content-container {
+            padding-top: 0;
+        }
+    }
+}
