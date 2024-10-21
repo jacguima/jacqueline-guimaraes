@@ -6,7 +6,7 @@ import Duvidas from "./componentes/Duvidas";
 import SpaceDesktop from "./componentes/space-desktop/space-desktop";
 import EspacoMobile from "./componentes/EspacoMobile";
 import Home from "./componentes/home/home";
-import Opinioes from "./componentes/Opinioes";
+import Reviews from "./componentes/reviews/reviews";
 import Services from "./componentes/services/services";
 import Rodape from "./componentes/Rodape";
 import AboutMeDesktop from "./componentes/about-me-desktop/about-me-desktop";
@@ -22,7 +22,7 @@ function App() {
   const spaceRef = useRef(null);
   const duvidasRef = useRef(null);
   const blogRef = useRef(null);
-  const opinioesRef = useRef(null);
+  const reviewsRef = useRef(null);
   const contatosRef = useRef(null);
 
   const scrollToRef = (ref) => () =>
@@ -44,7 +44,7 @@ function App() {
           scrollToPsicoterapia={scrollToRef(servicesRef)}
           scrollToEspaco={scrollToRef(spaceRef)}
           scrollToBlog={scrollToRef(blogRef)}
-          scrollToOpinioes={scrollToRef(opinioesRef)}
+          scrollToOpinioes={scrollToRef(reviewsRef)}
           scrollToDuvidas={scrollToRef(duvidasRef)}
         />
       </div>
@@ -63,7 +63,7 @@ function App() {
           <SpaceMobile ref={spaceRef} />
           <OnlineMobile />
         </div>
-        <Opinioes ref={opinioesRef} />
+        <Reviews ref={reviewsRef} />
         {/*<div ref={duvidasRef}>*/}
         {/*  <Duvidas />*/}
         {/*</div>*/}

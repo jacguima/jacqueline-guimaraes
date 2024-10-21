@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import "./Carousel.css";
-import reviews from "../Opinioes/OpinioesMocks";
-import OpinioesCards from "../Opinioes/OpinioesCards";
+import "./carousel.css";
+import reviews from "../reviews-mock";
+import ReviewCard from "../card/review-card";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -56,7 +56,7 @@ const Carousel = () => {
       <div className="carousel">
         <Slider ref={sliderRef} {...settings}>
           {reviews.map((review) => (
-            <OpinioesCards key={review.id} {...review} />
+            <ReviewCard key={review.id} {...review} />
           ))}
         </Slider>
       </div>

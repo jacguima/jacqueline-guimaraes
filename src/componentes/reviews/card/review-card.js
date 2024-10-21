@@ -1,10 +1,10 @@
-import "./cards.css";
+import "./review-card.css";
 import React from "react";
-import DoctaraliaIcon from "../../assets/images/doctoria.png";
-import GoogleIcon from "../UI/google";
-import BgReviewImage from "../../assets/images/bg-review.png";
+import DoctaraliaIcon from "../../../assets/images/doctoria.png";
+import GoogleIcon from "../../UI/google";
+import BgReviewImage from "../../../assets/images/bg-review.png";
 
-const OpinioesCards = ({ author, content, source }) => {
+const ReviewCard = ({ author, content, source }) => {
   const renderSourceIcon = () => {
     switch (source) {
       case "google":
@@ -60,4 +60,4 @@ const OpinioesCards = ({ author, content, source }) => {
   );
 };
 
-export default OpinioesCards;
+export default ReviewCard;

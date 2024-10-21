@@ -1,8 +1,8 @@
 import React from "react";
-import "./Opinioes.css";
-import Carousel from "../Carousel";
+import "./reviews.css";
+import Carousel from "./carousel/carousel";
 
-const Opinioes = () => {
+const Reviews = () => {
   return (
     <div className="reviews-container">
       <div className="container-narrow">
@@ -13,4 +13,4 @@ const Opinioes = () => {
   );
 };
 
-export default Opinioes;
+export default Reviews;
