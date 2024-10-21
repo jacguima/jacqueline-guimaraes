@@ -56,8 +56,10 @@ const Carousel = () => {
     <div className="carousel-container">
       <div className="carousel">
         <Slider ref={sliderRef} {...settings}>
-          {reviews.map((review) => (
-            <ReviewCard key={review.id} {...review} />
+          {reviews.map((review, i) => (
+            <a href={review.link} target="_blank" rel="noreferrer">
+              <ReviewCard key={i} {...review} />
+            </a>
           ))}
         </Slider>
       </div>

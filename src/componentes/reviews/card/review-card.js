@@ -15,11 +15,7 @@ const ReviewCard = ({ author, content, link }) => {
   return (
     <div className="card-review-container">
       <div className="card-review">
-        <div className="source-icon">
-          <a target="_blank" rel="noreferrer" href={link}>
-            {renderSourceIcon()}
-          </a>
-        </div>
+        <div className="source-icon">{renderSourceIcon()}</div>
         <p className={"review-text"}>{content}</p>
         <p className={"review-author"}>– {author}</p>
       </div>
