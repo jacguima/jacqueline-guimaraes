@@ -28,12 +28,6 @@ const Carousel = () => {
           slidesToShow: 3,
         },
       },
-      // {
-      //   breakpoint: 1300,
-      //   settings: {
-      //     slidesToShow: 2,
-      //   },
-      // },
       {
         breakpoint: 1000,
         settings: {
