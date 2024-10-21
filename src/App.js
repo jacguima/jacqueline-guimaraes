@@ -63,13 +63,7 @@ function App() {
           <SpaceMobile ref={spaceRef} />
           <OnlineMobile />
         </div>
-        {/*<div ref={espacoRef}>*/}
-        {/*  <Espaco />*/}
-        {/*</div>*/}
-        {/*<div>*/}
-        {/*  <EspacoMobile />*/}
-        {/*</div>*/}
-        {/*<Opinioes ref={opinioesRef} />*/}
+        <Opinioes ref={opinioesRef} />
         {/*<div ref={duvidasRef}>*/}
         {/*  <Duvidas />*/}
         {/*</div>*/}

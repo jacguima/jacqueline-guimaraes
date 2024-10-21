@@ -4,9 +4,11 @@ import Carousel from "../Carousel";
 
 const Opinioes = () => {
   return (
-    <div className="container-narrow reviews-container">
-      <div className="circle-bg-reviews"></div>
-      <Carousel />
+    <div className="reviews-container">
+      <div className="container-narrow">
+        <div className="circle-bg-reviews"></div>
+        <Carousel />
+      </div>
     </div>
   );
 };

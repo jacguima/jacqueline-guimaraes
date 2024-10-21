@@ -1,6 +1,6 @@
 .online-section-mobile {
     display: flex;
-    margin: 8rem 0;
+    margin-top: 8rem;
     color: var(--color-green-secondary);
 
     .title {
