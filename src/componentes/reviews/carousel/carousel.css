@@ -65,3 +65,17 @@
 .custom-arrows button:focus {
     outline: none;
 }
+
+@media (min-width: 1000px) {
+    .slick-list {
+        padding: 2.4rem 0 !important;
+    }
+
+    .slick-slide {
+        transition: transform .2s ease-in-out;
+    }
+
+    .slick-center {
+        transform: scale(1.2);
+    }
+}

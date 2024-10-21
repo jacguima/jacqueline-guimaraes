@@ -16,7 +16,7 @@ const Carousel = () => {
     centerMode: true,
     centerPadding: "0",
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     initialSlide: 0,
@@ -28,14 +28,20 @@ const Carousel = () => {
           slidesToShow: 3,
         },
       },
+      // {
+      //   breakpoint: 1300,
+      //   settings: {
+      //     slidesToShow: 2,
+      //   },
+      // },
       {
-        breakpoint: 1300,
+        breakpoint: 1000,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 1100,
+        breakpoint: 700,
         settings: {
           slidesToShow: 1,
         },
