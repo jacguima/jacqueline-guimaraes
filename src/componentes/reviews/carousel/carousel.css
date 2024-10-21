@@ -72,7 +72,7 @@
     }
 
     .slick-slide {
-        transition: transform .2s ease-in-out;
+        transition: transform .6s ease-in-out;
     }
 
     .slick-center {
