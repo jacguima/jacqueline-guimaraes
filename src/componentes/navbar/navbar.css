@@ -78,6 +78,7 @@
 
         .wpp-btn, button {
             height: 2rem;
+            border-radius: 999px;
         }
 
         .wpp-btn {

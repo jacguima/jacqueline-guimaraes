@@ -70,7 +70,7 @@ const reviews = [
     link: "https://g.co/kgs/DxJihKs",
   },
   {
-    author: "A.A.",
+    author: "Ana",
     content: "Ótima consulta! Me senti muito confortável em conversar com ela.",
     link: "https://www.doctoralia.com.br/jacqueline-guimaraes-3/psicologo/brasilia",
   },
