@@ -55,28 +55,32 @@ const Questions = () => {
 const accordionData = [
   {
     question: "Quem precisa de psicoterapia?",
-    answer: "Pessoas que precisam de suporte emocional...",
+    answer:
+      "A procura por tratamento psicológico não deve restringir-se apenas a casos emergenciais. A qualquer momento da vida, em que sintamos necessidade desse suporte, é possível buscar ajuda. Seja quais forem suas angústias, sinta-se à vontade para conversar comigo.",
   },
   {
     question: "Um psicólogo resolverá todos meus problemas?",
-    answer: "O psicólogo auxilia no processo...",
+    answer:
+      "Não exatamente. A função do psicólogo é oferecer um suporte significativo para ajudá-lo a desenvolver ferramentas que o auxiliem no enfrentamento dos seus desafios emocionais e psicológicos, incentivando reflexões, confrontos internos para uma melhor compreensão e aceitação de si mesmo.",
   },
   {
     question: "Um psicólogo revelará meus segredos?",
     answer:
-      "Não, todas as informações são mantidas em sigilo conforme ética profissional. Não, todas as informações são mantidas em sigilo conforme ética profissional. Não, todas as informações são mantidas em sigilo conforme ética profissional. Não, todas as informações são mantidas em sigilo conforme ética profissional.",
+      "Não, todas as informações compartilhadas durante as sessões de terapia são mantidas em sigilo. A confidencialidade é um dos princípios éticos fundamentais da profissão, e cabe ao profissional garantir a privacidade e o sigilo das informações do paciente.",
   },
   {
     question: "Você atende convênio?",
-    answer: "Sim, atendemos vários convênios.",
+    answer:
+      "Não, mas com o recibo e relatório por mim expedidos, você poderá solicitar um reembolso ao seu Plano de Saúde.",
   },
   {
     question: "Quanto tempo dura o tratamento?",
-    answer: "A duração do tratamento varia de pessoa para pessoa...",
+    answer:
+      "Não existe um prazo pré determinado. Cada pessoa tem seu tempo, a psicoterapia terá a duração que você necessitar :)",
   },
   {
     question: "Tem diferença entre o atendimento online e o presencial?",
-    answer: "Sim, há algumas diferenças...",
+    answer: "Nenhuma! Ambos tem a mesma eficácia.",
   },
 ];
 
