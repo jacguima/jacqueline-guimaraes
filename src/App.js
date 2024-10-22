@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./App.css";
 import Navbar from "./componentes/navbar/navbar";
 import Blog from "./componentes/Blog";
-import Duvidas from "./componentes/Duvidas";
+import Questions from "./componentes/questions/questions";
 import SpaceDesktop from "./componentes/space-desktop/space-desktop";
 import Home from "./componentes/home/home";
 import Reviews from "./componentes/reviews/reviews";
@@ -63,9 +63,9 @@ function App() {
           <OnlineMobile />
         </div>
         <Reviews ref={reviewsRef} />
-        {/*<div ref={duvidasRef}>*/}
-        {/*  <Duvidas />*/}
-        {/*</div>*/}
+        <div ref={duvidasRef}>
+          <Questions />
+        </div>
         {/*<div ref={blogRef}>*/}
         {/*  <Blog />*/}
         {/*</div>*/}
