@@ -24,6 +24,7 @@ const Questions = () => {
   return (
     <div className="questions-section">
       <div className="container-narrow">
+        <h2 className={"title"}>Dúvidas frequentes</h2>
         <div
           className={`accordion ${activeIndex !== null ? "active-gap" : ""}`}
         >
