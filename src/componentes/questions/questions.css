@@ -66,4 +66,53 @@
         padding: 1rem 3rem;
         opacity: 1;
     }
+
+    @media (max-width: 992px) {
+        .accordion-button {
+            font-size: var(--font-size-base);
+        }
+    }
+
+    @media (max-width: 576px) {
+        .accordion-button {
+            white-space: normal;
+            height: 4rem;
+        }
+
+        .accordion-item {
+            width: 100%;
+        }
+
+        .container-narrow {
+            padding: 0;
+        }
+
+        .accordion-wrapper {
+            width: 90%;
+        }
+
+        .accordion-wrapper:nth-of-type(odd) {
+            align-self: flex-start;
+
+            .accordion-button {
+                border-radius: 0 1.4rem 1.4rem 0;
+            }
+
+            .accordion-item {
+                border-radius: 0 1.4rem 1.4rem 0;
+            }
+        }
+
+        .accordion-wrapper:nth-of-type(even) {
+            align-self: flex-end;
+
+            .accordion-button {
+                border-radius: 1.4rem 0 0 1.4rem;
+            }
+
+            .accordion-item {
+                border-radius: 1.4rem 0 0 1.4rem;
+            }
+        }
+    }
 }
