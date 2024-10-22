@@ -14,17 +14,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #444;
+    color: var(--main-green);
     padding: 4rem .4rem 6rem 4rem;
     justify-content: space-between;
     transition: transform .2s ease-in-out;
 
     .review-text {
-        font-size: 1rem;
         margin-bottom: .5rem;
         overflow-y: auto;
         padding: 0 1rem;
         text-align: center;
+        font-weight: 500;
+        font-size: 14px;
     }
 
     .review-author {
