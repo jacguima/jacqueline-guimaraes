@@ -4,7 +4,6 @@ import Navbar from "./componentes/navbar/navbar";
 import Blog from "./componentes/Blog";
 import Duvidas from "./componentes/Duvidas";
 import SpaceDesktop from "./componentes/space-desktop/space-desktop";
-import EspacoMobile from "./componentes/EspacoMobile";
 import Home from "./componentes/home/home";
 import Reviews from "./componentes/reviews/reviews";
 import Services from "./componentes/services/services";
