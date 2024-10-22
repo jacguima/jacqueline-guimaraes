@@ -2,6 +2,7 @@ import React from "react";
 import "./reviews.css";
 import Carousel from "./carousel/carousel";
 
+// TODO: 'schedule' button missing
 const Reviews = () => {
   return (
     <div className="reviews-container">
