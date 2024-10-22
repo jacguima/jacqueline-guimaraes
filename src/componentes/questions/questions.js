@@ -36,6 +36,9 @@ const Questions = () => {
                   onClick={() => handleToggle(index)}
                 >
                   {item.question}
+                  <i
+                    className={`fas fa-chevron-right ${activeIndex === index ? "rotate" : ""}`}
+                  ></i>
                 </button>
                 <div
                   ref={(el) => (contentRefs.current[index] = el)}
