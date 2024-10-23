@@ -103,7 +103,10 @@ const Mosaic = () => {
           }}
         >
           <div style={{ display: "flex", flex: 1 }}>
-            <div className={"mosaic-card soon"}></div>
+            <div className={"mosaic-card ebook"}>
+              <h3>EBOOKS</h3>
+              <span className="material-symbols-outlined">download</span>
+            </div>
           </div>
           <div style={{ display: "flex", flex: 2 }}>
             <div className={"mosaic-card soon"}></div>
