@@ -1,7 +1,7 @@
 import React from "react";
 import "./mosaic-desktop.css";
-import Doc from "../../assets/images/document.png";
-import ArrowRightCircleOutlined from "../../shared/arrow-right-circle-outlined";
+import Doc from "../../../assets/images/document.png";
+import ArrowRightCircleOutlined from "../../../shared/arrow-right-circle-outlined";
 
 const defaultGap = "1rem";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "./mosaic-mobile.css";
-import Doc from "../../assets/images/document.png";
-import ArrowRightCircleOutlined from "../../shared/arrow-right-circle-outlined";
+import Doc from "../../../assets/images/document.png";
+import ArrowRightCircleOutlined from "../../../shared/arrow-right-circle-outlined";
 
 const defaultGap = "1rem";
 
@@ -59,8 +59,35 @@ const MosaicMobile = () => {
             </div>
           </div>
         </div>
-        <div style={{ display: "flex", flex: 2 }}></div>
-        <div style={{ display: "flex", flex: 3 }}></div>
+        <div className={"middle-container"}>
+          <div className={"mosaic-card ebook"}>
+            <h3>EBOOKS</h3>
+            <span className="material-symbols-outlined">download</span>
+          </div>
+        </div>
+        <div className={"content-cards-container"}>
+          <div style={{ display: "flex", flex: 1 }}>
+            <div className={"mosaic-card content content-love"}>
+              <span className="material-symbols-outlined">download</span>
+              <a
+                href="https://peerw.org/index.php/journals/article/view/2052/1172"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
+            </div>
+          </div>
+          <div style={{ display: "flex", flex: 1 }}>
+            <div className={"mosaic-card content content-grief"}>
+              <span className="material-symbols-outlined">download</span>
+              <a href="/files/luto.pdf" download="luto.pdf"></a>
+            </div>
+          </div>
+          <div style={{ display: "flex", flex: 1 }}>
+            <div className={"mosaic-card content content-cycle"}>
+              <span className="material-symbols-outlined">download</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

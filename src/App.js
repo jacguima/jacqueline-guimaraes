@@ -14,8 +14,8 @@ import BlogMob from "./componentes/BlogMob";
 import AboutMeMobile from "./componentes/about-me-mobile/about-me-mobile";
 import SpaceMobile from "./componentes/space-mobile/space-mobile";
 import OnlineMobile from "./componentes/online-mobile/online-mobile";
-import MosaicDesktop from "./componentes/mosaic-desktop/mosaic-desktop";
-import MosaicMobile from "./componentes/mosaic-mobile/mosaic-mobile";
+import MosaicDesktop from "./componentes/mosaic/mosaic-desktop/mosaic-desktop";
+import MosaicMobile from "./componentes/mosaic/mosaic-mobile/mosaic-mobile";
 
 function App() {
   const aboutMeRef = useRef(null);
