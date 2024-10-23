@@ -71,7 +71,7 @@ function App() {
           <MosaicMobile ref={mosaicRef} />
         </div>
         <Footer ref={footerRef} />
-        {/*<Wpp />*/}
+        <Wpp />
       </div>
     </div>
   );
