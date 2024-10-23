@@ -7,7 +7,6 @@ import NumberTwo from "../../assets/images/2.png";
 import NumberThree from "../../assets/images/3.png";
 import CheckCircleIcon from "../../shared/check-circle-icon";
 
-// TODO: change green images
 const Psicoterapia = () => {
   return (
     <div className={"services-section"}>
