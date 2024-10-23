@@ -1,13 +1,13 @@
 import React from "react";
-import "./mosaic.css";
+import "./mosaic-desktop.css";
 import Doc from "../../assets/images/document.png";
 import ArrowRightCircleOutlined from "../../shared/arrow-right-circle-outlined";
 
 const defaultGap = "1rem";
 
-const Mosaic = () => {
+const MosaicDesktop = () => {
   return (
-    <div className={"mosaic-section"}>
+    <div className={"mosaic-desktop-section"}>
       <div
         className={"container-narrow"}
         style={{ flex: 1, display: "flex", gap: defaultGap }}
@@ -135,4 +135,4 @@ const Mosaic = () => {
   );
 };
 
-export default Mosaic;
+export default MosaicDesktop;

@@ -14,7 +14,8 @@ import BlogMob from "./componentes/BlogMob";
 import AboutMeMobile from "./componentes/about-me-mobile/about-me-mobile";
 import SpaceMobile from "./componentes/space-mobile/space-mobile";
 import OnlineMobile from "./componentes/online-mobile/online-mobile";
-import Mosaic from "./componentes/mosaic/mosaic";
+import MosaicDesktop from "./componentes/mosaic-desktop/mosaic-desktop";
+import MosaicMobile from "./componentes/mosaic-mobile/mosaic-mobile";
 
 function App() {
   const aboutMeRef = useRef(null);
@@ -65,7 +66,12 @@ function App() {
         </div>
         <Reviews ref={reviewsRef} />
         <Questions ref={questionsRef} />
-        <Mosaic ref={mosaicRef} />
+        <div className={"mosaic-desktop-container"}>
+          <MosaicDesktop ref={mosaicRef} />
+        </div>
+        <div className={"mosaic-mobile-container"}>
+          <MosaicMobile ref={mosaicRef} />
+        </div>
 
         {/*<div>*/}
         {/*  <BlogMob />*/}
