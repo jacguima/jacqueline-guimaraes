@@ -61,6 +61,23 @@
     }
 
     .soon {
-        background: blue;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem 2rem 2.5rem;
+
+        i {
+            align-self: flex-end;
+            font-size: 1.5rem;
+        }
+    }
+
+    .soon.soon-green {
+        background: #d1d8b0;
+        color: white;
+    }
+
+    .soon.soon-grey {
+        background: #e2e2e2;
+        color: #292929;
     }
 }

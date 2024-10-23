@@ -50,10 +50,16 @@ const Mosaic = () => {
             }}
           >
             <div style={{ display: "flex", flex: 1 }}>
-              <div className={"mosaic-card soon"}></div>
+              <div className={"mosaic-card soon soon-green"}>
+                <i className="fa-solid fa-circle-arrow-right"></i>
+                <p>Em breve</p>
+              </div>
             </div>
             <div style={{ display: "flex", flex: 1 }}>
-              <div className={"mosaic-card soon"}></div>
+              <div className={"mosaic-card soon soon-grey"}>
+                <i className="fa-solid fa-circle-arrow-right"></i>
+                <p>Em breve</p>
+              </div>
             </div>
           </div>
 
@@ -66,10 +72,16 @@ const Mosaic = () => {
             }}
           >
             <div style={{ display: "flex", flex: 1 }}>
-              <div className={"mosaic-card soon"}></div>
+              <div className={"mosaic-card soon soon-grey"}>
+                <i className="fa-solid fa-circle-arrow-right"></i>
+                <p>Em breve</p>
+              </div>
             </div>
             <div style={{ display: "flex", flex: 1 }}>
-              <div className={"mosaic-card soon"}></div>
+              <div className={"mosaic-card soon soon-green"}>
+                <i className="fa-solid fa-circle-arrow-right"></i>
+                <p>Em breve</p>
+              </div>
             </div>
           </div>
         </div>
