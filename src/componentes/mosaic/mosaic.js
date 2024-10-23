@@ -109,13 +109,25 @@ const Mosaic = () => {
             </div>
           </div>
           <div style={{ display: "flex", flex: 2 }}>
-            <div className={"mosaic-card content content-love"}></div>
+            <div className={"mosaic-card content content-love"}>
+              <span className="material-symbols-outlined">download</span>
+              <a
+                href="https://peerw.org/index.php/journals/article/view/2052/1172"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
+            </div>
           </div>
           <div style={{ display: "flex", flex: 2 }}>
-            <div className={"mosaic-card content content-grief"}></div>
+            <div className={"mosaic-card content content-grief"}>
+              <span className="material-symbols-outlined">download</span>
+              <a href="/files/luto.pdf" download="luto.pdf"></a>
+            </div>
           </div>
           <div style={{ display: "flex", flex: 2 }}>
-            <div className={"mosaic-card content content-cycle"}></div>
+            <div className={"mosaic-card content content-cycle"}>
+              <span className="material-symbols-outlined">download</span>
+            </div>
           </div>
         </div>
       </div>
