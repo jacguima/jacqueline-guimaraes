@@ -15,6 +15,12 @@ const Navbar = ({
 }) => {
   const [isOpen, setOpen] = useState(false);
 
+  // Helper function to handle link clicks
+  const handleLinkClick = (scrollFunction) => () => {
+    setOpen(false); // Collapse the hamburger menu
+    scrollFunction(); // Scroll to the desired section
+  };
+
   return (
     <div className="container-wide">
       <div className={`navbar ${isOpen ? "menu-opened" : ""}`}>
@@ -27,11 +33,11 @@ const Navbar = ({
               onClick={scrollToHome}
             />
           </div>
-          <div className={"hamburger-btn-container"}>
+          <div className="hamburger-btn-container">
             <Hamburger
               size={28}
-              color={"#777e5c"}
-              distance={"sm"}
+              color="#777e5c"
+              distance="sm"
               toggled={isOpen}
               toggle={setOpen}
               hideOutline={false}
@@ -39,7 +45,6 @@ const Navbar = ({
             />
           </div>
           <div className="links links-navbar">
-            {/*<button onClick={scrollToHome}>Home</button>*/}
             <button onClick={scrollToSobreMim}>Sobre mim</button>
             <button onClick={scrollToPsicoterapia}>Psicoterapia</button>
             <button onClick={scrollToEspaco}>Espaço</button>
@@ -52,7 +57,7 @@ const Navbar = ({
               href="https://wa.me/5561992081099"
               className="wpp-btn"
             >
-              <img className={"navbar-wpp-logo"} src={WppLogo} alt="Wpp Logo" />
+              <img className="navbar-wpp-logo" src={WppLogo} alt="Wpp Logo" />
               Fale comigo
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,22 +75,25 @@ const Navbar = ({
             </a>
           </div>
         </div>
-        {/*<div className={"hamburger-links"}>*/}
         <div className="links links-hamburger">
-          {/*<button onClick={scrollToHome}>Home</button>*/}
-          <button onClick={scrollToSobreMim}>Sobre mim</button>
-          <button onClick={scrollToPsicoterapia}>Psicoterapia</button>
-          <button onClick={scrollToEspaco}>Espaço</button>
-          <button onClick={scrollToOpinioes}>Opiniões</button>
-          <button onClick={scrollToDuvidas}>Dúvidas</button>
-          <button onClick={scrollToBlog}>Blog: em breve!</button>
+          <button onClick={handleLinkClick(scrollToSobreMim)}>Sobre mim</button>
+          <button onClick={handleLinkClick(scrollToPsicoterapia)}>
+            Psicoterapia
+          </button>
+          <button onClick={handleLinkClick(scrollToEspaco)}>Espaço</button>
+          <button onClick={handleLinkClick(scrollToOpinioes)}>Opiniões</button>
+          <button onClick={handleLinkClick(scrollToDuvidas)}>Dúvidas</button>
+          <button onClick={handleLinkClick(scrollToBlog)}>
+            Blog: em breve!
+          </button>
           <a
             rel="noreferrer"
             target="_blank"
             href="https://wa.me/5561992081099"
             className="wpp-btn"
+            onClick={() => setOpen(false)}
           >
-            <img className={"navbar-wpp-logo"} src={WppLogo} alt="Wpp Logo" />
+            <img className="navbar-wpp-logo" src={WppLogo} alt="Wpp Logo" />
             Fale comigo
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +110,6 @@ const Navbar = ({
             </svg>
           </a>
         </div>
-        {/*</div>*/}
       </div>
     </div>
   );
