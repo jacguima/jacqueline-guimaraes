@@ -48,7 +48,7 @@ function App() {
         />
       </div>
       <div className="container">
-        <div ref={aboutMeRef}>
+        <div ref={aboutMeRef} className="scroll-section">
           <div className="about-me-mobile-container">
             <AboutMeMobile />
           </div>
@@ -57,11 +57,11 @@ function App() {
           </div>
         </div>
 
-        <div ref={servicesRef}>
+        <div ref={servicesRef} className="scroll-section">
           <Services />
         </div>
 
-        <div ref={spaceRef}>
+        <div ref={spaceRef} className="scroll-section">
           <div className="space-desktop-container">
             <SpaceDesktop />
           </div>
@@ -71,15 +71,15 @@ function App() {
           </div>
         </div>
 
-        <div ref={reviewsRef}>
+        <div ref={reviewsRef} className="scroll-section">
           <Reviews />
         </div>
 
-        <div ref={questionsRef}>
+        <div ref={questionsRef} className="scroll-section">
           <Questions />
         </div>
 
-        <div ref={mosaicRef}>
+        <div ref={mosaicRef} className="scroll-section">
           <div className="mosaic-desktop-container">
             <MosaicDesktop />
           </div>
@@ -88,7 +88,7 @@ function App() {
           </div>
         </div>
 
-        <div ref={footerRef}>
+        <div ref={footerRef} className="scroll-section">
           <Footer />
         </div>
 
