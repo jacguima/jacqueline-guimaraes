@@ -1,0 +1,23 @@
+.schedule-btn {
+    text-decoration: none;
+    font-size: var(--font-size-h3);
+    width: fit-content;
+    padding: .5rem 6rem;
+    border-radius: 999px;
+    border: none;
+    align-self: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
+
+    .schedule-btn-link {
+        text-decoration: none;
+        color: var(--main-green);
+        font-weight: 600;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    &:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    }
+}

@@ -1,11 +1,12 @@
 import "./about-me-desktop.css";
 import ProfilePicture from "../../assets/images/foto-jac.jpg";
+import ScheduleButton from "../../shared/schedule-button/schedule-button";
 
 const AboutMeDesktop = () => {
   return (
     <div className="about-me-desktop">
       <div className="about-me-bg"></div>
-      <div style={{height: '100%'}} className="container-narrow">
+      <div style={{ height: "100%" }} className="container-narrow">
         <div className="about-me-content">
           <div className="about-me-text">
             <div
@@ -32,16 +33,7 @@ const AboutMeDesktop = () => {
                 forma livre e confidencial.
               </p>
             </div>
-            <button className="schedule-btn">
-              <a
-                className="schedule-btn-link"
-                target="_blank"
-                rel="noreferrer"
-                href="https://wa.me/5561992081099"
-              >
-                AGENDAR
-              </a>
-            </button>
+            <ScheduleButton />
           </div>
           <div className="profile-picture-container">
             <div className="profile-picture-border">

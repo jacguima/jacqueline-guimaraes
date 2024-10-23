@@ -86,6 +86,22 @@
         opacity: 1;
     }
 
+    .schedule-container {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+
+        .schedule-text {
+            font-style: italic;
+            text-align: center;
+            font-family: Kalam, sans-serif;
+            max-width: 34rem;
+            margin-bottom: 1rem;
+        }
+    }
+
     @media (max-width: 992px) {
         .accordion-button {
             font-size: var(--font-size-base);

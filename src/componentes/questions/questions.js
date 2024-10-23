@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./questions.css";
+import ScheduleButton from "../../shared/schedule-button/schedule-button";
 
 const Questions = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -49,6 +50,13 @@ const Questions = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className={"schedule-container"}>
+          <p className={"schedule-text"}>
+            Para mais informações sobre o processo terapêutico, incluindo
+            valores das consultas, entre em contato pelo WhatsApp.
+          </p>
+          <ScheduleButton />
         </div>
       </div>
     </div>
