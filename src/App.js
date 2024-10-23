@@ -48,29 +48,37 @@ function App() {
         />
       </div>
       <div className="container">
-        <div className={"about-me-mobile-container"}>
-          <AboutMeMobile ref={aboutMeRef} />
+        <div className="about-me-mobile-container" ref={aboutMeRef}>
+          <AboutMeMobile />
         </div>
-        <div className={"about-me-desktop-container"}>
-          <AboutMeDesktop ref={aboutMeRef} />
+        <div className="about-me-desktop-container">
+          <AboutMeDesktop />
         </div>
-        <Services ref={servicesRef} />
-        <div className={"space-desktop-container"}>
-          <SpaceDesktop ref={spaceRef} />
+        <div ref={servicesRef}>
+          <Services />
         </div>
-        <div className={"space-mobile-container"}>
-          <SpaceMobile ref={spaceRef} />
+        <div className="space-desktop-container" ref={spaceRef}>
+          <SpaceDesktop />
+        </div>
+        <div className="space-mobile-container">
+          <SpaceMobile />
           <OnlineMobile />
         </div>
-        <Reviews ref={reviewsRef} />
-        <Questions ref={questionsRef} />
-        <div className={"mosaic-desktop-container"}>
-          <MosaicDesktop ref={mosaicRef} />
+        <div ref={reviewsRef}>
+          <Reviews />
         </div>
-        <div className={"mosaic-mobile-container"}>
-          <MosaicMobile ref={mosaicRef} />
+        <div ref={questionsRef}>
+          <Questions />
         </div>
-        <Footer ref={footerRef} />
+        <div className="mosaic-desktop-container" ref={mosaicRef}>
+          <MosaicDesktop />
+        </div>
+        <div className="mosaic-mobile-container">
+          <MosaicMobile />
+        </div>
+        <div ref={footerRef}>
+          <Footer />
+        </div>
         <Wpp />
       </div>
     </div>
