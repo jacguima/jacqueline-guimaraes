@@ -109,13 +109,13 @@ const Mosaic = () => {
             </div>
           </div>
           <div style={{ display: "flex", flex: 2 }}>
-            <div className={"mosaic-card soon"}></div>
+            <div className={"mosaic-card content content-love"}></div>
           </div>
           <div style={{ display: "flex", flex: 2 }}>
-            <div className={"mosaic-card soon"}></div>
+            <div className={"mosaic-card content content-grief"}></div>
           </div>
           <div style={{ display: "flex", flex: 2 }}>
-            <div className={"mosaic-card soon"}></div>
+            <div className={"mosaic-card content content-cycle"}></div>
           </div>
         </div>
       </div>

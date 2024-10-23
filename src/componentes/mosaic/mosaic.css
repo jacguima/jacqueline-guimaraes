@@ -27,7 +27,7 @@
         color: #292929;
 
         h3 {
-        font-size: 1.5rem;
+            font-size: 1.5rem;
         }
 
         img {
@@ -89,6 +89,23 @@
         color: #292929;
     }
 
-    .ebook {
+    .mosaic-card.content {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &.content-love {
+            background-image: url("../../assets/images/ebooklinguagensdoamor.png");
+        }
+
+        &.content-grief {
+            background-image: url("../../assets/images/luto.jpg");
+            background-size: 124%;
+        }
+
+        &.content-cycle {
+            background-image: url("../../assets/images/ebookciclomenstrual.png");
+            background-position-x: right;
+        }
     }
 }
