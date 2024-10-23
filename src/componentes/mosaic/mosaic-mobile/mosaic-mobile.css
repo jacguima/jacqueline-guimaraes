@@ -169,10 +169,9 @@
     }
 
     @media (max-width: 480px) {
-
-    .middle-container {
-        flex: 1.5;
-    }
+        .middle-container {
+            flex: 1.5;
+        }
 
         .mosaic-card.content {
             span {
