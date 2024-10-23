@@ -1,6 +1,7 @@
 import React from "react";
 import "./mosaic.css";
 import Doc from "../../assets/images/document.png";
+import ArrowRightCircleOutlined from "../../shared/arrow-right-circle-outlined";
 
 const defaultGap = "1rem";
 
@@ -27,7 +28,16 @@ const Mosaic = () => {
               </div>
             </div>
             <div style={{ display: "flex", flex: 4 }}>
-              <div className={"mosaic-card article"}></div>
+              <div className={"mosaic-card article"}>
+                <a
+                  href="https://peerw.org/index.php/journals/article/view/2052/1172"
+                  target="_blank"
+                  rel="noreferrer"
+                ></a>
+                <h3>Artigo publicado:</h3>
+                <p>Análise Fílmica De “Tudo Em Todo Lugar..."</p>
+                <ArrowRightCircleOutlined />
+              </div>
             </div>
           </div>
 

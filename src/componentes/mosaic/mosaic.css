@@ -1,12 +1,22 @@
 .mosaic-section {
     margin: 8rem 0;
-    height: 40rem;
+    height: 36rem;
     display: flex;
 
     .mosaic-card {
         border-radius: 2rem;
         flex: 1;
         display: flex;
+
+        &:not(.soon) {
+            transition: transform .3s ease, box-shadow .3s ease;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        }
     }
 
     .blog {
@@ -22,7 +32,32 @@
     }
 
     .article {
-        background: green;
+        background-image: url("../../assets/images/artigo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 1rem;
+        position: relative;
+        color: #292929;
+
+        a {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        h3 {
+            font-weight: 400;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
     }
 
     .soon {
