@@ -1,0 +1,31 @@
+.mosaic-section {
+    margin: 8rem 0;
+    height: 40rem;
+    display: flex;
+
+    .mosaic-card {
+        border-radius: 2rem;
+        flex: 1;
+        display: flex;
+    }
+
+    .blog {
+        background: #f1f0e8;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        color: #292929;
+
+        img {
+            width: 2rem;
+        }
+    }
+
+    .article {
+        background: green;
+    }
+
+    .soon {
+        background: blue;
+    }
+}

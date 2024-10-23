@@ -14,13 +14,14 @@ import BlogMob from "./componentes/BlogMob";
 import AboutMeMobile from "./componentes/about-me-mobile/about-me-mobile";
 import SpaceMobile from "./componentes/space-mobile/space-mobile";
 import OnlineMobile from "./componentes/online-mobile/online-mobile";
+import Mosaic from "./componentes/mosaic/mosaic";
 
 function App() {
   const aboutMeRef = useRef(null);
   const servicesRef = useRef(null);
   const spaceRef = useRef(null);
-  const duvidasRef = useRef(null);
-  const blogRef = useRef(null);
+  const questionsRef = useRef(null);
+  const mosaicRef = useRef(null);
   const reviewsRef = useRef(null);
   const contatosRef = useRef(null);
 
@@ -34,7 +35,7 @@ function App() {
         scrollToPsicoterapia={scrollToRef(servicesRef)}
         scrollToEspaco={scrollToRef(spaceRef)}
         scrollToContatos={scrollToRef(contatosRef)}
-        scrollToBlog={scrollToRef(blogRef)}
+        scrollToBlog={scrollToRef(mosaicRef)}
       />
       <div className="colado">
         <Navbar
@@ -42,9 +43,9 @@ function App() {
           scrollToSobreMim={scrollToRef(aboutMeRef)}
           scrollToPsicoterapia={scrollToRef(servicesRef)}
           scrollToEspaco={scrollToRef(spaceRef)}
-          scrollToBlog={scrollToRef(blogRef)}
+          scrollToBlog={scrollToRef(mosaicRef)}
           scrollToOpinioes={scrollToRef(reviewsRef)}
-          scrollToDuvidas={scrollToRef(duvidasRef)}
+          scrollToDuvidas={scrollToRef(questionsRef)}
         />
       </div>
       <div className="container">
@@ -63,12 +64,8 @@ function App() {
           <OnlineMobile />
         </div>
         <Reviews ref={reviewsRef} />
-        <div ref={duvidasRef}>
-          <Questions />
-        </div>
-        {/*<div ref={blogRef}>*/}
-        {/*  <Blog />*/}
-        {/*</div>*/}
+        <Questions ref={questionsRef} />
+        <Mosaic ref={mosaicRef} />
 
         {/*<div>*/}
         {/*  <BlogMob />*/}
