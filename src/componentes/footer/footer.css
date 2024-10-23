@@ -1,0 +1,142 @@
+.footer-section {
+    background: #a9b475;
+    color: white;
+
+    .contact-list-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        flex: 1;
+    }
+
+    .logo-wrapper {
+        display: flex;
+        flex: 1;
+    }
+
+    .top-container, .bottom-container {
+        display: flex;
+    }
+
+    .top-container {
+        align-items: center;
+    }
+
+    .logo-img {
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .contact-icon {
+        width: 2rem;
+        height: auto;
+    }
+
+    .contact-item-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .contact-icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .policy-end-container {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .policy-start-container {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .policy-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .bottom-container {
+        flex-direction: column;
+        border-top: 1px solid white;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        gap: 4rem;
+    }
+
+    .policy-icon-wrapper {
+        height: 1.5rem;
+        width: auto;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .contact-icon {
+            width: 1.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .contact-list-container {
+            gap: 1rem;
+        }
+
+        .contact-icon {
+            width: 1.25rem;
+        }
+
+        .policy-start-container {
+            gap: 1rem;
+        }
+
+        .policy-icon-wrapper {
+            gap: 1rem;
+        }
+
+        .policy-icon-wrapper {
+            height: 1.25rem;
+        }
+    }
+
+
+    @media (max-width: 576px) {
+        padding-top: 3rem;
+
+        .top-container {
+            flex-direction: column;
+        }
+
+        .logo-img {
+            max-width: 26rem;
+        }
+
+        .contact-item-container {
+            gap: .5rem;
+            justify-content: center;
+        }
+
+        .policy-container {
+            flex-direction: column-reverse;
+            gap: 4rem;
+        }
+
+        .bottom-container {
+            padding-top: 1rem;
+            gap: 1rem;
+        }
+
+        .rights-container {
+            text-align: center;
+        }
+    }
+}

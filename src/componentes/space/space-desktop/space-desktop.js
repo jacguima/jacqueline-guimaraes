@@ -1,9 +1,9 @@
 import "./space-desktop.css";
-import MapSouth from "../../assets/images/south.png";
-import MapNorth from "../../assets/images/north.png";
-import Pin from "../../assets/images/pin.png";
-import Phone from "../../assets/images/phone.png";
-import CheckIcon from "../../shared/check-icon";
+import MapSouth from "../../../assets/images/south.png";
+import MapNorth from "../../../assets/images/north.png";
+import Pin from "../../../assets/images/pin.png";
+import Phone from "../../../assets/images/phone.png";
+import CheckIcon from "../../../shared/check-icon";
 
 const SpaceDesktop = () => {
   return (

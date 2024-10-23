@@ -1,21 +1,19 @@
 import React, { useRef } from "react";
 import "./App.css";
 import Navbar from "./componentes/navbar/navbar";
-import Blog from "./componentes/Blog";
 import Questions from "./componentes/questions/questions";
-import SpaceDesktop from "./componentes/space-desktop/space-desktop";
+import SpaceDesktop from "./componentes/space/space-desktop/space-desktop";
 import Home from "./componentes/home/home";
 import Reviews from "./componentes/reviews/reviews";
 import Services from "./componentes/services/services";
-import Rodape from "./componentes/Rodape";
-import AboutMeDesktop from "./componentes/about-me-desktop/about-me-desktop";
+import AboutMeDesktop from "./componentes/about-me/about-me-desktop/about-me-desktop";
 import Wpp from "./componentes/Wpp";
-import BlogMob from "./componentes/BlogMob";
-import AboutMeMobile from "./componentes/about-me-mobile/about-me-mobile";
-import SpaceMobile from "./componentes/space-mobile/space-mobile";
+import AboutMeMobile from "./componentes/about-me/about-me-mobile/about-me-mobile";
+import SpaceMobile from "./componentes/space/space-mobile/space-mobile";
 import OnlineMobile from "./componentes/online-mobile/online-mobile";
 import MosaicDesktop from "./componentes/mosaic/mosaic-desktop/mosaic-desktop";
 import MosaicMobile from "./componentes/mosaic/mosaic-mobile/mosaic-mobile";
+import Footer from "./componentes/footer/footer";
 
 function App() {
   const aboutMeRef = useRef(null);
@@ -24,7 +22,7 @@ function App() {
   const questionsRef = useRef(null);
   const mosaicRef = useRef(null);
   const reviewsRef = useRef(null);
-  const contatosRef = useRef(null);
+  const footerRef = useRef(null);
 
   const scrollToRef = (ref) => () =>
     ref.current.scrollIntoView({ behavior: "smooth" });
@@ -35,7 +33,7 @@ function App() {
         scrollToSobreMim={scrollToRef(aboutMeRef)}
         scrollToPsicoterapia={scrollToRef(servicesRef)}
         scrollToEspaco={scrollToRef(spaceRef)}
-        scrollToContatos={scrollToRef(contatosRef)}
+        scrollToContatos={scrollToRef(footerRef)}
         scrollToBlog={scrollToRef(mosaicRef)}
       />
       <div className="colado">
@@ -72,14 +70,7 @@ function App() {
         <div className={"mosaic-mobile-container"}>
           <MosaicMobile ref={mosaicRef} />
         </div>
-
-        {/*<div>*/}
-        {/*  <BlogMob />*/}
-        {/*</div>*/}
-
-        {/*<div ref={contatosRef}>*/}
-        {/*  <Rodape />*/}
-        {/*</div>*/}
+        <Footer ref={footerRef} />
         {/*<Wpp />*/}
       </div>
     </div>

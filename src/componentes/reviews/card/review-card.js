@@ -1,7 +1,7 @@
 import "./review-card.css";
 import React from "react";
 import DoctaraliaIcon from "../../../assets/images/doctoria.png";
-import GoogleIcon from "../../UI/google";
+import GoogleIcon from "../../../shared/google";
 
 const ReviewCard = ({ author, content, link }) => {
   const renderSourceIcon = () => {

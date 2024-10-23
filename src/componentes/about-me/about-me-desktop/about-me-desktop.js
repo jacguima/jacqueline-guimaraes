@@ -1,6 +1,6 @@
 import "./about-me-desktop.css";
-import ProfilePicture from "../../assets/images/foto-jac.jpg";
-import ScheduleButton from "../../shared/schedule-button/schedule-button";
+import ProfilePicture from "../../../assets/images/foto-jac.jpg";
+import ScheduleButton from "../../../shared/schedule-button/schedule-button";
 
 const AboutMeDesktop = () => {
   return (

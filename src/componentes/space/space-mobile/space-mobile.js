@@ -1,6 +1,6 @@
 import "./space-mobile.css";
-import MapSouth from "../../assets/images/south.png";
-import MapNorth from "../../assets/images/north.png";
+import MapSouth from "../../../assets/images/south.png";
+import MapNorth from "../../../assets/images/north.png";
 
 const SpaceMobile = () => {
   return (

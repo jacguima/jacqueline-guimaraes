@@ -1,5 +1,5 @@
 import "./about-me-mobile.css";
-import ProfileBG from "../../assets/images/about-me-profile.png";
+import ProfileBG from "../../../assets/images/about-me-profile.png";
 
 const AboutMeMobile = () => {
   return (
