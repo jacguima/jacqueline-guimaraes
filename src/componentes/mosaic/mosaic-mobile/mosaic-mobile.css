@@ -142,7 +142,7 @@
 
         &.content-grief {
             background-image: url("../../../assets/images/luto.jpg");
-            background-size: 124%;
+            background-size: cover;
 
             span {
                 color: #9b5ed1;
