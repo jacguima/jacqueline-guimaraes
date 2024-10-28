@@ -33,6 +33,7 @@
             white-space: nowrap;
             border-radius: 999px;
             background: var(--main-green-really-light);
+            color: var(--kinda-black);
             width: 100%;
             letter-spacing: 0.04em;
             cursor: pointer;
