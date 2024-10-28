@@ -47,6 +47,8 @@
     .policy-end-container {
         display: flex;
         gap: 1.5rem;
+        justify-content: center;
+        width: fit-content;
     }
 
     .policy-start-container {
