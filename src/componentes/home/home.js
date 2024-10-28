@@ -10,15 +10,15 @@ const Home = ({
   scrollToSobreMim,
   scrollToPsicoterapia,
   scrollToEspaco,
-  scrollToContatos,
   scrollToBlog,
 }) => {
+  const openWhatsApp = () => {
+    window.open("https://wa.me/5561992081099", "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className="home-bg">
       <div className="container-narrow">
-        {/* <div className="bg-video">
-        <video src={VideoBg} autoPlay loop muted />
-      </div> */}
         <div className="home-wrapper">
           <div className="logo-container">
             <img className="logo" src={LogoBranca} alt="logo" />
@@ -27,7 +27,7 @@ const Home = ({
             <button onClick={scrollToSobreMim}>sobre mim</button>
             <button onClick={scrollToPsicoterapia}>psicoterapia</button>
             <button onClick={scrollToEspaco}>espaço</button>
-            <button onClick={scrollToContatos}>entre em contato</button>
+            <button onClick={openWhatsApp}>entre em contato</button>
             <button onClick={scrollToBlog}>blog: em breve!</button>
             <div className="contact">
               <a

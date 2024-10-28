@@ -33,7 +33,6 @@ function App() {
         scrollToSobreMim={scrollToRef(aboutMeRef)}
         scrollToPsicoterapia={scrollToRef(servicesRef)}
         scrollToEspaco={scrollToRef(spaceRef)}
-        scrollToContatos={scrollToRef(footerRef)}
         scrollToBlog={scrollToRef(mosaicRef)}
       />
       <div className="colado">
