@@ -3,6 +3,22 @@ import MapSouth from "../../../assets/images/south.png";
 import MapNorth from "../../../assets/images/north.png";
 
 const SpaceMobile = () => {
+  const openNorthMap = () => {
+    window.open(
+      "https://maps.app.goo.gl/V99mxENYgtX7sw3X9",
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
+
+  const openSouthMap = () => {
+    window.open(
+      "https://maps.app.goo.gl/qDwMQZnpSivMpLRi7",
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
+
   return (
     <div className="space-section-mobile">
       <div
@@ -23,7 +39,9 @@ const SpaceMobile = () => {
               <h2 className={"address-title"}>Asa Norte</h2>
               <h3 className={"address-details"}>Shopping ID</h3>
             </div>
-            <button className={"card-button"}>Como chegar</button>
+            <button className={"card-button"} onClick={openNorthMap}>
+              Como chegar
+            </button>
           </div>
           <div className={"card"}>
             <div className={"card-map-img-wrapper"}>
@@ -35,7 +53,9 @@ const SpaceMobile = () => {
                 Ed. San Marino - SEP Sul <br /> Quadra 707/907
               </h3>
             </div>
-            <button className={"card-button"}>Como chegar</button>
+            <button className={"card-button"} onClick={openSouthMap}>
+              Como chegar
+            </button>
           </div>
         </div>
       </div>
