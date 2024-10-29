@@ -7,7 +7,7 @@ import Home from "./componentes/home/home";
 import Reviews from "./componentes/reviews/reviews";
 import Services from "./componentes/services/services";
 import AboutMeDesktop from "./componentes/about-me/about-me-desktop/about-me-desktop";
-import Wpp from "./componentes/Wpp";
+import Whatsapp from "./componentes/whatsapp/whatsapp";
 import AboutMeMobile from "./componentes/about-me/about-me-mobile/about-me-mobile";
 import SpaceMobile from "./componentes/space/space-mobile/space-mobile";
 import OnlineMobile from "./componentes/online-mobile/online-mobile";
@@ -91,7 +91,7 @@ function App() {
           <Footer />
         </div>
 
-        <Wpp />
+        <Whatsapp />
       </div>
     </div>
   );
