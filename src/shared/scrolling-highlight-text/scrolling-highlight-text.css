@@ -1,0 +1,18 @@
+.scrolling-highlight-text {
+  position: relative;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  overflow: hidden;
+        z-index: 2;
+}
+
+.scrolling-highlight-text .highlight-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0; /* Starts with 0% width */
+  background-color: yellow; /* Default color, will be overridden by props */
+  transition: width .5s ease-out; /* Default duration, overridden by props */
+  z-index: -1;
+}

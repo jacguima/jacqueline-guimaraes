@@ -186,27 +186,9 @@
         justify-content: center;
     }
 
-    .highlight-text {
-        position: relative;
-        display: inline-block;
-        padding: 0.25rem 0.75rem;
-        border-radius: 0.5rem;
+    .online-subtitle {
         font-weight: 600;
-        overflow: hidden; /* Ensure the highlight-bg is clipped by the border-radius */
-        background-color: transparent; /* Ensure no background color conflicts */
-        z-index: 2;
-    }
-
-    .highlight-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 0%; /* Start with 0% width */
-        background-color: var(--beige); /* Replace with your desired highlight color */
-        border-radius: 0.5rem; /* Match the parent border-radius */
-        transition: width 0.4s ease-out; /* Animate the width change */
-        z-index: -1; /* Place it behind the text */
+        text-align: center;
     }
 
     @media (max-width: 992px) {

@@ -5,6 +5,7 @@ import Pin from "../../../assets/images/pin.png";
 import Phone from "../../../assets/images/phone.png";
 import CheckIcon from "../../../shared/check-icon";
 import { useEffect, useRef } from "react";
+import ScrollingHighlightText from "../../../shared/scrolling-highlight-text/scrolling-highlight-text";
 
 const SpaceDesktop = () => {
   const highlightRef = useRef(null);
@@ -112,12 +113,11 @@ const SpaceDesktop = () => {
               <div style={{ display: "flex", flex: 1 }}></div>
             </div>
             <div>
-              <p style={{ textAlign: "center" }}>
-                <span className="highlight-text" ref={highlightRef}>
-                  <span className="highlight-bg"></span>
+              <p className={"online-subtitle"}>
+                <ScrollingHighlightText highlightColor="var(--beige)">
                   Sessões 100% online para brasileiros em qualquer lugar do
                   mundo!
-                </span>
+                </ScrollingHighlightText>
               </p>
             </div>
             <div className={"checks-phone-container"}>
