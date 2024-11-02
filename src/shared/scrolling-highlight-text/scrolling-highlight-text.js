@@ -3,7 +3,7 @@ import "./scrolling-highlight-text.css";
 
 const ScrollingHighlightText = ({
   children,
-  startPointRatio = 0.95,
+  startPointRatio = 1,
   endPointRatio = 0.5,
   highlightColor = "yellow",
   borderRadius = "0.5rem",
