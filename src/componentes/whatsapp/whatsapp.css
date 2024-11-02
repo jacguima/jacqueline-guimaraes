@@ -1,7 +1,7 @@
 .whatsapp-container {
     position: fixed;
     z-index: 99;
-    bottom: 10rem;
+    bottom: 12rem;
     transform: translateX(-50%);
     left: 50%;
     display: flex;
@@ -66,6 +66,6 @@
 
 @media (max-width: 576px) {
     .whatsapp-container {
-        bottom: 1rem;
+        bottom: 2rem;
     }
 }

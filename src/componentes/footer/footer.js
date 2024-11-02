@@ -97,6 +97,17 @@ const Footer = () => {
             </div>
             <div className={"rights-container"}>
               <p>© 2023 Jacqueline Guimarães ∙ Todos os direitos reservados</p>
+              <p className={"mauricio-azevedo-container"}>
+                <b>Desenvolvido por</b>:{" "}
+                <a
+                  className={"mauricio-azevedo"}
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://wa.me/5561920007402"
+                >
+                  Maurício Azevedo
+                </a>
+              </p>
             </div>
           </div>
         </div>

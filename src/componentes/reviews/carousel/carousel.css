@@ -1,38 +1,3 @@
-.carousel {
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-.slick-slide {
-    display: flex;
-    justify-content: center;
-}
-
-.rating {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-}
-
-.rating .fa-star,
-.rating .fa-star-half-alt,
-.rating .fa-star-outline {
-    color: gold;
-    margin: 0 2px;
-}
-
-.source-icon .fa-google {
-    color: #db4437;
-}
-
-.source-icon .fa-app-store-ios {
-    color: #000;
-}
-
 .carousel-container {
     position: relative;
     display: flex;
@@ -40,58 +5,93 @@ a {
     flex-direction: column;
     align-items: center;
     padding: 4rem 0;
-}
 
-.carousel-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 1;
-    background: linear-gradient(to right, rgba(210, 216, 190, 1) 0%, rgba(210, 216, 190, 0) 5%, rgba(210, 216, 190, 0) 50%, rgba(210, 216, 190, 0) 95%, rgba(210, 216, 190, 1) 100%);
-}
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+        background: linear-gradient(to right, rgba(210, 216, 190, 1) 0%, rgba(210, 216, 190, 0) 5%, rgba(210, 216, 190, 0) 50%, rgba(210, 216, 190, 0) 95%, rgba(210, 216, 190, 1) 100%);
+    }
 
-.custom-arrows {
-    display: flex;
-    justify-content: center; /* Center the arrows horizontally */
-    align-items: center;
-    margin-top: 1rem;
-}
+    .carousel {
+        width: 100%;
+    }
 
-.custom-arrows button {
-    line-height: 0;
-    background-color: rgba(0, 0, 0, 0.2); /* Darker shade on hover */
-    color: white; /* Arrow color */
-    border: none;
-    padding: 10px;
-    margin: 0 5px; /* Space between the buttons */
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.custom-arrows button:hover {
-    background-color: rgba(0, 0, 0, 0.4); /* Darker shade on hover */
-}
-
-.custom-arrows button:focus {
-    outline: none;
-}
-
-@media (min-width: 1000px) {
-    .slick-list {
-        padding: 2.6rem 0 !important;
+    a {
+        text-decoration: none;
     }
 
     .slick-slide {
-        transition: transform .6s ease-in-out;
+        display: flex;
+        justify-content: center;
     }
 
-    .slick-center {
-        transform: scale(1.2);
+    .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .rating .fa-star,
+    .rating .fa-star-half-alt,
+    .rating .fa-star-outline {
+        color: gold;
+        margin: 0 2px;
+    }
+
+    .source-icon .fa-google {
+        color: #db4437;
+    }
+
+    .source-icon .fa-app-store-ios {
+        color: #000;
+    }
+
+    .custom-arrows {
+        display: flex;
+        justify-content: center; /* Center the arrows horizontally */
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .custom-arrows button {
+        line-height: 0;
+        background-color: rgba(0, 0, 0, 0.2); /* Darker shade on hover */
+        color: white; /* Arrow color */
+        border: none;
+        padding: 10px;
+        margin: 0 5px; /* Space between the buttons */
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .custom-arrows button:hover {
+        background-color: rgba(0, 0, 0, 0.4); /* Darker shade on hover */
+    }
+
+    .custom-arrows button:focus {
+        outline: none;
+    }
+
+    @media (min-width: 1000px) {
+        .slick-list {
+            padding: 2.6rem 0 !important;
+        }
+
+        .slick-slide {
+            transition: transform .6s ease-in-out;
+        }
+
+        .slick-center {
+            transform: scale(1.2);
+        }
     }
 }

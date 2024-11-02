@@ -84,6 +84,50 @@
         }
     }
 
+    .rights-container {
+        text-align: center;
+    }
+
+    .mauricio-azevedo-container {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .25rem;
+    }
+
+    .mauricio-azevedo {
+        position: relative;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        overflow: hidden;
+        z-index: 0;
+        padding: .25rem .75rem;
+        border-radius: .75rem;
+    }
+
+    /* Creating the highlight effect */
+
+    .mauricio-azevedo::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: var(--main-green); /* Choose your highlight color */
+        transition: width 0.3s ease-in-out;
+        z-index: -1; /* Places highlight behind text */
+        border-radius: .75rem;
+    }
+
+    /* Hover effect */
+
+    .mauricio-azevedo:hover::before {
+        width: 100%;
+    }
+
     @media (max-width: 1200px) {
         .contact-icon {
             width: 1.5rem;
@@ -139,8 +183,9 @@
             gap: 1rem;
         }
 
-        .rights-container {
-            text-align: center;
+        .mauricio-azevedo {
+            padding: 0;
+            text-decoration: underline;
         }
     }
 }
