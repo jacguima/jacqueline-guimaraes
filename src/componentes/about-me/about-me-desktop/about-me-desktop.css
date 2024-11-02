@@ -41,6 +41,10 @@
         gap: 3rem;
         text-align: justify;
         font-weight: 300;
+
+        p {
+            font-size: 1.25rem;
+        }
     }
 
     .about-me-content {
