@@ -1,5 +1,6 @@
 import "./about-me-mobile.css";
 import ProfileBG from "../../../assets/images/about-me-profile.png";
+import ScheduleButton from "../../../shared/schedule-button/schedule-button";
 
 const AboutMeMobile = () => {
   return (
@@ -23,6 +24,9 @@ const AboutMeMobile = () => {
             meus Clientes possam explorar suas emoções e pensamentos de forma
             livre e confidencial.
           </p>
+        </div>
+        <div style={{ marginTop: "2rem" }}>
+          <ScheduleButton />
         </div>
       </div>
     </div>
