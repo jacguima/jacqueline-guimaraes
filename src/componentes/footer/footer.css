@@ -105,6 +105,7 @@
         z-index: 0;
         padding: .25rem .5rem;
         border-radius: .75rem;
+        transition: color 0.6s ease-in-out;
     }
 
     /* Creating the highlight effect */
@@ -116,7 +117,8 @@
         left: 0;
         width: 0;
         height: 100%;
-        background-color: var(--main-green); /* Choose your highlight color */
+        /*background-color: var(--main-green); !* Choose your highlight color *!*/
+        background-color: white; /* Choose your highlight color */
         transition: width 0.3s ease-in-out;
         z-index: -1; /* Places highlight behind text */
         border-radius: .75rem;
@@ -124,8 +126,12 @@
 
     /* Hover effect */
 
-    .mauricio-azevedo:hover::before {
-        width: 100%;
+    .mauricio-azevedo:hover {
+        color: #444;
+
+        &::before {
+            width: 100%;
+        }
     }
 
     @media (max-width: 1200px) {
