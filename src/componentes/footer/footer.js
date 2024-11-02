@@ -47,7 +47,11 @@ const Footer = () => {
               </div>
               <div
                 className={"contact-item-container"}
-                onClick={() => openLink("https://wa.me/5561992081099")}
+                onClick={() =>
+                  openLink(
+                    "https://docs.google.com/forms/d/e/1FAIpQLScIrmm5u32gXkl9oTwN9-srG2tLrdUdbKQp4VjwrqVfB2w4Yw/viewform",
+                  )
+                }
               >
                 <div className={"contact-icon-wrapper"}>
                   <svg
@@ -82,16 +86,38 @@ const Footer = () => {
               </div>
               <div className={"policy-end-container"}>
                 <div className={"policy-icon-wrapper"}>
-                  <img src={InstaLogo} alt="" />
+                  <img
+                    src={InstaLogo}
+                    alt="instagram"
+                    onClick={() => openLink("https://www.instagram.com")}
+                  />
                 </div>
                 <div className={"policy-icon-wrapper"}>
-                  <img src={MailLogo} alt="email" />
+                  <img
+                    src={MailLogo}
+                    alt="email"
+                    onClick={() =>
+                      openLink("mailto:jacqueline.g.nunes@gmail.com")
+                    }
+                  />
                 </div>
                 <div className={"policy-icon-wrapper"}>
-                  <img src={WppBranco} alt="wpp" />
+                  <img
+                    src={WppBranco}
+                    alt="wpp"
+                    onClick={() => openLink("https://wa.me/5561992081099")}
+                  />
                 </div>
                 <div className={"policy-icon-wrapper"}>
-                  <img src={Linktree} alt="linktree" />
+                  <img
+                    src={Linktree}
+                    alt="linktree"
+                    onClick={() =>
+                      openLink(
+                        "https://linktr.ee/psijacquelineguimaraes?utm_source=linktree_admin_share",
+                      )
+                    }
+                  />
                 </div>
               </div>
             </div>
