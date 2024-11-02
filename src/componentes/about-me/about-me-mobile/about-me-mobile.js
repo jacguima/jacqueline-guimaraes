@@ -11,18 +11,24 @@ const AboutMeMobile = () => {
         </div>
         <div className={"paragraphs-container"}>
           <p>
-            Graduada pelo UniCEUB e inscrita no Conselho Regional de Psicologia
-            CRP - 01/25708.
+            Graduada em Psicologia pelo UniCEUB e inscrita no Conselho Regional
+            de Psicologia CRP - 01/25708.
           </p>
           <p>
             Adoto os princípios éticos e técnicos da Psicologia Humanista em
-            minha prática clínica, sendo especialista na Abordagem Centrada na
-            Pessoa (ACP) pela UNEPOS.
+            minha prática clínica, sendo{" "}
+            <b>Especialista na Abordagem Centrada na Pessoa (ACP)</b> pela
+            UNEPOS.
           </p>
           <p>
             Proporciono um ambiente ético, confidencial e acolhedor a fim de que
-            meus Clientes possam explorar suas emoções e pensamentos de forma
-            livre e confidencial.
+            possa explorar suas emoções e pensamentos de forma livre e
+            confidencial.
+          </p>
+          <p>
+            Atualmente atendo na modalidade online pacientes de qualquer lugar
+            do mundo. Construo com estudo, escuta e cuidado uma clínica pensando
+            nas demandas de <b>adolescentes e adultos</b>.
           </p>
         </div>
         <div style={{ marginTop: "2rem" }}>
