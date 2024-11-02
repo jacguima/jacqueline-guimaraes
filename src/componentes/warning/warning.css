@@ -1,0 +1,11 @@
+.warning-section {
+    background: white;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    margin-bottom: 4rem;
+
+    p {
+        text-align: center;
+        font-size: var(--font-size-small);
+    }
+}
