@@ -6,6 +6,7 @@ import NumberOne from "../../assets/images/1.png";
 import NumberTwo from "../../assets/images/2.png";
 import NumberThree from "../../assets/images/3.png";
 import CheckCircleIcon from "../../shared/check-circle-icon";
+import ScrollingHighlightText from "../../shared/scrolling-highlight-text/scrolling-highlight-text";
 
 const Services = () => {
   return (
@@ -48,7 +49,14 @@ const Services = () => {
                 <h2 className={"services-detailed-title"}>
                   Psicoterapia individual
                 </h2>
-                <h3 className={"online-on-site"}>online e presencial</h3>
+                <h3 className={"online-on-site"}>
+                  <ScrollingHighlightText
+                    highlightColor="var(--main-green-really-light"
+                    textPadding="0 .75rem"
+                  >
+                    online e presencial
+                  </ScrollingHighlightText>
+                </h3>
                 <p className={"service-details-paragraph"}>
                   Imagine um espaço seguro e acolhedor, onde você recebe suporte
                   profissional e especializado para explorar seus pensamentos e

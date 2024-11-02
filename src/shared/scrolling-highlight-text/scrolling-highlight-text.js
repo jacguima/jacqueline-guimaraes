@@ -8,6 +8,7 @@ const ScrollingHighlightText = ({
   highlightColor = "yellow",
   borderRadius = "0.5rem",
   transitionDuration = "0.5s",
+  textPadding = "0.25rem 0.75rem",
 }) => {
   const highlightRef = useRef(null);
 
@@ -53,6 +54,7 @@ const ScrollingHighlightText = ({
 
   useEffect(() => {
     if (highlightRef.current) {
+      highlightRef.current.style.padding = textPadding;
       const highlightBg = highlightRef.current.querySelector(".highlight-bg");
       if (highlightBg) {
         highlightBg.style.backgroundColor = highlightColor;
