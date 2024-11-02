@@ -4,7 +4,7 @@ import LogoInsta from "../../assets/images/insta-logo.png";
 import LogoMail from "../../assets/images/email-logo.png";
 import LogoWpp from "../../assets/images/wpp-logo.png";
 import LogoLink from "../../assets/images/logo-link.png";
-import LogoBranca from "../../assets/images/LogoSemSombra.png";
+import LogoBranca from "../../assets/images/logo-branca.png";
 
 const Home = ({
   scrollToSobreMim,
