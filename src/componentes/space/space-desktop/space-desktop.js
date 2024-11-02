@@ -4,8 +4,51 @@ import MapNorth from "../../../assets/images/north.png";
 import Pin from "../../../assets/images/pin.png";
 import Phone from "../../../assets/images/phone.png";
 import CheckIcon from "../../../shared/check-icon";
+import { useEffect, useRef } from "react";
 
 const SpaceDesktop = () => {
+  const highlightRef = useRef(null);
+
+  useEffect(() => {
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (highlightRef.current) {
+            const rect = highlightRef.current.getBoundingClientRect();
+            const windowHeight =
+              window.innerHeight || document.documentElement.clientHeight;
+
+            const startPoint = windowHeight * 0.95;
+            const endPoint = windowHeight * 0.5;
+
+            const progress = (startPoint - rect.top) / (startPoint - endPoint);
+            const clampedProgress = Math.max(0, Math.min(progress, 1));
+
+            const highlightBg =
+              highlightRef.current.querySelector(".highlight-bg");
+            if (highlightBg) {
+              highlightBg.style.width = `${clampedProgress * 100}%`;
+            }
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll);
+
+    handleScroll(); // Initial call
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="space-section">
       <div
@@ -67,6 +110,15 @@ const SpaceDesktop = () => {
                 <h3 className={"online-on-site-text"}>Atendimento Online</h3>
               </div>
               <div style={{ display: "flex", flex: 1 }}></div>
+            </div>
+            <div>
+              <p style={{ textAlign: "center" }}>
+                <span className="highlight-text" ref={highlightRef}>
+                  <span className="highlight-bg"></span>
+                  Sessões 100% online para brasileiros em qualquer lugar do
+                  mundo!
+                </span>
+              </p>
             </div>
             <div className={"checks-phone-container"}>
               <div
