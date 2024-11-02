@@ -6,6 +6,7 @@ import MailLogo from "../../assets/images/email-logo.png";
 import Linktree from "../../assets/images/logo-link.png";
 import WppBranco from "../../assets/images/wpp-logo.png";
 import InstaLogo from "../../assets/images/insta-logo.png";
+import { openLink } from "../../shared/utils";
 
 const Footer = () => {
   return (
@@ -14,7 +15,10 @@ const Footer = () => {
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div className={"top-container"}>
             <div className={"contact-list-container"}>
-              <div className={"contact-item-container"}>
+              <div
+                className={"contact-item-container"}
+                onClick={() => openLink("https://wa.me/5561992081099")}
+              >
                 <div className={"contact-icon-wrapper"}>
                   <img
                     className={"contact-icon"}
@@ -26,7 +30,10 @@ const Footer = () => {
                   <p>+55 61 99208-1099</p>
                 </div>
               </div>
-              <div className={"contact-item-container"}>
+              <div
+                className={"contact-item-container"}
+                onClick={() => openLink("mailto:jacqueline.g.nunes@gmail.com")}
+              >
                 <div className={"contact-icon-wrapper"}>
                   <img
                     className={"contact-icon"}
@@ -38,7 +45,10 @@ const Footer = () => {
                   <p>jacqueline.g.nunes@gmail.com</p>
                 </div>
               </div>
-              <div className={"contact-item-container"}>
+              <div
+                className={"contact-item-container"}
+                onClick={() => openLink("https://wa.me/5561992081099")}
+              >
                 <div className={"contact-icon-wrapper"}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
