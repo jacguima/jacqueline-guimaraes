@@ -6,6 +6,17 @@
     left: 50%;
     display: flex;
     justify-content: flex-end;
+    pointer-events: none;
+}
+
+.whatsapp-img-wrapper {
+    pointer-events: all;
+    cursor: pointer;
+    transition: transform .4s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .whatsapp-img-container {
