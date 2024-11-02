@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import LogoBranca from "../../assets/images/LogoSemSombra.png";
+import LogoBranca from "../../assets/images/logo-branca.png";
 import WppLogo from "../../assets/images/whatsapp.png";
 import MailLogo from "../../assets/images/email-logo.png";
 import Linktree from "../../assets/images/logo-link.png";
