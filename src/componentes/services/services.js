@@ -129,7 +129,7 @@ const Services = () => {
                   className={"service-img service-img-boat"}
                   src={BoatGuy}
                   alt="boat guy"
-                  ref={addToRefs}
+                  ref={addToRefs} // Attach ref
                 />
               </div>
             </div>
@@ -161,7 +161,7 @@ const Services = () => {
                   className={"service-img service-img-chat img-chat-left"}
                   src={ChatLeft}
                   alt="chat baloon left"
-                  ref={addToRefs}
+                  ref={addToRefs} // Attach ref
                 />
                 {/* Right Chat Balloon */}
                 <img
@@ -207,7 +207,7 @@ const Services = () => {
                   className={"service-img service-img-bike"}
                   src={BikeGuy}
                   alt="bike guy"
-                  ref={addToRefs}
+                  ref={addToRefs} // Attach ref
                 />
               </div>
             </div>
