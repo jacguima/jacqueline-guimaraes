@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import "./services.css";
-import BikeImage from "../../assets/images/bike.png";
+import BikeImgBg from "../../assets/images/services-bike-img-bg.png";
 import BoatImgBg from "../../assets/images/services-boat-img-bg.png";
 import ChatImgBg from "../../assets/images/services-chat-img-bg.png";
 import BoatGuy from "../../assets/images/boat-guy.png";
+import BikeGuy from "../../assets/images/bike-guy.png";
 import ChatLeft from "../../assets/images/chat-left.png";
 import ChatRight from "../../assets/images/chat-right.png";
 import NumberOne from "../../assets/images/1.png";
@@ -128,7 +129,7 @@ const Services = () => {
                   className={"service-img service-img-boat"}
                   src={BoatGuy}
                   alt="boat guy"
-                  ref={addToRefs} // Attach ref
+                  ref={addToRefs}
                 />
               </div>
             </div>
@@ -160,7 +161,7 @@ const Services = () => {
                   className={"service-img service-img-chat img-chat-left"}
                   src={ChatLeft}
                   alt="chat baloon left"
-                  ref={addToRefs} // Attach ref
+                  ref={addToRefs}
                 />
                 {/* Right Chat Balloon */}
                 <img
@@ -198,19 +199,16 @@ const Services = () => {
                 className={"service-img-container img-container-professional"}
               >
                 <img
-                  className={"service-img-bg"}
-                  src={BikeImage}
-                  alt="bike guy"
+                  className={"service-img-bg img-bg-bike"}
+                  src={BikeImgBg}
+                  alt="background"
                 />
-                {/* If there's an image to animate, add it here with ref */}
-                {/* Example:
                 <img
-                  className={"service-img service-img-boat"}
-                  src={AnotherImage}
-                  alt="another image"
+                  className={"service-img service-img-bike"}
+                  src={BikeGuy}
+                  alt="bike guy"
                   ref={addToRefs}
                 />
-                */}
               </div>
             </div>
           </div>

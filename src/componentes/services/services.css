@@ -99,7 +99,7 @@
 
                     .service-img-bg {
                         width: 100%;
-                        height: 100%;
+                        height: auto;
                         object-fit: cover;
                         object-position: center;
                     }
@@ -111,6 +111,15 @@
                         left: 0;
                         top: 50%;
                         transform: translateY(-50%);
+                    }
+
+                    .service-img-bike {
+                        height: 60%;
+                        width: auto;
+                        opacity: .8;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                     }
 
                     /* Animation for Boat Image */
@@ -126,7 +135,7 @@
                     }
 
                     .service-img-boat.animate {
-                        opacity: 1;
+                        opacity: .8;
                         transform: translateX(0) rotateY(0deg) scale(1) translateY(-50%);
                         transition: opacity 2s ease-in-out, transform 2s ease-in-out;
                     }
@@ -148,7 +157,7 @@
                     }
 
                     .service-img-chat.img-chat-left.animate {
-                        opacity: 1;
+                        opacity: .8;
                         transform: translateY(-88%) translateX(16%);
                     }
 
@@ -161,7 +170,7 @@
                     }
 
                     .service-img-chat.img-chat-right.animate {
-                        opacity: 1;
+                        opacity: .8;
                         transform: translateY(-12%) translateX(-16%);
                     }
                 }
@@ -179,6 +188,7 @@
                 .img-container-professional {
                     right: -392px;
                     bottom: 0;
+                    width: 22rem;
                 }
             }
 
