@@ -48,7 +48,7 @@ const Navbar = ({
             <button onClick={scrollToSobreMim}>Sobre mim</button>
             <button onClick={scrollToPsicoterapia}>Psicoterapia</button>
             <button onClick={scrollToEspaco}>Espaço</button>
-            <button onClick={scrollToOpinioes}>Opiniões</button>
+            <button onClick={scrollToOpinioes}>Depoimentos</button>
             <button onClick={scrollToDuvidas}>Dúvidas</button>
             <button onClick={scrollToBlog}>Blog: em breve!</button>
             <a
@@ -81,7 +81,9 @@ const Navbar = ({
             Psicoterapia
           </button>
           <button onClick={handleLinkClick(scrollToEspaco)}>Espaço</button>
-          <button onClick={handleLinkClick(scrollToOpinioes)}>Opiniões</button>
+          <button onClick={handleLinkClick(scrollToOpinioes)}>
+            Depoimentos
+          </button>
           <button onClick={handleLinkClick(scrollToDuvidas)}>Dúvidas</button>
           <button onClick={handleLinkClick(scrollToBlog)}>
             Blog: em breve!
