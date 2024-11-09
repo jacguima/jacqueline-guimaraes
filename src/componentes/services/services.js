@@ -1,6 +1,8 @@
+import React, { useEffect, useRef } from "react";
 import "./services.css";
 import BikeImage from "../../assets/images/bike.png";
-import BoatImage from "../../assets/images/barco.png";
+import ImgBg from "../../assets/images/services-img-bg.png";
+import BoatGuy from "../../assets/images/boat-guy.png";
 import ChatImage from "../../assets/images/chat.png";
 import NumberOne from "../../assets/images/1.png";
 import NumberTwo from "../../assets/images/2.png";
@@ -9,6 +11,53 @@ import CheckCircleIcon from "../../shared/check-circle-icon";
 import ScrollingHighlightText from "../../shared/scrolling-highlight-text/scrolling-highlight-text";
 
 const Services = () => {
+  // Create a ref to store all service-img-boat elements
+  const imgBoatRefs = useRef([]);
+
+  useEffect(() => {
+    // Callback function for Intersection Observer
+    const callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Add the 'animate' class to trigger the CSS animation
+          entry.target.classList.add("animate");
+          // Stop observing the current target
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    // Create an Intersection Observer instance
+    const observerOptions = {
+      root: null, // relative to the viewport
+      rootMargin: "0px",
+      threshold: 0.1, // 100% of the element is visible
+    };
+
+    const observer = new IntersectionObserver(callback, observerOptions);
+
+    // Observe each img-boat element
+    imgBoatRefs.current.forEach((img) => {
+      if (img) {
+        observer.observe(img);
+      }
+    });
+
+    // Cleanup function to disconnect the observer on unmount
+    return () => {
+      if (observer) {
+        observer.disconnect();
+      }
+    };
+  }, []);
+
+  // Function to add refs to the imgBoatRefs array
+  const addToRefs = (el) => {
+    if (el && !imgBoatRefs.current.includes(el)) {
+      imgBoatRefs.current.push(el);
+    }
+  };
+
   return (
     <div className={"services-section"}>
       <div className={"container-narrow"}>
@@ -41,6 +90,7 @@ const Services = () => {
       <div className={"body"}>
         <div className={"container-narrow"}>
           <div className={"services-detailed-list"}>
+            {/* Service 1 */}
             <div className={"service-details"}>
               <div className={"number-container"}>
                 <img className={"number-img"} src={NumberOne} alt="Número 1" />
@@ -51,7 +101,7 @@ const Services = () => {
                 </h2>
                 <h3 className={"online-on-site"}>
                   <ScrollingHighlightText
-                    highlightColor="var(--main-green-really-light"
+                    highlightColor="var(--main-green-really-light)"
                     textPadding="0 .75rem"
                     threshold={0.3}
                   >
@@ -67,12 +117,24 @@ const Services = () => {
                 </p>
               </div>
               <div className={"service-img-container img-container-individual"}>
-                <img className={"service-img"} src={BoatImage} alt="Barco" />
+                <img
+                  className={"service-img-bg"}
+                  src={ImgBg}
+                  alt="background"
+                />
+                <img
+                  className={"service-img service-img-boat"}
+                  src={BoatGuy}
+                  alt="boat guy"
+                  ref={addToRefs} // Attach ref
+                />
               </div>
             </div>
+
+            {/* Service 2 */}
             <div className={"service-details details-couple"}>
               <div className={"number-container"}>
-                <img className={"number-img"} src={NumberTwo} alt="Número 1" />
+                <img className={"number-img"} src={NumberTwo} alt="Número 2" />
               </div>
               <div className={"service-details-content"}>
                 <h2 className={"services-detailed-title"}>
@@ -86,15 +148,18 @@ const Services = () => {
                 </p>
               </div>
               <div className={"service-img-container img-container-couple"}>
-                <img className={"service-img"} src={ChatImage} alt="Chat" />
+                <img className={"service-img-bg"} src={ChatImage} alt="Chat" />
+                {/* If there's an image to animate, add it here with ref */}
               </div>
             </div>
+
+            {/* Service 3 */}
             <div className={"service-details"}>
               <div className={"number-container"}>
                 <img
                   className={"number-img"}
                   src={NumberThree}
-                  alt="Número 1"
+                  alt="Número 3"
                 />
               </div>
               <div className={"service-details-content"}>
@@ -113,7 +178,8 @@ const Services = () => {
               <div
                 className={"service-img-container img-container-professional"}
               >
-                <img className={"service-img"} src={BikeImage} alt="Chat" />
+                <img className={"service-img-bg"} src={BikeImage} alt="Chat" />
+                {/* If there's an image to animate, add it here with ref */}
               </div>
             </div>
           </div>
