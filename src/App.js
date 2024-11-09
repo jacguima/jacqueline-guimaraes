@@ -14,7 +14,6 @@ import OnlineMobile from "./componentes/online-mobile/online-mobile";
 import MosaicDesktop from "./componentes/mosaic/mosaic-desktop/mosaic-desktop";
 import MosaicMobile from "./componentes/mosaic/mosaic-mobile/mosaic-mobile";
 import Footer from "./componentes/footer/footer";
-import Warning from "./componentes/warning/warning";
 
 function App() {
   const aboutMeRef = useRef(null);
@@ -87,8 +86,6 @@ function App() {
             <MosaicMobile />
           </div>
         </div>
-
-        <Warning />
 
         <div ref={footerRef} className="scroll-section">
           <Footer />
