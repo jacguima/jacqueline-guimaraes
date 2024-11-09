@@ -1,18 +1,23 @@
 .scrolling-highlight-text {
-    position: relative;
-    padding: 0.25rem 0.75rem;
-    overflow: hidden;
-    z-index: 2;
-    font-family: inherit;
+  position: relative;
+  padding: 0.25rem 0.75rem;
+  overflow: hidden;
+  z-index: 2;
+  font-family: inherit;
+  display: inline-block; /* Ensures the element wraps the content properly */
 }
 
 .scrolling-highlight-text .highlight-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0; /* Starts with 0% width */
-    background-color: yellow; /* Default color, will be overridden by props */
-    transition: width .5s ease-out; /* Default duration, overridden by props */
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0; /* Starts with 0% width */
+  background-color: yellow; /* Default color, overridden by props */
+  transition: width 0.5s ease-out; /* Default duration, overridden by props */
+  z-index: -1;
+}
+
+.scrolling-highlight-text.highlighted .highlight-bg {
+  width: 100%; /* Expands to full width when highlighted */
 }

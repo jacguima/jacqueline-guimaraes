@@ -114,7 +114,10 @@ const SpaceDesktop = () => {
             </div>
             <div>
               <p className={"online-subtitle"}>
-                <ScrollingHighlightText highlightColor="var(--beige)">
+                <ScrollingHighlightText
+                  threshold={0.3}
+                  highlightColor="var(--beige)"
+                >
                   Sessões 100% online para brasileiros em qualquer lugar do
                   mundo!
                 </ScrollingHighlightText>

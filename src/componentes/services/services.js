@@ -53,6 +53,7 @@ const Services = () => {
                   <ScrollingHighlightText
                     highlightColor="var(--main-green-really-light"
                     textPadding="0 .75rem"
+                    threshold={0.3}
                   >
                     online e presencial
                   </ScrollingHighlightText>
