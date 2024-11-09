@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import "./services.css";
 import BikeImage from "../../assets/images/bike.png";
-import ImgBg from "../../assets/images/services-img-bg.png";
+import BoatImgBg from "../../assets/images/services-boat-img-bg.png";
+import ChatImgBg from "../../assets/images/services-chat-img-bg.png";
 import BoatGuy from "../../assets/images/boat-guy.png";
-import ChatImage from "../../assets/images/chat.png";
+import ChatLeft from "../../assets/images/chat-left.png";
+import ChatRight from "../../assets/images/chat-right.png";
 import NumberOne from "../../assets/images/1.png";
 import NumberTwo from "../../assets/images/2.png";
 import NumberThree from "../../assets/images/3.png";
@@ -11,8 +13,8 @@ import CheckCircleIcon from "../../shared/check-circle-icon";
 import ScrollingHighlightText from "../../shared/scrolling-highlight-text/scrolling-highlight-text";
 
 const Services = () => {
-  // Create a ref to store all service-img-boat elements
-  const imgBoatRefs = useRef([]);
+  // Create a ref to store all animated elements (boats and chats)
+  const animatedRefs = useRef([]);
 
   useEffect(() => {
     // Callback function for Intersection Observer
@@ -31,15 +33,15 @@ const Services = () => {
     const observerOptions = {
       root: null, // relative to the viewport
       rootMargin: "0px",
-      threshold: 0.1, // 100% of the element is visible
+      threshold: 0.1, // Trigger when 10% of the element is visible
     };
 
     const observer = new IntersectionObserver(callback, observerOptions);
 
-    // Observe each img-boat element
-    imgBoatRefs.current.forEach((img) => {
-      if (img) {
-        observer.observe(img);
+    // Observe each animated element
+    animatedRefs.current.forEach((el) => {
+      if (el) {
+        observer.observe(el);
       }
     });
 
@@ -51,10 +53,10 @@ const Services = () => {
     };
   }, []);
 
-  // Function to add refs to the imgBoatRefs array
+  // Function to add refs to the animatedRefs array
   const addToRefs = (el) => {
-    if (el && !imgBoatRefs.current.includes(el)) {
-      imgBoatRefs.current.push(el);
+    if (el && !animatedRefs.current.includes(el)) {
+      animatedRefs.current.push(el);
     }
   };
 
@@ -119,7 +121,7 @@ const Services = () => {
               <div className={"service-img-container img-container-individual"}>
                 <img
                   className={"service-img-bg"}
-                  src={ImgBg}
+                  src={BoatImgBg}
                   alt="background"
                 />
                 <img
@@ -148,8 +150,25 @@ const Services = () => {
                 </p>
               </div>
               <div className={"service-img-container img-container-couple"}>
-                <img className={"service-img-bg"} src={ChatImage} alt="Chat" />
-                {/* If there's an image to animate, add it here with ref */}
+                <img
+                  className={"service-img-bg"}
+                  src={ChatImgBg}
+                  alt="background"
+                />
+                {/* Left Chat Balloon */}
+                <img
+                  className={"service-img service-img-chat img-chat-left"}
+                  src={ChatLeft}
+                  alt="chat baloon left"
+                  ref={addToRefs} // Attach ref
+                />
+                {/* Right Chat Balloon */}
+                <img
+                  className={"service-img service-img-chat img-chat-right"}
+                  src={ChatRight}
+                  alt="chat baloon right"
+                  ref={addToRefs} // Attach ref
+                />
               </div>
             </div>
 
@@ -178,8 +197,20 @@ const Services = () => {
               <div
                 className={"service-img-container img-container-professional"}
               >
-                <img className={"service-img-bg"} src={BikeImage} alt="Chat" />
+                <img
+                  className={"service-img-bg"}
+                  src={BikeImage}
+                  alt="bike guy"
+                />
                 {/* If there's an image to animate, add it here with ref */}
+                {/* Example:
+                <img
+                  className={"service-img service-img-boat"}
+                  src={AnotherImage}
+                  alt="another image"
+                  ref={addToRefs}
+                />
+                */}
               </div>
             </div>
           </div>

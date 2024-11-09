@@ -113,13 +113,15 @@
                         transform: translateY(-50%);
                     }
 
+                    /* Animation for Boat Image */
+
                     .service-img-boat {
                         transform-origin: center;
                         backface-visibility: hidden;
 
                         /* Initial state before animation */
                         opacity: 0;
-                        transform: translateY(-50%) translateX(-100px) rotateY(-50deg) scale(.8);
+                        transform: translateY(-50%) translateX(-100px) rotateY(-50deg) scale(0.8);
                         transition: opacity 0.5s ease-out, transform 0.5s ease-out;
                     }
 
@@ -127,6 +129,40 @@
                         opacity: 1;
                         transform: translateX(0) rotateY(0deg) scale(1) translateY(-50%);
                         transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+                    }
+
+                    /* Animation for Chat Balloons */
+
+                    .service-img-chat {
+                        width: 60%;
+                        opacity: 0;
+                        transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+                        /* Ensure initial transforms are overridden */
+                        /* Initial state will be defined based on modifier classes */
+                    }
+
+                    /* Left Chat Balloon Initial and Animated States */
+
+                    .service-img-chat.img-chat-left {
+                        transform: translateY(-100%) translateX(-50%);
+                    }
+
+                    .service-img-chat.img-chat-left.animate {
+                        opacity: 1;
+                        transform: translateY(-88%) translateX(16%);
+                    }
+
+                    /* Right Chat Balloon Initial and Animated States */
+
+                    .service-img-chat.img-chat-right {
+                        right: 0;
+                        left: unset;
+                        transform: translateY(100%) translateX(50%);
+                    }
+
+                    .service-img-chat.img-chat-right.animate {
+                        opacity: 1;
+                        transform: translateY(-12%) translateX(-16%);
                     }
                 }
 
@@ -151,36 +187,6 @@
             }
         }
     }
-
-    /*@keyframes fadeInCurve {*/
-    /*    0% {*/
-    /*        opacity: 0;*/
-    /*        transform: translateX(-100px) rotateY(-30deg) translateY(-50%);*/
-    /*    }*/
-    /*    50% {*/
-    /*        opacity: 0.5;*/
-    /*        transform: translateX(-25px) rotateY(15deg) translateY(-50%);*/
-    /*    }*/
-    /*    100% {*/
-    /*        opacity: 1;*/
-    /*        transform: translateX(0) rotateY(0deg) scale(1.05) translateY(-50%);*/
-    /*    }*/
-    /*}*/
-
-    /*@keyframes fadeInCurve {*/
-    /*    0% {*/
-    /*        opacity: 0;*/
-    /*        transform: translateX(-100px) rotateY(0deg) translateY(-50%);*/
-    /*    }*/
-    /*    50% {*/
-    /*        opacity: 0.5;*/
-    /*        transform: translateX(-25px) rotateY(15deg) translateY(-50%);*/
-    /*    }*/
-    /*    100% {*/
-    /*        opacity: 1;*/
-    /*        transform: translateX(0) rotateY(-30deg) scale(1.05) translateY(-50%);*/
-    /*    }*/
-    /*}*/
 
     @media (max-width: 1200px) {
         .header {
