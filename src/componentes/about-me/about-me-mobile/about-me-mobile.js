@@ -26,9 +26,9 @@ const AboutMeMobile = () => {
             confidencial.
           </p>
           <p>
-            Atualmente atendo na modalidade online pacientes de qualquer lugar
-            do mundo. Construo com estudo, escuta e cuidado uma clínica pensando
-            nas demandas de <b>adolescentes e adultos</b>.
+            Atualmente, atendo na modalidade online pessoas de toda parte do
+            mundo. Construo com estudo, escuta e cuidado uma clínica pensando
+            nas demandas do <b>paciente</b>.
           </p>
         </div>
         <div style={{ marginTop: "2rem" }}>
