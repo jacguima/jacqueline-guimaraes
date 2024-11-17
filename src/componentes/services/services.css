@@ -123,7 +123,7 @@
 
                         /* Initial state before animation */
                         opacity: 0;
-                        transform: translateY(-50%) translateX(-150px) rotateY(-70deg) scale(0.6);
+                        transform: translateY(-50%) translateX(-40px) rotateY(-20deg) scale(0.9);
                         transition: opacity 2s ease-in-out, transform 2s ease-in-out;
                     }
 
@@ -145,7 +145,7 @@
                     /* Left Chat Balloon Initial and Animated States */
 
                     .service-img-chat.img-chat-left {
-                        transform: translateY(-100%) translateX(-50%) scale(0.6);
+                        transform: translateY(-100%) translateX(4%) scale(0.9);
                     }
 
                     .service-img-chat.img-chat-left.animate {
@@ -158,7 +158,7 @@
                     .service-img-chat.img-chat-right {
                         right: 0;
                         left: unset;
-                        transform: translateY(100%) translateX(50%) scale(0.6);
+                        transform: translateY(0%) translateX(-4%) scale(0.9);
                     }
 
                     .service-img-chat.img-chat-right.animate {
@@ -174,7 +174,7 @@
                         opacity: 0; /* Initial state before animation */
                         top: 50%;
                         left: 50%;
-                        transform: translate(-50%, -50%) translateX(-250px) translateY(-50px) rotateY(-70deg) rotateZ(20deg) rotateX(10deg) scale(0.6);
+                        transform: translate(-50%, -50%) translateX(-60px) translateY(-20px) rotateY(-10deg) rotateZ(10deg) rotateX(10deg) scale(0.8);
                         transition: opacity 2s ease-in-out, transform 2s ease-in-out;
                     }
 
