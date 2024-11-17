@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./services.css";
 import BikeImgBg from "../../assets/images/services-bike-img-bg.png";
 import BoatImgBg from "../../assets/images/services-boat-img-bg.png";
@@ -14,83 +14,6 @@ import CheckCircleIcon from "../../shared/check-circle-icon";
 import ScrollingHighlightText from "../../shared/scrolling-highlight-text/scrolling-highlight-text";
 
 const Services = () => {
-  // Ref for individual animated elements (boat and bike)
-  const animatedRefs = useRef([]);
-
-  // Ref for chat container
-  const chatContainerRef = useRef(null);
-
-  useEffect(() => {
-    // Callback function for individual elements (boat and bike)
-    const animateElementsCallback = (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-          observer.unobserve(entry.target);
-        }
-      });
-    };
-
-    // Create Intersection Observer for individual elements
-    const animatedObserver = new IntersectionObserver(animateElementsCallback, {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.1, // Trigger when 10% of the element is visible
-    });
-
-    // Observe each individual animated element (boat and bike)
-    animatedRefs.current.forEach((el) => {
-      if (el) {
-        animatedObserver.observe(el);
-      }
-    });
-
-    // Callback function for chat container
-    const chatCallback = (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // Find all chat balloons inside the chat container
-          const chatBalloons =
-            entry.target.querySelectorAll(".service-img-chat");
-          chatBalloons.forEach((chat) => {
-            chat.classList.add("animate");
-          });
-          // Stop observing the chat container
-          observer.unobserve(entry.target);
-        }
-      });
-    };
-
-    // Create Intersection Observer for chat container
-    const chatObserver = new IntersectionObserver(chatCallback, {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.1, // Trigger when 10% of the chat container is visible
-    });
-
-    // Observe the chat container
-    if (chatContainerRef.current) {
-      chatObserver.observe(chatContainerRef.current);
-    }
-
-    // Cleanup function to disconnect observers on unmount
-    return () => {
-      if (animatedObserver) {
-        animatedObserver.disconnect();
-      }
-      if (chatObserver) {
-        chatObserver.disconnect();
-      }
-    };
-  }, []);
-
-  // Function to add refs to the animatedRefs array
-  const addToRefs = (el) => {
-    if (el && !animatedRefs.current.includes(el)) {
-      animatedRefs.current.push(el);
-    }
-  };
-
   return (
     <div className={"services-section"}>
       <div className={"container-narrow"}>
@@ -159,7 +82,6 @@ const Services = () => {
                   className={"service-img service-img-boat"}
                   src={BoatGuy}
                   alt="boat guy"
-                  ref={addToRefs} // Attach ref
                 />
               </div>
             </div>
@@ -180,10 +102,7 @@ const Services = () => {
                   convivência mais saudável e satisfatória.
                 </p>
               </div>
-              <div
-                className={"service-img-container img-container-couple"}
-                ref={chatContainerRef} // Attach ref to chat container
-              >
+              <div className={"service-img-container img-container-couple"}>
                 <img
                   className={"service-img-bg"}
                   src={ChatImgBg}
@@ -194,14 +113,12 @@ const Services = () => {
                   className={"service-img service-img-chat img-chat-left"}
                   src={ChatLeft}
                   alt="chat baloon left"
-                  ref={addToRefs} // Attach ref
                 />
                 {/* Right Chat Balloon */}
                 <img
                   className={"service-img service-img-chat img-chat-right"}
                   src={ChatRight}
                   alt="chat baloon right"
-                  ref={addToRefs} // Attach ref
                 />
               </div>
             </div>
@@ -240,7 +157,6 @@ const Services = () => {
                   className={"service-img service-img-bike"}
                   src={BikeGuy}
                   alt="bike guy"
-                  ref={addToRefs} // Attach ref
                 />
               </div>
             </div>

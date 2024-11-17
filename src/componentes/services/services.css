@@ -115,71 +115,34 @@
                         transform: translateY(-50%);
                     }
 
-                    /* Animation for Boat Image */
-
                     .service-img-boat {
                         transform-origin: center;
                         backface-visibility: hidden;
-
-                        /* Initial state before animation */
-                        opacity: 0;
-                        transform: translateY(-50%) translateX(-40px) rotateY(-20deg) scale(0.9);
-                        transition: opacity 2s ease-in-out, transform 2s ease-in-out;
-                    }
-
-                    .service-img-boat.animate {
                         opacity: 0.8;
                         transform: translateX(0) rotateY(0deg) scale(1) translateY(-50%);
                     }
-
-                    /* Animation for Chat Balloons */
-
+                    
                     .service-img-chat {
                         width: 60%;
-                        opacity: 0;
-                        transition: opacity 2s ease-in-out, transform 2s ease-in-out;
-                        /* Ensure initial transforms are overridden */
-                        /* Initial state will be defined based on modifier classes */
+                        opacity: 0.8;
                     }
-
-                    /* Left Chat Balloon Initial and Animated States */
 
                     .service-img-chat.img-chat-left {
-                        transform: translateY(-100%) translateX(4%) scale(0.9);
-                    }
-
-                    .service-img-chat.img-chat-left.animate {
-                        opacity: 0.8;
                         transform: translateY(-88%) translateX(16%) scale(1);
                     }
-
-                    /* Right Chat Balloon Initial and Animated States */
 
                     .service-img-chat.img-chat-right {
                         right: 0;
                         left: unset;
-                        transform: translateY(0%) translateX(-4%) scale(0.9);
-                    }
-
-                    .service-img-chat.img-chat-right.animate {
-                        opacity: 0.8;
                         transform: translateY(-12%) translateX(-16%) scale(1);
                     }
-
-                    /* Animation for Bike Image */
 
                     .service-img-bike {
                         height: 60%;
                         width: auto;
-                        opacity: 0; /* Initial state before animation */
+                        opacity: 0.8;
                         top: 50%;
                         left: 50%;
-                        transform: translate(-50%, -50%) translateX(-60px) translateY(-20px) rotateY(-10deg) rotateZ(10deg) rotateX(10deg) scale(0.8);
-                        transition: opacity 2s ease-in-out, transform 2s ease-in-out;
-                    }
-
-                    .service-img-bike.animate {
-                        opacity: 0.8;
                         transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotateY(0deg) rotateZ(0deg) rotateX(0deg) scale(1);
                     }
                 }
