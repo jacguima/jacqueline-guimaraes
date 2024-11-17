@@ -13,18 +13,10 @@
     }
 
     .profile-picture {
-        width: 100%;
-        height: 100%;
         object-fit: cover;
         object-position: center;
-    }
-
-    .profile-picture-border {
-        border-radius: 6rem;
-        border: 2px solid white;
-        overflow: hidden;
-        height: 664px;
-        width: 464px;
+        width: 28rem;
+        height: auto;
     }
 
     .profile-picture-container {
@@ -43,14 +35,14 @@
         font-weight: 300;
 
         p {
-            font-size: 1.25rem;
+            font-size: 22px;
         }
     }
 
     .about-me-content {
         display: flex;
         align-items: center;
-        gap: 8rem;
+        gap: 4rem;
         height: 100%;
         justify-content: center;
     }
@@ -60,17 +52,14 @@
     }
 
     @media (max-width: 1200px) {
-        .profile-picture-border {
-            height: 564px;
-            width: 364px;
-        }
-
-        .about-me-content {
-            gap: 4rem;
+        .profile-picture {
+            width: 26rem;
         }
 
         .about-me-text {
-            max-width: 432px;
+            p {
+                font-size: 20px;
+            }
         }
     }
 

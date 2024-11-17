@@ -1,5 +1,5 @@
 import "./about-me-desktop.css";
-import ProfilePicture from "../../../assets/images/foto-jac.jpg";
+import ProfilePicture from "../../../assets/images/profile-picture-desktop.png";
 import ScheduleButton from "../../../shared/schedule-button/schedule-button";
 
 const AboutMeDesktop = () => {
@@ -44,13 +44,13 @@ const AboutMeDesktop = () => {
             <ScheduleButton />
           </div>
           <div className="profile-picture-container">
-            <div className="profile-picture-border">
-              <img
-                className="profile-picture"
-                src={ProfilePicture}
-                alt="Profile Pictue"
-              />
-            </div>
+            {/*<div className="profile-picture-border">*/}
+            <img
+              className="profile-picture"
+              src={ProfilePicture}
+              alt="Profile Pictue"
+            />
+            {/*</div>*/}
           </div>
         </div>
       </div>
