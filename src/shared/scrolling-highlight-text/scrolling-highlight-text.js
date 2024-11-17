@@ -1,60 +1,72 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./scrolling-highlight-text.css";
 
 const ScrollingHighlightText = ({
   children,
-  threshold = 0.1, // Trigger when 10% of the component is visible
+  startPointRatio = 1,
+  endPointRatio = 0.5,
   highlightColor = "yellow",
   borderRadius = "0.5rem",
-  transitionDuration = "1s",
+  transitionDuration = "0.5s",
   textPadding = "0.25rem 0.75rem",
 }) => {
   const highlightRef = useRef(null);
-  const [isHighlighted, setIsHighlighted] = useState(false);
 
   useEffect(() => {
-    const observerOptions = {
-      threshold: threshold,
-    };
+    let ticking = false;
 
-    const observerCallback = (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setIsHighlighted(true);
-          observer.unobserve(entry.target); // Stop observing after highlighting
-        }
-      });
-    };
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (highlightRef.current) {
+            const rect = highlightRef.current.getBoundingClientRect();
+            const windowHeight =
+              window.innerHeight || document.documentElement.clientHeight;
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+            const startPoint = windowHeight * startPointRatio;
+            const endPoint = windowHeight * endPointRatio;
 
-    if (highlightRef.current) {
-      observer.observe(highlightRef.current);
-    }
+            const progress = (startPoint - rect.top) / (startPoint - endPoint);
+            const clampedProgress = Math.max(0, Math.min(progress, 1));
 
-    return () => {
-      if (highlightRef.current) {
-        observer.unobserve(highlightRef.current);
+            const highlightBg =
+              highlightRef.current.querySelector(".highlight-bg");
+            if (highlightBg) {
+              highlightBg.style.width = `${clampedProgress * 100}%`;
+            }
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
-  }, [threshold]);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll);
+
+    handleScroll(); // Initial call
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, [startPointRatio, endPointRatio]);
+
+  useEffect(() => {
+    if (highlightRef.current) {
+      highlightRef.current.style.padding = textPadding;
+      const highlightBg = highlightRef.current.querySelector(".highlight-bg");
+      if (highlightBg) {
+        highlightBg.style.backgroundColor = highlightColor;
+        highlightBg.style.borderRadius = borderRadius;
+        highlightBg.style.transitionDuration = transitionDuration;
+      }
+    }
+  }, [highlightColor, borderRadius, transitionDuration]);
 
   return (
-    <span
-      className={`scrolling-highlight-text ${isHighlighted ? "highlighted" : ""}`}
-      ref={highlightRef}
-      style={{
-        padding: textPadding,
-      }}
-    >
-      <span
-        className="highlight-bg"
-        style={{
-          backgroundColor: highlightColor,
-          borderRadius: borderRadius,
-          transitionDuration: transitionDuration,
-        }}
-      ></span>
+    <span className="scrolling-highlight-text" ref={highlightRef}>
+      <span className="highlight-bg"></span>
       {children}
     </span>
   );
