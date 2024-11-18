@@ -109,6 +109,8 @@
         align-items: center;
         justify-content: center;
         gap: .25rem;
+        line-height: 1;
+        font-size: 16px;
     }
 
     .mauricio-azevedo {
@@ -138,12 +140,12 @@
         border-radius: .75rem;
     }
 
-    /* Hover effect */
+    @media (hover: hover) {
+        .mauricio-azevedo:hover {
+            color: #444;
+        }
 
-    .mauricio-azevedo:hover {
-        color: #444;
-
-        &::before {
+        .mauricio-azevedo:hover::before {
             width: 100%;
         }
     }
@@ -174,6 +176,10 @@
         .policy-icon-wrapper {
             height: 1.25rem;
         }
+
+        .mauricio-azevedo-container {
+            font-size: 14px;
+        }
     }
 
 
@@ -201,6 +207,10 @@
         .bottom-container {
             padding-top: 1rem;
             gap: 1rem;
+        }
+
+        .mauricio-azevedo-container {
+            font-size: 12px;
         }
 
         .mauricio-azevedo {
