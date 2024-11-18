@@ -216,6 +216,7 @@
         .mauricio-azevedo {
             padding: 0;
             text-decoration: underline;
+            border-radius: 0;
         }
     }
 }
