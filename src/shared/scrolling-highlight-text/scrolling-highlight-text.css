@@ -1,8 +1,6 @@
 .scrolling-highlight-text {
     position: relative;
-    display: inline-block; /* Change to inline-block to contain the entire width */
-    justify-content: center;
-    width: fit-content;
+    display: inline-block;
     padding: 0.25rem 0.75rem;
     overflow: hidden;
     z-index: 1;
@@ -14,10 +12,9 @@
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;
-    width: 0; /* Starts with 0% width */
-    background-color: yellow; /* Default color, will be overridden by props */
-    transition: width 0.5s ease-out; /* Default duration, overridden by props */
+    width: 0%;
+    background-color: yellow;
+    transition: width 0.5s ease-out;
     z-index: -1;
-    border-radius: inherit; /* Make sure the border-radius is applied */
+    border-radius: inherit;
 }
