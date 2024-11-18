@@ -50,7 +50,7 @@ const ScrollingHighlightText = ({
       const highlightBg = highlightRef.current.querySelector(".highlight-bg");
       if (highlightBg) {
         highlightBg.style.backgroundColor = highlightColor;
-        highlightBg.style.borderRadius = borderRadius;
+        highlightBg.parentElement.style.borderRadius = borderRadius;
         highlightBg.style.transitionDuration = transitionDuration;
       }
     }
