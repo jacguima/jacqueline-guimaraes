@@ -1,6 +1,6 @@
 .scrolling-highlight-text {
     position: relative;
-    display: flex; /* Change to inline-block to contain the entire width */
+    display: inline-block; /* Change to inline-block to contain the entire width */
     justify-content: center;
     width: fit-content;
     padding: 0.25rem 0.75rem;
