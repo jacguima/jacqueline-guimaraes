@@ -21,65 +21,43 @@ const Services = () => {
   const chatContainerRef = useRef(null);
 
   useEffect(() => {
-    // Callback function for individual elements (boat and bike)
+    const previousYPositions = new Map();
+
+    // Callback function for individual elements (boat, bike, and chat balloons)
     const animateElementsCallback = (entries, observer) => {
       entries.forEach((entry) => {
+        const currentY = entry.boundingClientRect.y;
+        const prevY = previousYPositions.get(entry.target) ?? currentY;
+        const isScrollingDown = currentY > prevY;
+        previousYPositions.set(entry.target, currentY);
+
         if (entry.isIntersecting) {
           entry.target.classList.add("animate");
-          observer.unobserve(entry.target);
+        } else if (isScrollingDown) {
+          // Reset the animation if scrolled down and out of view
+          entry.target.classList.remove("animate");
         }
       });
     };
 
-    // Create Intersection Observer for individual elements
+    // Create Intersection Observer for all animated elements
     const animatedObserver = new IntersectionObserver(animateElementsCallback, {
       root: null,
       rootMargin: "0px",
-      threshold: 0.1, // Trigger when 10% of the element is visible
+      threshold: 0.1,
     });
 
-    // Observe each individual animated element (boat and bike)
+    // Observe each animated element (boat, bike, and chat balloons)
     animatedRefs.current.forEach((el) => {
       if (el) {
         animatedObserver.observe(el);
       }
     });
 
-    // Callback function for chat container
-    const chatCallback = (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // Find all chat balloons inside the chat container
-          const chatBalloons =
-            entry.target.querySelectorAll(".service-img-chat");
-          chatBalloons.forEach((chat) => {
-            chat.classList.add("animate");
-          });
-          // Stop observing the chat container
-          observer.unobserve(entry.target);
-        }
-      });
-    };
-
-    // Create Intersection Observer for chat container
-    const chatObserver = new IntersectionObserver(chatCallback, {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.1, // Trigger when 10% of the chat container is visible
-    });
-
-    // Observe the chat container
-    if (chatContainerRef.current) {
-      chatObserver.observe(chatContainerRef.current);
-    }
-
     // Cleanup function to disconnect observers on unmount
     return () => {
       if (animatedObserver) {
         animatedObserver.disconnect();
-      }
-      if (chatObserver) {
-        chatObserver.disconnect();
       }
     };
   }, []);

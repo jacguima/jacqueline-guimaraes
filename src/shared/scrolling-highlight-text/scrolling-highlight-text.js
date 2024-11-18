@@ -3,7 +3,7 @@ import "./scrolling-highlight-text.css";
 
 const ScrollingHighlightText = ({
   children,
-  threshold = 0.1, // Trigger when 10% of the component is visible
+  threshold = 1, // Trigger when 10% of the component is visible
   highlightColor = "yellow",
   borderRadius = "0.5rem",
   transitionDuration = "1s",
@@ -11,22 +11,32 @@ const ScrollingHighlightText = ({
 }) => {
   const highlightRef = useRef(null);
   const [isHighlighted, setIsHighlighted] = useState(false);
+  const previousY = useRef(0);
 
   useEffect(() => {
     const observerOptions = {
       threshold: threshold,
     };
 
-    const observerCallback = (entries, observer) => {
+    const observerCallback = (entries) => {
       entries.forEach((entry) => {
+        const currentY = entry.boundingClientRect.y;
+        const isScrollingDown = currentY > previousY.current;
+        previousY.current = currentY;
+
         if (entry.isIntersecting) {
           setIsHighlighted(true);
-          observer.unobserve(entry.target); // Stop observing after highlighting
+        } else if (!entry.isIntersecting && isScrollingDown) {
+          // Reset the highlight if scrolled down out of view
+          setIsHighlighted(false);
         }
       });
     };
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions,
+    );
 
     if (highlightRef.current) {
       observer.observe(highlightRef.current);
