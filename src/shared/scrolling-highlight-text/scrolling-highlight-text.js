@@ -13,31 +13,23 @@ const ScrollingHighlightText = ({
   const highlightRef = useRef(null);
 
   useEffect(() => {
-    let ticking = false;
-
     const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          if (highlightRef.current) {
-            const rect = highlightRef.current.getBoundingClientRect();
-            const windowHeight =
-              window.innerHeight || document.documentElement.clientHeight;
+      if (highlightRef.current) {
+        const rect = highlightRef.current.getBoundingClientRect();
+        const windowHeight =
+          window.innerHeight || document.documentElement.clientHeight;
 
-            const startPoint = windowHeight * startPointRatio;
-            const endPoint = windowHeight * endPointRatio;
+        const startPoint = windowHeight * startPointRatio;
+        const endPoint = windowHeight * endPointRatio;
 
-            const progress = (startPoint - rect.top) / (startPoint - endPoint);
-            const clampedProgress = Math.max(0, Math.min(progress, 1));
+        const progress = (startPoint - rect.top) / (startPoint - endPoint);
+        const clampedProgress = Math.max(0, Math.min(progress, 1));
 
-            const highlightBg =
-              highlightRef.current.querySelector(".highlight-bg");
-            if (highlightBg) {
-              highlightBg.style.width = `${clampedProgress * 100}%`;
-            }
-          }
-          ticking = false;
-        });
-        ticking = true;
+        const highlightBg = highlightRef.current.querySelector(".highlight-bg");
+        if (highlightBg) {
+          // Set width relative to the container width instead of just content
+          highlightBg.style.width = `calc(${clampedProgress * 100}% + 0.5rem)`;
+        }
       }
     };
 
@@ -58,7 +50,7 @@ const ScrollingHighlightText = ({
       const highlightBg = highlightRef.current.querySelector(".highlight-bg");
       if (highlightBg) {
         highlightBg.style.backgroundColor = highlightColor;
-        highlightBg.style.borderRadius = borderRadius;
+        highlightBg.parentElement.style.borderRadius = borderRadius;
         highlightBg.style.transitionDuration = transitionDuration;
       }
     }
