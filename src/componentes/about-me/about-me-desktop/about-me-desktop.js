@@ -38,19 +38,17 @@ const AboutMeDesktop = () => {
               <p>
                 Atualmente, atendo na modalidade online pessoas de toda parte do
                 mundo. Construo com estudo, escuta e cuidado uma clínica
-                pensando nas demandas do <b>paciente</b>.
+                pensando nas demandas do paciente.
               </p>
             </div>
             <ScheduleButton />
           </div>
           <div className="profile-picture-container">
-            {/*<div className="profile-picture-border">*/}
             <img
               className="profile-picture"
               src={ProfilePicture}
               alt="Profile Pictue"
             />
-            {/*</div>*/}
           </div>
         </div>
       </div>
