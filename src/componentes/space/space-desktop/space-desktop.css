@@ -139,14 +139,26 @@
         }
     }
 
-    .map-image-wrapper:hover {
-        transform: scale(1.1);
+    .map-image-wrapper, .map-address {
+        transition: transform 0.3s ease-in-out;
+        transform-origin: center;
+        cursor: pointer;
+    }
+
+    .map-image-wrapper.hovered, .map-address.hovered {
+        transform: scale(1.05);
+    }
+
+    .map-address.hovered {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .map-image-wrapper.hovered {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 
-    .map-image-south:hover + .address-south, .map-image-north:hover + .address-north {
-        transform: scale(1.05);
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    .map-address.delay-scale {
+        transition-delay: 0.1s;
     }
 
     .check-text-container {
