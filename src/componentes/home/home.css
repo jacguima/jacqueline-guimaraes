@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
     background-size: cover;
-    padding-bottom: 3rem;
 
     .home-wrapper {
         display: flex;
@@ -66,6 +65,8 @@
     }
 
     @media (max-width: 992px) {
+        padding-bottom: 3rem;
+
         .home-wrapper {
             flex-direction: column;
 
