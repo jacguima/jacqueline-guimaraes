@@ -47,11 +47,7 @@ const MosaicMobile = () => {
             </div>
             <div style={{ display: "flex", flex: 4 }}>
               <div className={"mosaic-card article"}>
-                <a
-                  href="https://peerw.org/index.php/journals/article/view/2052/1172"
-                  target="_blank"
-                  rel="noreferrer"
-                ></a>
+                <a href="/files/analisefilmica.pdf" target="_blank"></a>
                 <h3>Artigo publicado:</h3>
                 <p>Análise Fílmica De “Tudo Em Todo Lugar..."</p>
                 <ArrowRightCircleOutlined />
@@ -69,17 +65,13 @@ const MosaicMobile = () => {
           <div style={{ display: "flex", flex: 1 }}>
             <div className={"mosaic-card content content-love"}>
               <span className="material-symbols-outlined">download</span>
-              <a
-                href="https://peerw.org/index.php/journals/article/view/2052/1172"
-                target="_blank"
-                rel="noreferrer"
-              ></a>
+              <a href="/files/linguagensdoamor.pdf" target="_blank"></a>
             </div>
           </div>
           <div style={{ display: "flex", flex: 1 }}>
             <div className={"mosaic-card content content-grief"}>
               <span className="material-symbols-outlined">download</span>
-              <a href="/files/luto.pdf" download="luto.pdf"></a>
+              <a href="/files/luto.pdf" target="_blank"></a>
             </div>
           </div>
           <div style={{ display: "flex", flex: 1 }}>
